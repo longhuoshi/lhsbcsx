@@ -4,6 +4,21 @@ package bcsx.generics;
  * @author l
  * @date 2020/1/6 10:29
  * @description
+ *
+ * List和List<Object> 实际上表示 “持有任何object类型的原生List”
+ * List<?>  实际上表示 “持有某种特定类型的非原生List”,只是我们不知道那种类型是什么。
+ *
+ * 在wildSubtype()中，在Holder类型上的限制被放松为包括持有任何扩展自T的对象的Holder。
+ * 这还是意味着如果T是Fruit,那么holder可以是Holder<Apple>,这是合法的。为了防止将
+ * Orange放置到Holder<Apple>中，对set()的调用 (或者对任何接受这个类型参数为参数的方法的
+ * 调用)都是不允许的。但是，你仍旧知道任何来自Holder<? extends Fruit>的对象至少是Fruit,
+ * 因此get() (或者任何将产生具有这个类型参数的返回值的方法)。都是允许的。
+ *
+ * wildSupertype()展示了超类型通配符，这个方法展示了与wildSubtype()相反的行为：holder
+ * 可以是持有任何T的基类型（父类型）的容器。因此，set()可以接受T，因为任何可以工作于基类的对象都
+ * 可以多态地作用于导出类（这里就是T）。但是，尝试着调用get是没有用的。因为由holder持
+ * 有的类型可以是任何超类型，因此唯一安全的类型就是object。
+ *
  */
 public class Wildcards {
 
@@ -47,6 +62,7 @@ public class Wildcards {
     }
 
     static <T> T wildSubtype(Holder<? extends T> holder,T arg){
+
 //        holder.set(arg);// Error:
         //'set(capture<? extends T>)' in 'Holder' cannot be applied to '(T)'
         T t = holder.get();
@@ -109,6 +125,7 @@ public class Wildcards {
         wildSupertype(raw,lng);//Warnings
         //Unchecked assignment: 'bcsx.generics.Holder' to 'bcsx.generics.Holder<? super java.lang.Long>'
         wildSupertype(qualified,lng);
+
 //        wildSupertype(unbouded,lng);//Error
         //'wildSupertype(Holder<? super T>, T)' in 'Wildcards' cannot be applied to '(Holder<capture<?>>, Long)'
 //        wildSupertype(bounded,lng);//Error

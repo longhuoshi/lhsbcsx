@@ -11,6 +11,7 @@ public class ListMaker<T> {
 		ListMaker<String> sMaker = new ListMaker<String>();
 		List<String> l = sMaker.create();
 //		System.out.println(l.toString());
+
 	}
 
 }
