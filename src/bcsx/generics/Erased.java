@@ -1,4 +1,7 @@
 package bcsx.generics;
+
+import java.math.BigDecimal;
+
 /*
  * 擦除丢失了在泛型代码中执行某些操作的能力。
  * 写代码时要注意确切类型信息的操作都无法工作
@@ -15,8 +18,11 @@ public class Erased<T> {
 //		T var = new T();        //Error
 //		T[] array = new T[SIZE];//Error
 //		T[] array = (T)new Object[SIZE];
-		
+
+
+
 		
 	}
+
 
 }

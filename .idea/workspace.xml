@@ -2,14 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6277be4e-fd1e-4219-96ba-a75892772a04" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bcsx/generics/CaptureConversion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bcsx/generics/BasicHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bcsx/generics/ByteSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bcsx/generics/CRGWithBasicHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bcsx/generics/ClassCasting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bcsx/generics/ComparablePet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bcsx/generics/ConvariantReturnTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bcsx/generics/CuriouslyRecurringGeneric.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bcsx/generics/GenericCast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bcsx/generics/GenericsAndReturnTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bcsx/generics/HijackedInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bcsx/generics/ListOfInt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bcsx/generics/MultipleinterfaceVariants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bcsx/generics/NeedCasting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bcsx/generics/NotSelfBounded.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bcsx/generics/OrdinaryArguments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bcsx/generics/PlainGenericInheritance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bcsx/generics/PrimitiveGenericTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bcsx/generics/RestrictedComparablePets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bcsx/generics/SelfBounding.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bcsx/generics/SelfBoundingAndCovariantArguments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bcsx/generics/SelfBoundingMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bcsx/generics/Unconstrained.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bcsx/generics/UseList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bcsx/generics/UseList2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bcsx/practice/generics/Ex29.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myjava/Test2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mjava/bcsx/generics/ListMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mjava/bcsx/generics/ListMaker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mjava/bcsx/generics/UnboundedWildcards2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mjava/bcsx/generics/UnboundedWildcards2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin001.txt" beforeDir="false" afterPath="$PROJECT_DIR$/admin001.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mjava/bcsx/generics/CaptureConversion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mjava/bcsx/generics/CaptureConversion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mjava/bcsx/generics/Erased.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mjava/bcsx/generics/Erased.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/mjava/bcsx/generics/Wildcards.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mjava/bcsx/generics/Wildcards.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bcsx/generics/ListMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bcsx/generics/ListMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bcsx/generics/Wildcards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bcsx/generics/Wildcards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mjava/bcsx/net/mindview/util/Print.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mjava/bcsx/net/mindview/util/Print.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bcsx/generics/CaptureConversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bcsx/generics/CaptureConversion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bcsx/generics/Erased.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bcsx/generics/Erased.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bcsx/net/mindview/util/Print.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bcsx/net/mindview/util/Print.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,13 +73,16 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="bcsx.generics" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\practice\java\mjava\src\myjava\lambda" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CaptureConversion">
-    <configuration name="CaptureConversion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bcsx.generics.CaptureConversion" />
+  <component name="RunManager" selected="Application.PlainGenericInheritance">
+    <configuration name="OrdinaryArguments" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bcsx.generics.OrdinaryArguments" />
       <module name="mjava" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -65,22 +95,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyEx28" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bcsx.practice.generics.MyEx28" />
-      <module name="mjava" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bcsx.practice.generics.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UnboundedWildcards1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bcsx.generics.UnboundedWildcards1" />
+    <configuration name="PlainGenericInheritance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bcsx.generics.PlainGenericInheritance" />
       <module name="mjava" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -93,8 +109,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UnboundedWildcards2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bcsx.generics.UnboundedWildcards2" />
+    <configuration name="RestrictedComparablePets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bcsx.generics.RestrictedComparablePets" />
       <module name="mjava" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -107,8 +123,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Wildcards" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bcsx.generics.Wildcards" />
+    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="myjava.Test2" />
+      <module name="mjava" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="myjava.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unconstrained" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bcsx.generics.Unconstrained" />
       <module name="mjava" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -144,19 +174,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MyEx28" />
-      <item itemvalue="Application.UnboundedWildcards1" />
-      <item itemvalue="Application.UnboundedWildcards2" />
-      <item itemvalue="Application.Wildcards" />
-      <item itemvalue="Application.CaptureConversion" />
+      <item itemvalue="Application.Test2" />
+      <item itemvalue="Application.Unconstrained" />
+      <item itemvalue="Application.RestrictedComparablePets" />
+      <item itemvalue="Application.OrdinaryArguments" />
+      <item itemvalue="Application.PlainGenericInheritance" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CaptureConversion" />
-        <item itemvalue="Application.UnboundedWildcards2" />
-        <item itemvalue="Application.UnboundedWildcards1" />
-        <item itemvalue="Application.Wildcards" />
-        <item itemvalue="Application.MyEx28" />
+        <item itemvalue="Application.PlainGenericInheritance" />
+        <item itemvalue="Application.OrdinaryArguments" />
+        <item itemvalue="Application.Unconstrained" />
+        <item itemvalue="Application.RestrictedComparablePets" />
+        <item itemvalue="Application.Test2" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +221,20 @@
       <workItem from="1584502263892" duration="13085000" />
       <workItem from="1585118587027" duration="607000" />
       <workItem from="1592270737535" duration="13330000" />
-      <workItem from="1592359774503" duration="1764000" />
+      <workItem from="1592359774503" duration="24693000" />
+      <workItem from="1592442392426" duration="23777000" />
+      <workItem from="1592538701567" duration="10212000" />
+      <workItem from="1592556856074" duration="2105000" />
+      <workItem from="1592986234418" duration="2332000" />
+      <workItem from="1593418204349" duration="2202000" />
+      <workItem from="1593479589296" duration="1834000" />
+      <workItem from="1593566042447" duration="4564000" />
+      <workItem from="1593652755569" duration="9802000" />
+      <workItem from="1593745364783" duration="5763000" />
+      <workItem from="1593998081307" duration="14343000" />
+      <workItem from="1594084229191" duration="6460000" />
+      <workItem from="1594171019839" duration="3917000" />
+      <workItem from="1594256620010" duration="4604000" />
     </task>
     <servers />
   </component>
@@ -199,26 +242,30 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="197" y="407" key="#com.intellij.ide.util.MemberChooser" timestamp="1594021891263">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="197" y="407" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594021891263" />
     <state width="422" height="466" key="DebuggerActiveHint" timestamp="1592300266826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="422" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1592300266826" />
-    <state width="930" height="334" key="GridCell.Tab.0.bottom" timestamp="1592300658186">
+    <state width="925" height="281" key="GridCell.Tab.0.bottom" timestamp="1594281962937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="930" height="334" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592300658186" />
-    <state width="930" height="334" key="GridCell.Tab.0.center" timestamp="1592300658186">
+    <state width="925" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594281962937" />
+    <state width="925" height="281" key="GridCell.Tab.0.center" timestamp="1594281962937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="930" height="334" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592300658186" />
-    <state width="930" height="334" key="GridCell.Tab.0.left" timestamp="1592300658186">
+    <state width="925" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594281962937" />
+    <state width="925" height="281" key="GridCell.Tab.0.left" timestamp="1594281962937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="930" height="334" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592300658186" />
-    <state width="930" height="334" key="GridCell.Tab.0.right" timestamp="1592300658186">
+    <state width="925" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594281962937" />
+    <state width="925" height="281" key="GridCell.Tab.0.right" timestamp="1594281962937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="930" height="334" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592300658186" />
+    <state width="925" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594281962937" />
     <state width="930" height="334" key="GridCell.Tab.1.bottom" timestamp="1592300658186">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -235,6 +282,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="930" height="334" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592300658186" />
+    <state x="587" y="121" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594022424685">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="587" y="121" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594022424685" />
   </component>
   <component name="masterDetails">
     <states>

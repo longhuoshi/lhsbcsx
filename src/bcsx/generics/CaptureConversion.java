@@ -2,6 +2,8 @@ package bcsx.generics;
 
 import bcsx.net.mindview.util.CountingGenerator;
 
+import java.math.BigDecimal;
+
 /**
  * @author l
  * @date 2020/6/16 17:02
@@ -24,8 +26,9 @@ public class CaptureConversion {
         f1(holder); // Call with captured type
     }
 
+
     public static void main(String[] args) {
-        Holder raw = new Holder<Integer>(1);
+        Holder<Integer> raw = new Holder(1);
         f1(raw); //produces warnings
         f2(raw); //No warnings
 
@@ -35,7 +38,6 @@ public class CaptureConversion {
         // Upcast to Holder<?>, still figures it out:
         Holder<?> wildcarded = new Holder<Double>(1.0);
         f2(wildcarded);
-
 
 
 

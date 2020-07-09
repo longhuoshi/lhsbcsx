@@ -22,4 +22,13 @@ public class Print {
   printf(String format, Object... args) {
     return System.out.printf(format, args);
   }
+
+  public static void println(Object obj) {
+    System.out.println(obj);
+  }
+  public static void println() {
+    System.out.println();
+  }
+
+
 } ///:~
