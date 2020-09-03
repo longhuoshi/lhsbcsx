@@ -26,6 +26,8 @@ public class CountingGenerator {
       return chars[index];
     }
   }
+
+
   public static class
   String implements Generator<java.lang.String> {
     private int length = 7;

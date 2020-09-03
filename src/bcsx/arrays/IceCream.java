@@ -3,7 +3,12 @@ package bcsx.arrays;
 import java.util.Arrays;
 import java.util.Random;
 
-public class IceCream { 
+/**
+ * 16.3 返回一个数组
+ *
+ * */
+
+public class IceCream {
     private static Random rand = new Random(47);
     static final String[] FLAVORS={
         "Chocolate", "Strawberry", "Vanilla Fudge Swirl",

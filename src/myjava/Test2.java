@@ -1,7 +1,12 @@
 package myjava;
 
+import com.sun.deploy.util.StringUtils;
+
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author l
@@ -25,11 +30,22 @@ public class Test2 {
         //测试
         BigDecimal financeToAccountDto = new BigDecimal(4004.01);
         System.out.println(formatPointXX(financeToAccountDto));
-        Person8 p = new Person8();
-        p.setName(p.getName()+"dasfasdf");
-        p.setName(p.getName()+"123");
-        p.setName(p.getName()+"哈哈");
-        System.out.println(p.getName());
+
+        List<Integer> list = new ArrayList<>();
+        list.add(223);
+        list.add(225);
+        list.add(251);
+        list.add(252);
+
+
+
+
+        System.out.println(list.toString());
+
+        //Integer 转String
+        List<String> list3 = list.stream().map(Object::toString).collect(Collectors.toList());
+        //逗号分隔String
+//        System.out.println( String.join(",",list3));
 
     }
 

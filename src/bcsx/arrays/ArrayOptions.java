@@ -2,6 +2,11 @@ package bcsx.arrays;
 
 import java.util.Arrays;
 
+/**
+ *16.2 数组是第一级对象
+ *[bə'rɪliəm]  Beryllium
+ * */
+
 public class ArrayOptions {
 
     public static void main(String[] args) {
@@ -15,10 +20,13 @@ public class ArrayOptions {
                 c[i] = new BerylliumSphere();
             }
         }
-        
-        BerylliumSphere[] d = {new BerylliumSphere(),new BerylliumSphere(),new BerylliumSphere() };
+        //聚集初始化(变量= {})操作必须在 变量定义的位置使用。
+        BerylliumSphere[] d ={new BerylliumSphere(),new BerylliumSphere(),new BerylliumSphere() };
+        //动态的聚集初始化(变量=new xx[]{}) 可以在任意位置创建和初始化数组对象。
+        //只要是聚集初始化，就不能填写数组长度 
         a = new BerylliumSphere[]{new BerylliumSphere(),new BerylliumSphere()};
-      
+
+
         System.out.println("a.length = " + a.length);
         System.out.println("b.length = " + b.length);
         System.out.println("c.length = " + c.length);
@@ -27,7 +35,9 @@ public class ArrayOptions {
         System.out.println("a.length = " + a.length);
 
         System.out.println("=============================== ");
-        int[] e;
+        //arrays of primitives
+        // primitive ['prɪmətɪv]
+        int[] e;  // null reference
         int[] f = new int[5];
         System.out.println("f: " + Arrays.toString(f));
         int[] g = new int[4];
@@ -47,7 +57,10 @@ public class ArrayOptions {
         System.out.println("=============================== ");
         char[] i = new char[5];
         System.out.println("i: "+Arrays.toString(i));
-        
+
+
+
+
         
     }
 

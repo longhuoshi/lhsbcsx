@@ -2,7 +2,10 @@ package bcsx.arrays;
 
 import java.util.Arrays;
 import java.util.Random;
-
+/**
+ *16.4 多维数组
+ * 数组中构成矩阵的每个向量都可以具有任意的长度（这被称为粗糙数组 ）
+ * */
 public class RaggedArray {
 
     public static void main(String[] args) {

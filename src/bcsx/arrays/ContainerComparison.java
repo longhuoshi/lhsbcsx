@@ -3,13 +3,16 @@ package bcsx.arrays;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+/**
+ * 16.1 数组为什么特殊
+ *
+ *
+ * */
 
+//[bə'rɪliəm]  Beryllium
 class BerylliumSphere{
     private static long counter;
     private final long id = counter++;
-    public static void aaa(){
-        counter = 2;
-    }
     public String toString(){
         return "Sphere "+id;
     }
@@ -22,6 +25,7 @@ public class ContainerComparison {
         for(int i=0;i<5;i++){
             spheres[i] = new BerylliumSphere();
         }
+
         System.out.println(Arrays.toString(spheres));
         System.out.println(spheres[4]);
         
