@@ -22,5 +22,7 @@ public class TestGenerated {
         Integer[] b = Generated.array(Integer.class,new CountingGenerator.Integer(),8);
         System.out.println(Arrays.toString(b));
 
+
+
     }
 }

@@ -1,0 +1,24 @@
+jls7:The null reference can always be assigned or cast to any reference type
+从上面的Java语言规范中可以得出：
+Java中所有类的顶级父类是Object，可以认为Null是所有类的子类。
+
+Java泛型
+<? extends T>和<? super T>是Java泛型中的“通配符（Wildcards）”和“边界（Bounds）”的概念。
+<? extends T>：是指 “上界通配符（Upper Bounds Wildcards）
+<? super T>：是指 “下界通配符（Lower Bounds Wildcards）
+
+
+PECS 全称 Producter Extends, Consumer Super 原则
+即供应者使用 Extends,消费者使用 Super。（生产者使用“? extends T”通配符，消费者使用“? super T”通配符）
+PECS原则总结
+从上述两方面的分析，总结PECS原则如下：
+如果要从集合中读取类型T的数据，并且不能写入，可以使用 ? extends 通配符；(Producer Extends)
+如果要从集合中写入类型T的数据，并且不需要读取，可以使用 ? super 通配符；(Consumer Super)
+如果既要存又要取，那么就不要使用任何通配符。
+
+为什么java的泛型会出现？因为Java中的泛型没有协变特性的导致的
+
+
+
+
+
