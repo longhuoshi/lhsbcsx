@@ -52,10 +52,6 @@ public class Test {
 
 
 
-
-
-
-
 	}
 
 
@@ -88,7 +84,7 @@ public class Test {
 		String a="a1234";
 		if(isNumeric(a))
 			System.out.println("----");
-		
+		 
 		//int 不足6位在前面补0
 		String str = String.format("%06d", Integer.parseInt("123"));
 		System.out.println(str);
