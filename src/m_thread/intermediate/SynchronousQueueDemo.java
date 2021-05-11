@@ -12,6 +12,7 @@ import java.util.concurrent.SynchronousQueue;
  * 就好像生产者在不断地产生数据 ，水费者在不断消费数据 。
  *
  *
+ *
  */
 public class SynchronousQueueDemo {
     public static void main(String[] args) {
