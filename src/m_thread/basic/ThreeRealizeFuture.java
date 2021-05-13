@@ -22,6 +22,7 @@ public class ThreeRealizeFuture {
         System.out.println("这是主线程!");
 
         try {
+
             //返回结果 是堵塞的。要等线程执行完，才返回
             System.out.println("线程返回值："+futureTask.get());
         } catch (InterruptedException e) {

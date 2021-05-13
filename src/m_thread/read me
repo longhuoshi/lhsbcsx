@@ -109,6 +109,98 @@ CAS（Compare-and-Swap 比较和交换）
 5.11 同步计数器Semaphore
 5.12 同步计数器CyclicBarrier
 
+第六章 线程池
+单个任务小，而任务数量巨大，最适合用线程池。
+6.2 newSingleThreadExecutor的使用
+6.3 newCachedThreadPool的使用
+6.4 newFixedThreadPool的使用
+6.7 自定义线程池与ExecutortorService
+    2、自用ThreadFactory他创建一个新线程
+    3、 理解RejectedExecutionHandler
+        如果线程池里的线程已经饱和，并且任务队列也已满。那就要做丢弃处理。
+        线程池任务拒绝策略
+        1)不用线程池线程执行
+            CallerRunsPolicy:只用调用者所在线程来运行任务。
+        2)抛出异常
+            AbortPolicy:直接抛出异常
+        3)丢弃队列中最旧任务
+            DiscardOldestPolicy:丢弃队列里离执行最近（在队列里呆得时间最长）的一个任务，并执行当前任务。
+        4)直接丢弃任务。
+            DiscardPolicy:不处理，丢弃掉。
+    4、ThreadPoolExecutor详解
+       ThreadPoolExecutor类是线程池中最核心的一个类。
+       构造器的几个参数
+       1)int corePoolSize：核心池大小
+       2)int maximumPoolSize: 线程池最大线程数
+       3)long keepAliveTime: 表示线程没有任务执行时最多保持多久的时间会终止。
+       4)TimeUnit unit:参数keepAliveTime的时间单位。
+       5)BlockingQueue workQueue:一个阻塞队列，用来存储等待执行任务。
+       6)ThreadFactory threadFactory:线程工厂，主要用来创建线程。
+       7)RejectedExecutionHandler handler:表示当拒绝处理任务时的策略，也可以是自定义的。
+
+6.8 线程池在工作中的错误说明
+
+第7章 JDK7新增的Fork/Join
+7.1 认识Future任务机制和FutureTask
+7.2 什么是Fork/Join框架
+7.2 认识Fork/Join的JDK里面的家族
+    fork()这个方法决定了ForkJoinTask的异步执行，凭借这个方法可以创建新的任务。
+    join()该方法负责在计算完成后返回结果 ，因此允许一个任务等待另一个任务执行完成 。
+
+    ForkJoinTask 的两个子类
+    RecursiveTask 用于有返回结果 的任务
+    RecursiveAction 用于没有返回结果 的任务
+
+    ForkJoinPool: 用来执行ForkJoinTask，任务分割的子任务会添加到当前工作线程所维护的双端队列中，
+    进入队列的头部。
+
+7.4 Fork/Join 框架的实现原理
+    Fork/Join(分叉/结合)框架是一个比较特殊的线程池框架，专用于需要将一个任务不断分解成子任务（分叉），
+    再不断进行汇总得到最终结果（结合 ）的计算过程 。
+
+7.6 Fork/Join 模式优缺点及其实际应用场景 。
+
+第3部分 实际的使用，监控与拓展
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
