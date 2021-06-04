@@ -22,32 +22,32 @@ class MyThrad implements Runnable{
 				+ "\"customerDeliveryTime\":5,\"lastModifyDate\":\"\","
 						+ "\"orderDetail\":["
 						+ " {"
-						+ "\"customerRemark\":\"é…èœæ–¹æ¡ˆä¸‹å•\","
+						+ "\"customerRemark\":\"Åä²Ë·½°¸ÏÂµ¥\","
 						+ "\"goodsId\":109,"
-						+ " \"goodsName\":\"é’è¾£æ¤’(æ–¤)\","
+						+ " \"goodsName\":\"ÇàÀ±½·(½ï)\","
 						+ "\"goodsNum\":4,"
 						+ " \"orderDetailId\":-1,"
 						+ "\"orderDetailType\":10,"
 						+ "\"orderType\":10,"
 						+ "\"orderTypeInit\":11,"
 						+ "\"price\":6,"
-						+ "\"specDesc\":\"æ•£è£…\","
+						+ "\"specDesc\":\"É¢×°\","
 						+ "\"supplierId\":2271,"
-						+ "\"supplierName\":\"æµ‹è¯•è´¦å·Y\","
+						+ "\"supplierName\":\"²âÊÔÕËºÅY\","
 						+ "\"ticketFlag\":false,"
-						+ "\"untiCode\":\"æ–¤\","
+						+ "\"untiCode\":\"½ï\","
 						+ "\"suppliers\":["
 						+ "{"
 							+ "\"id\":2271,"
-							+ "\"name\":\"æµ‹è¯•è´¦å·Y\""
+							+ "\"name\":\"²âÊÔÕËºÅY\""
 						+ "},"
 						+ "{"
 							+ "\"id\":830,"
-							+ "\"name\":\"è‡ªè´­\""
+							+ "\"name\":\"×Ô¹º\""
 						+ "},"
 						+ "{"
 						+ "\"id\":2270,"
-						+ "\"name\":\"æµ‹è¯•è´¦å·Z\""
+						+ "\"name\":\"²âÊÔÕËºÅZ\""
 					+ "}"
 				+ "]"
 			+ "}"
@@ -93,9 +93,9 @@ public class PostJson {
 		return formatter.format(new Date());
 	}
 	/**
-	 * è¯·æ±‚æ•°æ®
-	 * @param postData æ•°æ®åŒ…
-	 * @param packageId æŒ‡ä»¤åŒ…åºåˆ—å·
+	 * ÇëÇóÊı¾İ
+	 * @param postData Êı¾İ°ü
+	 * @param packageId Ö¸Áî°üĞòÁĞºÅ
 	 * 
 	 * */
 	public static String postserver(String postData,String strTime) {
@@ -117,12 +117,12 @@ public class PostJson {
 			//" + str
 			 osw.flush();  
 //			 osw.close();
-			/*å‘é€æ–‡ä»¶æ•°æ®è¯¥å¦‚ä½•å®ç°*/
+			/*·¢ËÍÎÄ¼şÊı¾İ¸ÃÈçºÎÊµÏÖ*/
 
 		 BufferedReader inss = new BufferedReader(new InputStreamReader(connection.getInputStream()));  
 		 String line = null;  
 		 StringBuffer content= new StringBuffer();  
-		 while((line = inss.readLine()) != null){//lineä¸ºè¿”å›å€¼ï¼Œè¿™å°±å¯ä»¥åˆ¤æ–­æ˜¯å¦æˆåŠŸã€  
+		 while((line = inss.readLine()) != null){//lineÎª·µ»ØÖµ£¬Õâ¾Í¿ÉÒÔÅĞ¶ÏÊÇ·ñ³É¹¦¡¢  
 			content.append(line);  
 		 }
 		inss.close() ;  
@@ -133,8 +133,8 @@ public class PostJson {
 //        signB = ReturnValue.base64dec(signMsg.getBytes());
         result = new String(signB,"utf-8");
 //		System.out.println(" ");
-		System.out.println(Thread.currentThread()+"è¿”å›ç»“æœï¼š" + result);
-//		System.out.println("è¿è¡Œç»“æŸï¼");
+		System.out.println(Thread.currentThread()+"·µ»Ø½á¹û£º" + result);
+//		System.out.println("ÔËĞĞ½áÊø£¡");
         
 		inss=null;  
 		url=null; 

@@ -1,6 +1,6 @@
 package bcsx.generics;
 
-import jdk.nashorn.internal.runtime.PrototypeObject;
+
 
 public class SimpleHolder {
 	private Object obj;

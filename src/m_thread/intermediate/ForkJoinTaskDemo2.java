@@ -18,7 +18,7 @@ import java.util.concurrent.*;
 public class ForkJoinTaskDemo2 {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         System.out.println("Thread Main begin!");
-        Integer count = new ForkJoinPool().invoke(new CountingTask(Paths.get("E:\\work"))); //  整个磁盘统计 E:\
+        Integer count = new ForkJoinPool().invoke(new CountingTask(Paths.get("E:\\Download\\ed"))); //  整个磁盘统计 E:\
         System.out.println("总文件数量："+count);
         System.out.println("Thread Main End!");
     }

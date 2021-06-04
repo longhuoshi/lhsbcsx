@@ -1,5 +1,9 @@
 package bcsx.generics;
 
+/**
+ * 15.8.2 泛型数组
+ *
+ * */
 
 public class ArrayOfGeneric {
 	static final int SIZE = 100;

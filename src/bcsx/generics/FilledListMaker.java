@@ -3,6 +3,12 @@ package bcsx.generics;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 因为擦除在方法体中移除 了类型信息，所以在运行时的问题就是边界；
+ * 即对象进入和离开 方法的地点。
+ *
+ * */
+
 public class FilledListMaker<T> {
 	
 

@@ -45,18 +45,18 @@ public class ClassTypeCapture<T> {
 
 	public static void main(String[] args) {
 		ClassTypeCapture<Building> ctc = new ClassTypeCapture<Building>(Building.class);
-		System.out.println(ctc.f(new Building()));
-		System.out.println(ctc.f(new House()));
+		System.out.println(ctc.f(new Building()));  // Building 是 Building   返回：true
+		System.out.println(ctc.f(new House())); // House 是 Building  返回：true
 		
 		ClassTypeCapture<House> ctc2 = new ClassTypeCapture<House>(House.class);
-		System.out.println(ctc2.f(new Building()));
-		System.out.println(ctc2.f(new House()));
+		System.out.println(ctc2.f(new Building())); // Building 不是 House  返回：false
+		System.out.println(ctc2.f(new House())); // House 是 House  返回：true
 		
 		System.out.println("=========================");
 		//Building父类，House是子类
 		//house可不可以转换成Building
-		System.out.println(new House() instanceof Building);
-		System.out.println(new Building() instanceof House);
+		System.out.println(new House() instanceof Building);  //House 是 Building  等同于Building.class.isInstance(new House());
+		System.out.println(new Building() instanceof House);  //Building 不是 House  返回：false
 		
 		//Building类型有没有House.
 		System.out.println(Building.class.isInstance(new House()));

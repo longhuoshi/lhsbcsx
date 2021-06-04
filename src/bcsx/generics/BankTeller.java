@@ -11,7 +11,7 @@ import bcsx.net.mindview.util.Generator;
 class Customer{
 	private static long counter = 1;
 	private final long id = counter++;
-	public Customer(){}
+	private Customer(){}
 	public String toString(){
 		return "Customer "+id;
 	}
@@ -26,7 +26,7 @@ class Customer{
 class Teller{
 	private static long counter = 1;
 	private final long id = counter++;
-	public Teller(){}
+	private Teller(){}
 	public String toString(){
 		return "Teller "+ id;
 	}
@@ -52,6 +52,7 @@ public class BankTeller {
 		for(Customer c : line){
 			serve(tellers.get(random.nextInt(tellers.size())),c);
 		}
+
 	}
 
 }

@@ -8,7 +8,7 @@ class Lhs{
 	private static int num=0;
 	private final int counter = num++;
 	public String toString(){
-		return "æœºå™¨äºº "+counter+"å·";
+		return "»úÆ÷ÈË "+counter+"ºÅ";
 	}
 }
 public class ArrayMaker<T> {
@@ -17,16 +17,16 @@ public class ArrayMaker<T> {
 	
 	@SuppressWarnings("unchecked")
 	T[] create(int size){
-		//æ³¨æ„ï¼šå¯¹äº åœ¨æ³›å‹ä¸­åˆ›å»ºæ•°ç»„ï¼Œä½¿ç”¨Array.newInstance()æ˜¯æ¨èæ–¹å¼ ã€‚
+		//×¢Òâ£º¶ÔÓÚ ÔÚ·ºĞÍÖĞ´´½¨Êı×é£¬Ê¹ÓÃArray.newInstance()ÊÇÍÆ¼ö·½Ê½ ¡£
 		return (T[])Array.newInstance(kind, size); 
 	}
 	
 	T[] create2(int size){
 		
-		//åˆ›å»ºæ•°ç»„
+		//´´½¨Êı×é
 		T[] t = (T[])Array.newInstance(kind, size);
 		try {
-			//èµ‹å€¼
+			//¸³Öµ
 			for(int i=0; i< t.length ; i++){
 
 				T a =kind.newInstance();
@@ -46,6 +46,7 @@ public class ArrayMaker<T> {
 		ArrayMaker<Lhs> stringMaker = new ArrayMaker<Lhs>(Lhs.class);
 		Lhs[] stringArray = stringMaker.create2(9);
 		System.out.println(Arrays.asList(stringArray));
+
 	}
 
 }

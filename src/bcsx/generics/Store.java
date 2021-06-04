@@ -70,7 +70,7 @@ public class Store extends ArrayList<Aisle> {
 	
 	public static void main(String[] args) {
 		System.out.println(new Store(14, 5, 10));
-		
+
 	}
 
 }

@@ -1,5 +1,9 @@
 package bcsx.generics;
 /*
+
+15.8.1 创建类型实例
+
+
  * 没有编译期检查的泛型。。
  * 
  * 这个可以编译，但会因为ClassAsFactory<Integer>而失败。
@@ -31,7 +35,7 @@ public class InstantiateGenericType {
 			System.out.println("ClassAsFactory<Integer> failed");
 			
 		}
-		
+
 	}
 
 }

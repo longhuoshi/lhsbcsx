@@ -161,6 +161,14 @@ CAS（Compare-and-Swap 比较和交换）
 7.6 Fork/Join 模式优缺点及其实际应用场景 。
 
 第3部分 实际的使用，监控与拓展
+9.1 Java 线程池的监控
+9.2 ForkJoin如何监控
+9.3 Java内存结构
+9.4 可视化监控工具的使用。
+  VisualVM的使用。 命令jvisualvm
+  JConsole的使用   命令  jconsole
+  Oracle Java Mission Control 命令 jmc
+9.5 Linux线程分析监控使用方法。
 
 
 
