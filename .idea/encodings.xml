@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/src/bcsx/holding/AddingGroups.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/bcsx/holding/ArrayIsNotIterable.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/bcsx/holding/CrossContainerIteration.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/bcsx/holding/PrintingContainers.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/bcsx/generics/ArrayMaker.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/bcsx/generics/GenericMethods.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/bcsx/generics/GenericVarargs.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/bcsx/generics/LimitsOfInference.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/bcsx/holding/AddingGroups.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/bcsx/holding/ArrayIsNotIterable.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/bcsx/holding/CrossContainerIteration.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/bcsx/holding/PrintingContainers.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/bcsx/net/mindview/util/New.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/myjava/PostJson.java" charset="GBK" />
   </component>
 </project>
