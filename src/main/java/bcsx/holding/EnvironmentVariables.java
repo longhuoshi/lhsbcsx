@@ -1,12 +1,12 @@
-package bcsx.holding;
+package main.java.bcsx.holding;
 
 import java.util.Map;
 /**
- * 在java se5中，大量的类都是Iterable类型，主要包括所有的Collection类（但是不包括各种Map）。
-例如：下面的代码可以显示所有的操作系统环境变量。
+ * 锟斤拷java se5锟叫ｏ拷锟斤拷锟斤拷锟斤拷锟洁都锟斤拷Iterable锟斤拷锟酵ｏ拷锟斤拷要锟斤拷锟斤拷锟斤拷锟叫碉拷Collection锟洁（锟斤拷锟角诧拷锟斤拷锟斤拷锟斤拷锟斤拷Map锟斤拷锟斤拷
+锟斤拷锟界：锟斤拷锟斤拷拇锟斤拷锟斤拷锟斤拷锟斤拷示锟斤拷锟叫的诧拷锟斤拷系统锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷
 code
-System.getenv()返回一个Map, .entrySet产生一个由Map.Entry的元素构成的Set，并且这个Set是一个Ierable，
-因此它可以用于foreach循环。
+System.getenv()锟斤拷锟斤拷一锟斤拷Map, .entrySet锟斤拷锟斤拷一锟斤拷锟斤拷Map.Entry锟斤拷元锟截癸拷锟缴碉拷Set锟斤拷锟斤拷锟斤拷锟斤拷锟絊et锟斤拷一锟斤拷Ierable锟斤拷
+锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟絝oreach循锟斤拷锟斤拷
  * */
 public class EnvironmentVariables {
 

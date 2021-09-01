@@ -1,52 +1,52 @@
-package bcsx.exceptions;
+package main.java.bcsx.exceptions;
 
 
 /**
- * 12.7 Java±ê×¼Òì³£¡£
-	ThrowableÕâ¸öjavaÀà±»ÓÃÀ´±íÊ¾ÈÎºÎ¿ÉÒÔ×÷ÎªÒì³£±»Å×³öµÄÀà¡£Throwable¶ÔÏó¿É·ÖÎªÁ½ÖÖ
-ÀàÐÍ£¨Ö¸´ÓThrowable¼Ì³Ð¶øµÃµ½µÄÀàÐÍ£©£ºErrorÓÃÀ´±íÊ¾±àÒëÊ±ºÍÏµÍ³´íÎó£¨³ýÌØÊâÇé¿öÍâ
-Ò»°ã²»ÓÃÄã¹ØÐÄ£©£»ExceptionÊÇ¿ÉÒÔ±»Å×³öµÄ»ù±¾ÀàÐÍ£¬ÔÚjavaÀà¿â£¬ÓÃ»§·½·¨ÒÔ¼°ÔËÐÐÊ±¹ÊÕÏ
-ÖÐ¶¼¿ÉÄÜÅ×³öExceptionÐÍÒì³£¡£ËùÒÔJava³ÌÐòÔ±¹ØÐÄµÄ»ùÀàÍ¨³£ÊÇException¡£
-	ÒªÏë¶ÔÒì³£ÓÐÈ«ÃæµÄÁË½â£¬×îºÃÈ¥ä¯ÀÀÏÂHTML¸ñÊ½µÄjavaÎÄµµ¡£Äã»á·¢ÏÖ£¬ÕâÐ©Òì³£³ýÁËÃû³Æ
-ÍâÆäÊµ¶¼²î²»¶à¡£javaÖÐÒì³£µÄÊýÄ¿ÔÚ³ÖÐøÔö¼Ó¡£ËùÊ¹ÓÃµÄµÚÈý·½Àà¿âÒ²ÓÐ¿ÉÄÜÓÐ×Ô¼ºµÄÒì³£¡£
-¶ÔÒì³£À´Ëµ£¬¹Ø¼üÊÇÀí½â¸ÅÄîÒÔ¼°ÈçºÎÊ¹ÓÃ¡£
-	Òì³£µÄ»ù±¾¸ÅÄîÊÇÓÃÃû³Æ´úÌæ·¢ÉúµÄÎÊÌâ£¬²¢ÇÒÒì³£µÄÃû³ÆÓ¦¸Ã¿ÉÒÔÍûÎÄÖªÒâ¡£Òì³£²¢·ÇÈ«ÊÇ
-ÔÚjava.lang°üÀï¶¨ÒåµÄ£»ÓÐÐ©Òì³£ÊÇÓÃÀ´Ö§³ÖÆäËûÏñutil£¬netºÍioÕâÑùµÄ³ÌÐò°ü£¬ÕâÐ©Òì³£¿ÉÒÔ
-Í¨¹ýËüÃÇÍêÕûÃû³Æ»òÕß´ÓËüÃÇµÄ¸¸ÀàÖÐ¿´³ö¶ËÄß¡£±ÈÈç£¬ËùÓÐµÄÊäÈë/Êä³öÒì³£¶¼ÊÇ´Ó
-java.io.IOException¼Ì³Ð¶øÀ´µÄ¡£
+ * 12.7 Javaï¿½ï¿½×¼ï¿½ì³£ï¿½ï¿½
+	Throwableï¿½ï¿½ï¿½javaï¿½à±»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ÎºÎ¿ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ì³£ï¿½ï¿½ï¿½×³ï¿½ï¿½ï¿½ï¿½à¡£Throwableï¿½ï¿½ï¿½ï¿½É·ï¿½Îªï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½Í£ï¿½Ö¸ï¿½ï¿½Throwableï¿½Ì³Ð¶ï¿½ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½Errorï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿½ó£¨³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+Ò»ï¿½ã²»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½Exceptionï¿½Ç¿ï¿½ï¿½Ô±ï¿½ï¿½×³ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½javaï¿½ï¿½â£¬ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½
+ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×³ï¿½Exceptionï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Javaï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ÄµÄ»ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½Exceptionï¿½ï¿½
+	Òªï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½È«ï¿½ï¿½ï¿½ï¿½Ë½â£¬ï¿½ï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½ï¿½HTMLï¿½ï¿½Ê½ï¿½ï¿½javaï¿½Äµï¿½ï¿½ï¿½ï¿½ï¿½á·¢ï¿½Ö£ï¿½ï¿½ï¿½Ð©ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½î²»ï¿½à¡£javaï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½Ú³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½Ê¹ï¿½ÃµÄµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½Ð¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½
+ï¿½ï¿½ï¿½ì³£ï¿½ï¿½Ëµï¿½ï¿½ï¿½Ø¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã¡ï¿½
+	ï¿½ì³£ï¿½Ä»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ´ï¿½ï¿½æ·¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â£¬ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öªï¿½â¡£ï¿½ì³£ï¿½ï¿½ï¿½ï¿½È«ï¿½ï¿½
+ï¿½ï¿½java.langï¿½ï¿½ï¿½ï¶¨ï¿½ï¿½Ä£ï¿½ï¿½ï¿½Ð©ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½utilï¿½ï¿½netï¿½ï¿½ioï¿½ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð©ï¿½ì³£ï¿½ï¿½ï¿½ï¿½
+Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ»ï¿½ï¿½ß´ï¿½ï¿½ï¿½ï¿½ÇµÄ¸ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß¡ï¿½ï¿½ï¿½ï¿½ç£¬ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½Ç´ï¿½
+java.io.IOExceptionï¿½Ì³Ð¶ï¿½ï¿½ï¿½ï¿½Ä¡ï¿½
 
-12.7.1 ÌØÀý£ºRuntimeException
-ÓÐÒ»¸öÀý×Ó£º
+12.7.1 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½RuntimeException
+ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½
 if(t == null)
 	throw new NullPointerException();
-Èç¹û±ØÐë¶Ô´«µÝ¸ø·½·¨µÄÃ¿¸öÒýÓÃ¶¼¼ì²éÆäÊÇ·ñÎªnull£¨ÒòÎªÎÞ·¨È·¶¨µ÷ÓÃÕßÊÇ·ñ´«ÈëÁË·Ç·¨ÒýÓÃ£©
-ÕâÌýÆðÀ´×ÅÊµÏÅÈË¡£ÐÒÔËµÄÊÇ£¬Õâ²»±ØÓÉÄãÇ××ÔÀ´×ö£¬ËüÊôÓÚjavaµÄ±ê×¼ÔËÐÐÊ±¼ì²âµÄÒ»²¿·Ö¡£Èç¹û
-¶ÔnullÒýÓÃ½øÐÐµ÷ÓÃ£¬Java»á×Ô¶¯Å×³öNullPointerExceptionÒì³££¬ËùÒÔÉÏÊö´úÂëÊÇ¶àÓà£¬¾¡¹ÜÄãÒ²Ðí
-ÏëÒªÖ´ÐÐÆäËûµÄ¼ì²éÒÔÈ·±£NullPointerException²»»á³öÏÖ¡£
-	ÊôÓÚÔËÐÐÊ±Òì³£µÄÀàÐÍÓÐºÜ¶à£¬ËüÃÇ»á×Ô¶¯±»JavaÐéÄâ»úÅ×³ö£¬ËùÒÔ²»±ØÔÚÒì³£ËµÃ÷ÖÐ°ÑËüÃÇÁÐ³öÀ´¡£
-ÕâÐ©Òì³£¶¼ÊÇ´ÓRuntimeExceptionÀà¼Ì³Ð¶øÀ´£¬ËùÒÔ¼´ÌåÏÖÁË¼Ì³ÐµÄÓÅµã£¬Ê¹ÓÃÆðÀ´Ò²ºÜ·½±ã¡£Õâ¹¹³É
-ÁËÒ»×é¾ßÓÐÏàÍ¬ÌØÕ÷ºÍÐÐÎªµÄÒì³£ÀàÐÍ¡£²¢ÇÒ£¬Ò²²»ÔÙÐèÒªÔÚÒì³£ËµÃ÷ÖÐÉùÃ÷£¬·½·¨½«Å×³öRuntimeException
-ÀàÐÍµÄÒì³££¨»òÕßÈÎºÎ´ÓRuntimeException¼Ì³ÐµÄÒì³££©£¬ËüÃÇÒ²±»³ÆÎª¡°²»ÊÜ¼ì²éÒì³£¡±¡£ÕâÖÖÒì³£
-ÊôÓÚ´íÎó£¬½«±»×Ô¶¯²¶»ñ£¬¾Í²»ÓÃÄãÇ××Ô¶¯ÊÖÁË¡£ÒªÊÇ×Ô¼ºÈ¥¼ì²éRuntimeExceptionµÄ»°£¬´úÂë¾ÍÏÔµÃÌ«»ìÂÒÁË¡£
-²»¹ý¾¡¹ÜÍ¨³£²»ÓÃ²¶»ñRuntimeExceptionÒì³££¬µ«»¹ÊÇ¿ÉÒÔÔÚ´úÂëÖÐÅ×³öRuntimeExceptionÀàÐÍµÄÒì³£¡£
-	Èç¹û²»²¶»ñÕâÖÖÀàÐÍµÄÒì³£»á·¢ÉúÊ²Ã´ÊÂÄØ£¿ÒòÎª±àÒëÆ÷Ã»ÓÐÔÚÕâ¸öÎÊÌâÉÏ¶ÔÒì³£ËµÃ÷½øÐÐÇ¿ÖÆ¼ì²é£¬
-RuntimeExceptionÀàÐÍµÄÒì³£Ò²Ðí»á´©Ô½ËùÓÐµÄÖ´ÐÐÂ·¾¶Ö±´ïmain()·½·¨£¬¶ø²»»á±»²¶»ñ¡£ÒªÃ÷°×µ½µ×
-·¢ÉúÁËÊ²Ã´£¬¿ÉÒÔÊÔÊÔÏÂÃæµÄÀý×Ó£º
-bcsx.exceptions NeverCaught.java
-¿ÉÄÜ¶ÁÕßÒÑ¾­·¢ÏÖ£¬RuntimeException(»òÈÎºÎ´ÓËü¼Ì³ÐµÄÒì³£)ÊÇÒ»¸öÌØÀý¡£¶ÔÓÚÕâÖÖÒì³£ÀàÐÍ£¬
-±àÒëÆ÷²»ÐèÒªÒì³£ËµÃ÷£¬ÆäÊä³ö±»±¨¸æ¸øÁËSystem.err:
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½Ý¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Îªnullï¿½ï¿½ï¿½ï¿½Îªï¿½Þ·ï¿½È·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½Ë·Ç·ï¿½ï¿½ï¿½ï¿½Ã£ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½Ë¡ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½Ç£ï¿½ï¿½â²»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½javaï¿½Ä±ï¿½×¼ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö¡ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½nullï¿½ï¿½ï¿½Ã½ï¿½ï¿½Ðµï¿½ï¿½Ã£ï¿½Javaï¿½ï¿½ï¿½Ô¶ï¿½ï¿½×³ï¿½NullPointerExceptionï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¶ï¿½ï¿½à£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½
+ï¿½ï¿½ÒªÖ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½NullPointerExceptionï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¡ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÐºÜ¶à£¬ï¿½ï¿½ï¿½Ç»ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½Javaï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£Ëµï¿½ï¿½ï¿½Ð°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½Ð©ï¿½ì³£ï¿½ï¿½ï¿½Ç´ï¿½RuntimeExceptionï¿½ï¿½Ì³Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¼Ì³Ðµï¿½ï¿½Åµã£¬Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½Ü·ï¿½ï¿½ã¡£ï¿½â¹¹ï¿½ï¿½
+ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½Í¡ï¿½ï¿½ï¿½ï¿½Ò£ï¿½Ò²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ì³£Ëµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×³ï¿½RuntimeException
+ï¿½ï¿½ï¿½Íµï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎºÎ´ï¿½RuntimeExceptionï¿½Ì³Ðµï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Ü¼ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£
+ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ó£¬½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ñ£¬¾Í²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Ë¡ï¿½Òªï¿½ï¿½ï¿½Ô¼ï¿½È¥ï¿½ï¿½ï¿½RuntimeExceptionï¿½Ä»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôµï¿½Ì«ï¿½ï¿½ï¿½ï¿½ï¿½Ë¡ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½RuntimeExceptionï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×³ï¿½RuntimeExceptionï¿½ï¿½ï¿½Íµï¿½ï¿½ì³£ï¿½ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½ï¿½ì³£ï¿½á·¢ï¿½ï¿½Ê²Ã´ï¿½ï¿½ï¿½Ø£ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ì³£Ëµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½Æ¼ï¿½é£¬
+RuntimeExceptionï¿½ï¿½ï¿½Íµï¿½ï¿½ì³£Ò²ï¿½ï¿½á´©Ô½ï¿½ï¿½ï¿½Ðµï¿½Ö´ï¿½ï¿½Â·ï¿½ï¿½Ö±ï¿½ï¿½main()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á±»ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½×µï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê²Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½
+main.java.bcsx.exceptions NeverCaught.java
+ï¿½ï¿½ï¿½Ü¶ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½Ö£ï¿½RuntimeException(ï¿½ï¿½ï¿½ÎºÎ´ï¿½ï¿½ï¿½ï¿½Ì³Ðµï¿½ï¿½ì³£)ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½Í£ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ì³£Ëµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½System.err:
 
-ËùÒÔ´ð°¸ÊÇ£ºÈç¹ûRuntimeExceptionÃ»ÓÐ±»²¶»ñ¶øÖ±´ïmain(),ÄÇÃ´ÔÚ³ÌÐòÍË³öÇ°½«µ÷ÓÃÒì³£
-µÄprintStackTrace()·½·¨¡£
-	ÇëÎñ±Ø¼Ç×¡£ºÖ»ÄÜÔÚ´úÂëÖÐºöÂÔRuntimeException£¨¼°Æä×ÓÀà£©ÀàÐÍµÄÒì³££¬ÆäËüÀàÐÍÒì³£µÄ
-´¦Àí¶¼ÊÇÓÉ±àÒëÆ÷Ç¿ÖÆÊµÊ©µÄ¡£¾¿ÆäÔ­Òò£¬RuntimeException´ú±íµÄÊÇ±à³Ì´íÎó£º
-1£©ÎÞ·¨Ô¤ÁÏµÄ´íÎó¡£±ÈÈç´ÓÄã¿ØÖÆ·¶Î§Ö®Íâ´«µÝ½øÀ´µÄnullÒýÓÃ¡£
-2£©×÷Îª³ÌÐòÔ±£¬Ó¦¸ÃÔÚ´úÂëÖÐ½øÐÐ¼ì²éµÄ´íÎó¡££¨±ÈÈç¶ÔÓÚArrayIndexOutOfBoundsException£¬
-¾ÍµÃ×¢ÒâÒ»ÏÂÊý×é´óÐ¡ÁË¡££©ÔÚÒ»¸öµØ·½·¢ÉúµÄÒì³££¬³£³£»áÔÚÁíÒ»¸öµØ·½µ¼ÖÂ´íÎó¡£
-	Äã»á·¢ÏÖÔÚÕâÐ©Çé¿öÏÂÊ¹ÓÃÒì³£ºÜÓÐºÃ´¦£¬ËüÃÇÄÜ¸øµ÷Ê½´øÀ´±ãÀû¡£
-	ÖµµÃ×¢ÒâµÄÊÇ£º²»Ó¦°ÑjavaµÄÒì³£´¦Àí»úÖÆµ±³ÉÊÇµ¥Ò»ÓÃÍ¾µÄ¹¤¾ß¡£ÊÇµÄ£¬Ëü±»Éè¼ÆÓÃÀ´
-´¦ÀíÒ»Ð©·³ÈËµÄÔËÐÐÊ±´íÎó£¬ÕâÐ©´íÎóÍùÍùÊÇÓÉ´úÂë¿ØÖÆÄÜÁ¦Ö®ÍâµÄÒòËØµ¼ÖÂµÄ£»È»¶ø£¬Ëü¶ÔÓÚ
-·¢ÏÖÄ³Ð©±àÒëÆ÷ÎÞ·¨¼ì²âµ½µÄ±à³Ì´íÎó£¬Ò²ÊÇ·Ç³£ÖØÒªµÄ¡£
+ï¿½ï¿½ï¿½Ô´ï¿½ï¿½Ç£ï¿½ï¿½ï¿½ï¿½RuntimeExceptionÃ»ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½main(),ï¿½ï¿½Ã´ï¿½Ú³ï¿½ï¿½ï¿½ï¿½Ë³ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£
+ï¿½ï¿½printStackTrace()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	ï¿½ï¿½ï¿½ï¿½Ø¼ï¿½×¡ï¿½ï¿½Ö»ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½Ðºï¿½ï¿½ï¿½RuntimeExceptionï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½à£©ï¿½ï¿½ï¿½Íµï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É±ï¿½ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ÊµÊ©ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ï¿½RuntimeExceptionï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç±ï¿½Ì´ï¿½ï¿½ï¿½
+1ï¿½ï¿½ï¿½Þ·ï¿½Ô¤ï¿½ÏµÄ´ï¿½ï¿½ó¡£±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ·ï¿½Î§Ö®ï¿½â´«ï¿½Ý½ï¿½ï¿½ï¿½ï¿½ï¿½nullï¿½ï¿½ï¿½Ã¡ï¿½
+2ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½Ð½ï¿½ï¿½Ð¼ï¿½ï¿½Ä´ï¿½ï¿½ó¡££ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ArrayIndexOutOfBoundsExceptionï¿½ï¿½
+ï¿½Íµï¿½×¢ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½Ë¡ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ø·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ø·ï¿½ï¿½ï¿½ï¿½Â´ï¿½ï¿½ï¿½
+	ï¿½ï¿½á·¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð©ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ÐºÃ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¸ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	Öµï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½Ç£ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½javaï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½Çµï¿½Ò»ï¿½ï¿½Í¾ï¿½Ä¹ï¿½ï¿½ß¡ï¿½ï¿½ÇµÄ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½Ò»Ð©ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½ï¿½ÂµÄ£ï¿½È»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½Ä³Ð©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½âµ½ï¿½Ä±ï¿½Ì´ï¿½ï¿½ï¿½Ò²ï¿½Ç·Ç³ï¿½ï¿½ï¿½Òªï¿½Ä¡ï¿½
 
  * */
 

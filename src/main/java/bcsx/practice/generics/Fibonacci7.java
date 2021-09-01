@@ -3,14 +3,14 @@
 // Use composition instead of inheritance to adapt Fibonacci
 // to make it interable.
 
-package bcsx.practice.generics;
+package main.java.bcsx.practice.generics;
 
 import java.util.Iterator;
 
-import bcsx.net.mindview.util.Generator;
+import main.java.bcsx.net.mindview.util.Generator;
 /**
- * 15.3·ºÐÍ½Ó¿Ú
- * Á·Ï°7
+ * 15.3ï¿½ï¿½ï¿½Í½Ó¿ï¿½
+ * ï¿½ï¿½Ï°7
  * 
  * */
 public class Fibonacci7 implements Generator<Integer>, Iterable<Integer> {

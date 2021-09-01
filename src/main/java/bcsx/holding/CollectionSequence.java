@@ -1,13 +1,13 @@
-package bcsx.holding;
+package main.java.bcsx.holding;
 
 import java.util.AbstractCollection;
 import java.util.Iterator;
 
-import bcsx.typeinfo.pets.*;
+import main.java.bcsx.typeinfo.pets.*;
 /**
- * Èç¹ûÒªÓÃµ½Iterator¹¦ÄÜ£¬Í¨¹ı¼Ì³ĞÒ»¸ö³ÖÓĞPet¶ÔÏóµÄÀàÀ´´´½¨Ò»¸öCollectionµÄÊµÏÖ ¡£ÎÒÃÇ±ØĞëÒªÊµÏÖ CollectionµÄËùÓĞ·½·¨£¬
- * ¼´Ê¹ÎÒÃÇ²»ĞèÒªËü¡£ÕâÀï¾ÍÌá¹© ÁËAbstractCollectionÀà,µ«ÎŞÂÛÈçºÎ»¹ÊÇÒª±»Ç¿ÖÆÈ¥ÊµÏÖiteratorºÍsize()£¬ÒòÎªAbstractCollectionÃ»ÓĞÊµÏÖ
- * £¬µ«AbstractCollectionÆäËü·½·¨ÖĞÓÖÒªÓÃµ½¡£
+ * ï¿½ï¿½ï¿½Òªï¿½Ãµï¿½Iteratorï¿½ï¿½ï¿½Ü£ï¿½Í¨ï¿½ï¿½ï¿½Ì³ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Petï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Collectionï¿½ï¿½Êµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ç±ï¿½ï¿½ï¿½ÒªÊµï¿½ï¿½ Collectionï¿½ï¿½ï¿½ï¿½ï¿½Ğ·ï¿½ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½Ç²ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á¹© ï¿½ï¿½AbstractCollectionï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½Òªï¿½ï¿½Ç¿ï¿½ï¿½È¥Êµï¿½ï¿½iteratorï¿½ï¿½size()ï¿½ï¿½ï¿½ï¿½ÎªAbstractCollectionÃ»ï¿½ï¿½Êµï¿½ï¿½
+ * ï¿½ï¿½ï¿½ï¿½AbstractCollectionï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½Ãµï¿½ï¿½ï¿½
  * */
 public class CollectionSequence extends AbstractCollection<Pet>{
 	private Pet[] pets = Pets.createArray(8);

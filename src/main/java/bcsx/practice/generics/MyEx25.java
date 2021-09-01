@@ -1,4 +1,4 @@
-package bcsx.practice.generics;
+package main.java.bcsx.practice.generics;
 
 /**
  * 创建两个接口和一个实现了这两个接口的类。创建两个泛型方法，其中一个参数边界限定为第一个接口，

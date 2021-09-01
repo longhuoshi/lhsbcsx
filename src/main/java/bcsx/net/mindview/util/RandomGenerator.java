@@ -1,6 +1,6 @@
 //: net/mindview/util/RandomGenerator.java
 // Generators that produce random values.
-package bcsx.net.mindview.util;
+package main.java.bcsx.net.mindview.util;
 import java.util.*;
 
 public class RandomGenerator {

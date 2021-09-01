@@ -1,4 +1,4 @@
-package bcsx.generics;
+package main.java.bcsx.generics;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 public class GenericVarargs {
 	
 	/**
-	 * Óë±ê×¼¿âÖÐjava.util.Arrays.asList(a)·½·¨ÏàÍ¬µÄ¹¦ÄÜ ¡£
+	 * ï¿½ï¿½ï¿½×¼ï¿½ï¿½ï¿½ï¿½java.util.Arrays.asList(a)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½Ä¹ï¿½ï¿½ï¿½ ï¿½ï¿½
 	 * */
 	public static <T> List<T> makeList(T... args){
 		List<T> result = new ArrayList<T>();

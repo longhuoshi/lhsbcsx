@@ -1,16 +1,16 @@
-package bcsx.generics;
+package main.java.bcsx.generics;
 
 import java.util.*;
 
-import bcsx.net.mindview.util.New;
-import bcsx.typeinfo.pets.*;
+import main.java.bcsx.net.mindview.util.New;
+import main.java.bcsx.typeinfo.pets.*;
 
 public class LimitsOfInference {
 	static void f(Map<Person,List<? extends Pet>> petPeople){}
 	
 	public static void main(String[] args) {
 //		f(New.map());
-		//显式的类型说明
+		//锟斤拷式锟斤拷锟斤拷锟斤拷说锟斤拷
 		f(New.<Person,List<? extends Pet>>map());
 		
 	}

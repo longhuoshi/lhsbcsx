@@ -1,8 +1,8 @@
-package bcsx.innerclasses;
+package main.java.bcsx.innerclasses;
 
 /**
- * 匿名内部类
- * 在这个匿名内部类，使用了默认的构造器来生成Contents.
+ * 锟斤拷锟斤拷锟节诧拷锟斤拷
+ * 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷诓锟斤拷啵癸拷锟斤拷锟侥拷系墓锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟紺ontents.
  * */
 public class Parcel7 {
 	public Contents contents(){

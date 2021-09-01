@@ -1,4 +1,4 @@
-package bcsx.exceptions;
+package main.java.bcsx.exceptions;
 
 public class OnOffSwitch {
 	private static Switch sw = new Switch();

@@ -1,4 +1,4 @@
-package bcsx.generics;
+package main.java.bcsx.generics;
 
 /*
  * 带编译期检查的泛型

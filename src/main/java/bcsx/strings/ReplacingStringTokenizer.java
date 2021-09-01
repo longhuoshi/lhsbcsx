@@ -1,4 +1,4 @@
-package bcsx.strings;
+package main.java.bcsx.strings;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -6,8 +6,8 @@ import java.util.StringTokenizer;
 
 /**
  * 13.8 StringTokenizer 
- * ÔÚjavaÒýÓÃÕýÔò±í´ïÊ½(j2se1.4)ºÍScanner	Àà(java se5)Ö®Ç°£¬·Ö¸î
- * ×Ö·û´®Î¨Ò»·½·¨ÊÇÊ¹ÓÃStringTokenizerÀ´·Ö´Ê¡£
+ * ï¿½ï¿½javaï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½(j2se1.4)ï¿½ï¿½Scanner	ï¿½ï¿½(java se5)Ö®Ç°ï¿½ï¿½ï¿½Ö¸ï¿½
+ * ï¿½Ö·ï¿½ï¿½ï¿½Î¨Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½StringTokenizerï¿½ï¿½ï¿½Ö´Ê¡ï¿½
  * */
 public class ReplacingStringTokenizer {
 
@@ -21,7 +21,7 @@ public class ReplacingStringTokenizer {
 		System.out.println(Arrays.toString(input.split(" ")));
 		
 		Scanner scanner = new Scanner(input);
-		scanner.useDelimiter(" ");//ÕâÇ¥¿ÉÒÔ²»Ð´£¬Ä¬ÈÏµÄdelimiter¾ÍÊÇ¿Õ¸ñ
+		scanner.useDelimiter(" ");//ï¿½ï¿½Ç¥ï¿½ï¿½ï¿½Ô²ï¿½Ð´ï¿½ï¿½Ä¬ï¿½Ïµï¿½delimiterï¿½ï¿½ï¿½Ç¿Õ¸ï¿½
 		while(scanner.hasNext()){
 			
 			System.out.print(scanner.next()+" ");

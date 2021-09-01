@@ -1,4 +1,4 @@
-package bcsx.holding;
+package main.java.bcsx.holding;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -9,7 +9,7 @@ import java.util.Random;
 import java.util.Set;
 
 /**
- * сеох╤сапё╛╟╢сеох╪╤╦ъ╣м╣дкЁпР╣╞ЁЖ║ё╡╩йг╟╢ох╫ЬохЁЖ
+ * О©╫О©╫О©╫х╤О©╫О©╫пёО©╫О©╫О©╫О©╫О©╫О©╫х╪О©╫О©╫ъ╣м╣О©╫кЁО©╫Р╣╞ЁО©╫О©╫О©╫О©╫О©╫О©╫г╟О©╫О©╫х╫О©╫О©╫хЁО©╫
  * */
 public class PriorityQueueDemo {
 

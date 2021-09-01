@@ -1,9 +1,9 @@
-package bcsx.innerclasses.controller;
+package main.java.bcsx.innerclasses.controller;
 /**
- * ÄÚ²¿ÀàÓë¿ØÖÆ¿ò¼Ü
+ * ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¿ï¿½ï¿½
  * 
- * ½Ó¿ÚÃèÊöÁËÒª¿ØÖÆµÄÊÂ¼þ¡£ÒòÎªÆäÄ¬ÈÏµÄÐÐÎªÊÇ»ùÓÚÊ±¼äÈ¥Ö´ÐÐ¿ØÖÆ£¬ËùÒÔÊ¹ÓÃ³éÏóÀà´úÌæÊµ¼ÊµÄ½Ó¿Ú¡£
-ÏÂÃæµÄÀý×Ó°üº¬ÁËÄ³Ð©ÊµÏÖ£º
+ * ï¿½Ó¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½Æµï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Ä¬ï¿½Ïµï¿½ï¿½ï¿½Îªï¿½Ç»ï¿½ï¿½ï¿½Ê±ï¿½ï¿½È¥Ö´ï¿½Ð¿ï¿½ï¿½Æ£ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ÊµÄ½Ó¿Ú¡ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó°ï¿½ï¿½ï¿½ï¿½ï¿½Ä³Ð©Êµï¿½Ö£ï¿½
  * */
 public abstract class Event {
 	private long eventTime;

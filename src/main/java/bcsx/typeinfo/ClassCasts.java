@@ -1,6 +1,6 @@
-package bcsx.typeinfo;
+package main.java.bcsx.typeinfo;
 /**
- * 14.2.3 ĞÂµÄ×ªĞÍÓï·¨
+ * 14.2.3 ï¿½Âµï¿½×ªï¿½ï¿½ï¿½ï·¨
  * */
 class Building{}
 class House extends Building{}
@@ -14,9 +14,9 @@ public class ClassCasts {
 		h = (House)b;
 		
 		if(b instanceof House){
-			System.out.println("bÊôÓÚHouseÀà");
+			System.out.println("bï¿½ï¿½ï¿½ï¿½Houseï¿½ï¿½");
 		}else{
-			System.out.println("b²»ÊôÓÚHouseÀà");
+			System.out.println("bï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Houseï¿½ï¿½");
 		}
 		
 		

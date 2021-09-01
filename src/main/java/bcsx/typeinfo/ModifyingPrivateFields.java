@@ -1,9 +1,9 @@
-package bcsx.typeinfo;
+package main.java.bcsx.typeinfo;
 
 import java.lang.reflect.Field;
 
 /**
- * 反射修改变量的值 
+ * 锟斤拷锟斤拷锟睫改憋拷锟斤拷锟斤拷值 
  * final variable is safe
  * */
 
@@ -23,21 +23,21 @@ public class ModifyingPrivateFields {
 		
 		System.out.println(pf);
 		
-		//修改private variable i 的值 
+		//锟睫革拷private variable i 锟斤拷值 
 		Field f =  pf.getClass().getDeclaredField("i");
 		f.setAccessible(true);
 		System.out.println("f.getInt(pf):"+f.getInt(pf));
 		f.setInt(pf, 47);
 		System.out.println(pf);
 		
-		//修改private final variable s的值 
+		//锟睫革拷private final variable s锟斤拷值 
 		f = pf.getClass().getDeclaredField("s");
 		f.setAccessible(true);
 		System.out.println("f.get(pf):"+f.get(pf));
 		f.set(pf, "No,you're not!");
 		System.out.println(pf);
 		
-		//修改private variable s2的值 
+		//锟睫革拷private variable s2锟斤拷值 
 		f = pf.getClass().getDeclaredField("s2");
 		f.setAccessible(true);
 		System.out.println("f.get(pf):"+f.get(pf));

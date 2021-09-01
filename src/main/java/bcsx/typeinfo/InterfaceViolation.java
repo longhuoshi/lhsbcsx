@@ -1,6 +1,6 @@
-package bcsx.typeinfo;
+package main.java.bcsx.typeinfo;
 
-import bcsx.typeinfo.interfacea.A;
+import main.java.bcsx.typeinfo.interfacea.A;
 
 class B implements A{
 

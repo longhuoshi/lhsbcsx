@@ -1,13 +1,13 @@
-package bcsx.strings;
+package main.java.bcsx.strings;
 
 import java.util.ArrayList;
 
-import bcsx.generics.coffee.Coffee;
-import bcsx.generics.coffee.CoffeeGenerator;
+import main.java.bcsx.generics.coffee.Coffee;
+import main.java.bcsx.generics.coffee.CoffeeGenerator;
 /**
- * java中的每个类从根本上都是继承自Object，标准容器类自然也不例外。因此容器类都有toString方法，并且
-覆写了该方法，使得它生成的String结果能够表达容器自身，以及容器所包含的对象。例如ArrayList.toString()，
-它会遍历ArrayList中包含的所有对象，调用每个元素上的toStrig()方法。
+ * java锟叫碉拷每锟斤拷锟斤拷痈锟斤拷锟斤拷隙锟斤拷羌坛锟斤拷锟絆bject锟斤拷锟斤拷准锟斤拷锟斤拷锟斤拷锟斤拷然也锟斤拷锟斤拷锟解。锟斤拷锟斤拷锟斤拷锟斤拷喽硷拷锟絫oString锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷
+锟斤拷写锟剿该凤拷锟斤拷锟斤拷使锟斤拷锟斤拷锟斤拷锟缴碉拷String锟斤拷锟斤拷芄锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟皆硷拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟侥讹拷锟斤拷锟斤拷锟斤拷ArrayList.toString()锟斤拷
+锟斤拷锟斤拷锟斤拷锟紸rrayList锟叫帮拷锟斤拷锟斤拷锟斤拷锟叫讹拷锟襟，碉拷锟斤拷每锟斤拷元锟斤拷锟较碉拷toStrig()锟斤拷锟斤拷锟斤拷
 code ArrayListDisplay.java
  * */
 public class ArrayListDisplay {

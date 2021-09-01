@@ -1,7 +1,7 @@
-package bcsx.innerclasses;
+package main.java.bcsx.innerclasses;
 
 /**
- * 展示了在方法的作用域内，创建一个完整的类。这被称作局部内部类。
+ * 展示锟斤拷锟节凤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟节ｏ拷锟斤拷锟斤拷一锟斤拷锟斤拷锟斤拷锟斤拷锟洁。锟解被锟斤拷锟斤拷锟街诧拷锟节诧拷锟洁。
  * */
 public class Parcel5 {
 	public Destination destination(String s){
@@ -14,7 +14,7 @@ public class Parcel5 {
 			
 		}
 		
-		return new PDestination(s);  //向上转型，返回的是Destination引用。
+		return new PDestination(s);  //锟斤拷锟斤拷转锟酵ｏ拷锟斤拷锟截碉拷锟斤拷Destination锟斤拷锟矫★拷
 	}
 	
 	public static void main(String[] args){

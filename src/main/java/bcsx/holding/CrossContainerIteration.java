@@ -1,4 +1,4 @@
-package bcsx.holding;
+package main.java.bcsx.holding;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -6,8 +6,8 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.TreeSet;
 
-import bcsx.typeinfo.pets.Pet;
-import bcsx.typeinfo.pets.Pets;
+import main.java.bcsx.typeinfo.pets.Pet;
+import main.java.bcsx.typeinfo.pets.Pets;
 
 /**
  * 现在考虑创建一个display方法，它不必知晓容器的确切类型。

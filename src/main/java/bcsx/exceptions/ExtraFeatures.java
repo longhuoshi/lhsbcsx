@@ -1,7 +1,7 @@
-package bcsx.exceptions;
+package main.java.bcsx.exceptions;
 
 /**
- * ╩╧©ирт╫Ьр╩╡╫вт╤╗рЕрЛЁёё╛╠ххГ╪схК╤НмБ╣д╧╧тЛфВ╨мЁит╠ё╨
+ * О©╫О©╫О©╫О©╫О©╫т╫О©╫р╩О©╫О©╫О©╫т╤О©╫О©╫О©╫О©╫ЛЁёО©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫д╧О©╫О©╫О©╫О©╫О©╫О©╫мЁО©╫т╠О©╫О©╫
  * */
 class MyException2 extends Exception{
 	private int x;

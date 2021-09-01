@@ -1,7 +1,7 @@
-package bcsx.holding;
+package main.java.bcsx.holding;
 /**
- * ³ÖÓĞ¶ÔÏó(javaÈİÆ÷Àà¿âµÄ»ù±¾ÖªÊ¶£¬ÒÔ¼°¶ÔµäĞÍÓÃ·¨µÄÖØµã½éÉÜ)
-·ºĞÍºÍÀàĞÍ°²È«µÄÈİÆ÷
+ * ï¿½ï¿½ï¿½Ğ¶ï¿½ï¿½ï¿½(javaï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ÖªÊ¶ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½Ôµï¿½ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½)
+ï¿½ï¿½ï¿½Íºï¿½ï¿½ï¿½ï¿½Í°ï¿½È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * */
 import java.util.ArrayList;
 
@@ -16,7 +16,7 @@ class Orange{}
 
 
 public class ApplesAndOrangesWithGenerics {
-	//×¢½â:ÒÖÖÆ¾¯¸æĞÅÏ¢
+	//×¢ï¿½ï¿½:ï¿½ï¿½ï¿½Æ¾ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
 	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 		ArrayList apples = new ArrayList();

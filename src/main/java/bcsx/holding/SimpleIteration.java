@@ -1,10 +1,10 @@
-package bcsx.holding;
+package main.java.bcsx.holding;
 
 import java.util.Iterator;
 import java.util.List;
 
-import bcsx.typeinfo.pets.Pet;
-import bcsx.typeinfo.pets.Pets;
+import main.java.bcsx.typeinfo.pets.Pet;
+import main.java.bcsx.typeinfo.pets.Pets;
 
 public class SimpleIteration {
 
@@ -24,7 +24,7 @@ public class SimpleIteration {
 		it = pets.iterator();
 		for(int i=0; i<6;i++){
 			it.next();
-			//µ÷ÓÃrenive()·½·¨Ö®Ç°±ØÐëÏÈµ÷ÓÃ next()
+			//ï¿½ï¿½ï¿½ï¿½renive()ï¿½ï¿½ï¿½ï¿½Ö®Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Èµï¿½ï¿½ï¿½ next()
 			it.remove();
 		}
 		System.out.println(pets);

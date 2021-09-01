@@ -1,8 +1,8 @@
-package bcsx.typeinfo;
+package main.java.bcsx.typeinfo;
 
 import java.util.List;
 
-import bcsx.net.mindview.util.Null;
+import main.java.bcsx.net.mindview.util.Null;
 
 public interface Robot {
 	String name();

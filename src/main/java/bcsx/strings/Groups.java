@@ -1,4 +1,4 @@
-package bcsx.strings;
+package main.java.bcsx.strings;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -15,7 +15,7 @@ public class Groups {
 			    "The frumious Bandersnatch.";
 
 	public static void main(String[] args) {
-		//Æ¥ÅäÃ¿ÐÐ×îºóÈý¸öµ¥´Ê¡£ $()±íÊ¾ÓëÐòÁÐµÄÄ©¶ËÆ¥Åä  ÆäÊµ(?m)ÊÇÄ£Ê½±ê¼Ç
+		//Æ¥ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¡ï¿½ $()ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½Ä©ï¿½ï¿½Æ¥ï¿½ï¿½  ï¿½ï¿½Êµ(?m)ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½
 		Matcher m = Pattern.compile("(?m)(\\S+)\\s+((\\S+)\\s+(\\S+))$").matcher(POEM);
 		while(m.find()){
 			for(int j=0;j<m.groupCount();j++){

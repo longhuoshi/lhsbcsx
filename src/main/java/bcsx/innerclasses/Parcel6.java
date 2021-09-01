@@ -1,7 +1,7 @@
-package bcsx.innerclasses;
+package main.java.bcsx.innerclasses;
 
 /**
- * Õ¹Ê¾ÁËÈçºÎÔÚÈÎÒâ×÷ÓÃÓòÄÚÇ¶ÈëÒ»¸öÄÚ²¿Àà¡£
+ * Õ¹Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¶ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ú²ï¿½ï¿½à¡£
  * */
 public class Parcel6 {
 

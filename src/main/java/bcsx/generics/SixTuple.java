@@ -1,4 +1,4 @@
-package bcsx.generics;
+package main.java.bcsx.generics;
 
 public class SixTuple<A, B> {
 	public final A first;

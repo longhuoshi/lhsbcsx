@@ -1,7 +1,7 @@
-package bcsx.innerclasses;
+package main.java.bcsx.innerclasses;
 /**
- * 情形：必须 在一个类中以某种方式 实现两个接口。
- * 用内部类去实现 。
+ * 锟斤拷锟轿ｏ拷锟斤拷锟斤拷 锟斤拷一锟斤拷锟斤拷锟斤拷锟斤拷某锟街凤拷式 实锟斤拷锟斤拷锟斤拷锟接口★拷
+ * 锟斤拷锟节诧拷锟斤拷去实锟斤拷 锟斤拷
  * */
 interface A{}
 interface B{}

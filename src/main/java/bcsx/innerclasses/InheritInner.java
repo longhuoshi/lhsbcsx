@@ -1,6 +1,6 @@
-package bcsx.innerclasses;
+package main.java.bcsx.innerclasses;
 /**
- * ÄÚ²¿ÀàµÄ¼Ì³Ð
+ * ï¿½Ú²ï¿½ï¿½ï¿½Ä¼Ì³ï¿½
  * */
 
 class WithInner{

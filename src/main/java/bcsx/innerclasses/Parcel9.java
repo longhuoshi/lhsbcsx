@@ -1,10 +1,10 @@
-package bcsx.innerclasses;
+package main.java.bcsx.innerclasses;
 
 /**
- * 在匿名类中定义字段时，还能够对其执行初始化操作；
+ * 锟斤拷锟斤拷锟斤拷锟斤拷锟叫讹拷锟斤拷锟街讹拷时锟斤拷锟斤拷锟杰癸拷锟斤拷锟斤拷执锟叫筹拷始锟斤拷锟斤拷锟斤拷锟斤拷
  * */
 public class Parcel9 {
-	//dest参数引用要定义为final,因为它是在匿名类内部使用的。
+	//dest锟斤拷锟斤拷锟斤拷锟斤拷要锟斤拷锟斤拷为final,锟斤拷为锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟节诧拷使锟矫的★拷
 	public Destination destination(final String dest){
 		return new Destination() {
 			private String label = dest;

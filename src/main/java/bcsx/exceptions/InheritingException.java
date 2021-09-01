@@ -1,8 +1,8 @@
-package bcsx.exceptions;
+package main.java.bcsx.exceptions;
 
 class SimpleException extends Exception{}
 /**
- * ´´½¨×Ô¶¨ÒåÒì³£¡£
+ * ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½
  * */
 public class InheritingException {
 	public void f() throws SimpleException{

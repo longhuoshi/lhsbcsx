@@ -1,4 +1,4 @@
-package bcsx.innerclasses;
+package main.java.bcsx.innerclasses;
 
 class Parcel4{
     private class PContents implements Contents{

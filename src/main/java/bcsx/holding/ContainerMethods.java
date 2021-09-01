@@ -1,6 +1,6 @@
-package bcsx.holding;
+package main.java.bcsx.holding;
 
-import bcsx.net.mindview.util.ContainerMethodDifferences;
+import main.java.bcsx.net.mindview.util.ContainerMethodDifferences;
 
 public class ContainerMethods {
 

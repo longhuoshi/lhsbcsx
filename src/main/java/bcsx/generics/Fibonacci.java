@@ -1,6 +1,6 @@
-package bcsx.generics;
+package main.java.bcsx.generics;
 
-import bcsx.net.mindview.util.Generator;
+import main.java.bcsx.net.mindview.util.Generator;
 
 public class Fibonacci implements Generator<Integer>{
 	private int count = 0;

@@ -1,8 +1,8 @@
-package bcsx.typeinfo;
+package main.java.bcsx.typeinfo;
 
 
 /**
- * 14.5 instanceofºÍClassµÄµÈ¼ÛĞÔ¡£
+ * 14.5 instanceofï¿½ï¿½Classï¿½ÄµÈ¼ï¿½ï¿½Ô¡ï¿½
  * */
 
 class Base{}
@@ -11,7 +11,7 @@ public class FamilyVsExactType {
 	static void test(Object x){
 		System.out.println("Testing x of type "+x.getClass());
 		System.out.println("x instanceof Base "+(x instanceof Base));
-		//xÊÇDerivedÀàÂğ¡£»òÕßËµxÊÇDerivedµÄÅÉÉúÀàÂğ?
+		//xï¿½ï¿½Derivedï¿½ï¿½ï¿½ğ¡£»ï¿½ï¿½ï¿½Ëµxï¿½ï¿½Derivedï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?
 		System.out.println("x instanceof Derived "+(x instanceof Derived));
 		System.out.println("Base.class.isInstance(x) "+ Base.class.isInstance(x));
 		System.out.println("Derived.class.isInstance(x) "+ Derived.class.isInstance(x));

@@ -1,4 +1,4 @@
-package myjava.worker_thread;
+package main.java.myjava.worker_thread;
 
 /**
  * 是负责传递工作请求以及保存工人线程的类

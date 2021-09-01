@@ -1,5 +1,5 @@
 //: net/mindview/util/Sets.java
-package bcsx.practice;
+package main.java.bcsx.practice;
 
 import java.util.EnumSet;
 import java.util.HashSet;
@@ -10,10 +10,10 @@ public class Sets {
 		Set<T> result = null;
 		if(a instanceof EnumSet){
 			/**
-			 * ((EnumSet<T>)a).clone();±¨´í  
+			 * ((EnumSet<T>)a).clone();ï¿½ï¿½ï¿½ï¿½  
 			 * Bound mismatch: The type T is not a valid substitute for the bounded 
 			 * parameter <E extends Enum<E>> of the type EnumSet<E>
-			 * ´ý½â¾ö¡£
+			 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			 * */
 //			result = ((EnumSet<T>)a).clone();  
 			result.addAll(b);

@@ -1,9 +1,9 @@
-package bcsx.generics;
+package main.java.bcsx.generics;
 
-import bcsx.typeinfo.pets.Cat;
-import bcsx.typeinfo.pets.Dog;
-import bcsx.typeinfo.pets.Pet;
-import bcsx.typeinfo.pets.Pets;
+import main.java.bcsx.typeinfo.pets.Cat;
+import main.java.bcsx.typeinfo.pets.Dog;
+import main.java.bcsx.typeinfo.pets.Pet;
+import main.java.bcsx.typeinfo.pets.Pets;
 
 public class Holder3<H> {
 	private H a;

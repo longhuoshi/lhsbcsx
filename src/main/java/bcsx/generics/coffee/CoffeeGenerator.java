@@ -1,11 +1,11 @@
 //: generics/coffee/CoffeeGenerator.java
 // Generate different types of Coffee:
-package bcsx.generics.coffee;
+package main.java.bcsx.generics.coffee;
 
 import java.util.Iterator;
 import java.util.Random;
 
-import bcsx.net.mindview.util.Generator;
+import main.java.bcsx.net.mindview.util.Generator;
 
 public class CoffeeGenerator implements Generator<Coffee>, Iterable<Coffee> {
 	private Class[] types = { Latte.class, Mocha.class,

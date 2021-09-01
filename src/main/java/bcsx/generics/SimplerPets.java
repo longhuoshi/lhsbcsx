@@ -1,9 +1,9 @@
-package bcsx.generics;
+package main.java.bcsx.generics;
 
 import java.util.*;
 
-import bcsx.net.mindview.util.New;
-import bcsx.typeinfo.pets.*;
+import main.java.bcsx.net.mindview.util.New;
+import main.java.bcsx.typeinfo.pets.*;
 
 public class SimplerPets {
 

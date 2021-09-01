@@ -1,9 +1,9 @@
-package bcsx.holding;
+package main.java.bcsx.holding;
 
 import java.util.Set;
 import java.util.TreeSet;
 
-import bcsx.net.mindview.util.TextFile;
+import main.java.bcsx.net.mindview.util.TextFile;
 
 public class UniqueWords {
 

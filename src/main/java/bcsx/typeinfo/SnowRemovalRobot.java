@@ -1,4 +1,4 @@
-package bcsx.typeinfo;
+package main.java.bcsx.typeinfo;
 
 import java.util.Arrays;
 import java.util.List;

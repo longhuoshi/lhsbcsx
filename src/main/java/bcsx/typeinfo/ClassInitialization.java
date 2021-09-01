@@ -1,6 +1,6 @@
-package bcsx.typeinfo;
+package main.java.bcsx.typeinfo;
 /**
- * 14.2.1 Àà×ÖÃæ³£Á¿
+ * 14.2.1 ï¿½ï¿½ï¿½ï¿½ï¿½æ³£ï¿½ï¿½
  * */
 import java.util.Random;
 
@@ -37,7 +37,7 @@ public class ClassInitialization {
 		//Does trigger initialization
 		System.out.println(Initable2.staticNonFinal);
 		
-		Class initable3 = Class.forName("bcsx.typeinfo.Initable3");
+		Class initable3 = Class.forName("main.java.bcsx.typeinfo.Initable3");
 		System.out.println("After creating Initable3 ref");
 		System.out.println(Initable3.staticNonFinal);
 		

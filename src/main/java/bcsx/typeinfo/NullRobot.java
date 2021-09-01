@@ -1,4 +1,4 @@
-package bcsx.typeinfo;
+package main.java.bcsx.typeinfo;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -6,7 +6,7 @@ import java.lang.reflect.Proxy;
 import java.util.Collections;
 import java.util.List;
 
-import bcsx.net.mindview.util.Null;
+import main.java.bcsx.net.mindview.util.Null;
 
 class NullRobotProxyHandler implements InvocationHandler{
 	private String nullName;

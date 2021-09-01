@@ -1,9 +1,9 @@
-package bcsx.typeinfo;
+package main.java.bcsx.typeinfo;
 
 import java.util.ArrayList;
 import java.util.List;
 /**
- * 14.2.2 ·º»¯µÄClassÒýÓÃ¡£
+ * 14.2.2 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Classï¿½ï¿½ï¿½Ã¡ï¿½
  * 
  * */
 class CountedInteger{

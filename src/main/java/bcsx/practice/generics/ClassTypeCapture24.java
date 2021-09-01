@@ -1,4 +1,4 @@
-package bcsx.practice.generics;
+package main.java.bcsx.practice.generics;
 
 import java.util.HashMap;
 import java.util.Map;

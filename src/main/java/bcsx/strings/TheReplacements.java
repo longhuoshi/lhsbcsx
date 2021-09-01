@@ -1,10 +1,10 @@
-package bcsx.strings;
+package main.java.bcsx.strings;
 
 import java.awt.TextField;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import bcsx.net.mindview.util.TextFile;
+import main.java.bcsx.net.mindview.util.TextFile;
 
 /*! Here's a block of text to use as input to
 the regular expression matcher. Note that we'll
@@ -19,9 +19,9 @@ public class TheReplacements {
 		Matcher mInput = Pattern.compile("/\\*!(.*)!\\*/",Pattern.DOTALL).matcher(s);
 		if(mInput.find())
 			s = mInput.group(1);
-		//°ÑÁ½¸ö¼°Á½¸öÒÔÉÏµÄ¿Õ¸ñÌæ»»³ÉÒ»¸ö¿Õ¸ñ ¡£
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÏµÄ¿Õ¸ï¿½ï¿½æ»»ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Õ¸ï¿½ ï¿½ï¿½
 		s = s.replaceAll(" {2,}", " ");
-		//È¥µôÃ¿ÐÐ¿ªÍ·µÄ¿Õ¸ñ ¡£
+		//È¥ï¿½ï¿½Ã¿ï¿½Ð¿ï¿½Í·ï¿½Ä¿Õ¸ï¿½ ï¿½ï¿½
 		s = s.replaceAll("(?m)^ +","");
 		System.out.println(s);
 		s = s.replaceFirst("[aeiou]", "(VOWEL1)");
@@ -30,8 +30,8 @@ public class TheReplacements {
 		Pattern p = Pattern.compile("[aeiou]");
 		Matcher m = p.matcher(s);
 		while(m.find())
-			m.appendReplacement(sbuf, m.group().toUpperCase());//°ÑÆ¥Åäµ½µÄ×Ö·û´®µÄÄÚÈÝ×ª»»³É´óÐ´¸´ÖÆµ½sbufÖÐ¡£
-		m.appendTail(sbuf);//°Ñ×ÖÌõ´®sÊ£ÓàµÄ²¿·Ö¸´ÖÆµ½sbufÖÐ¡£
+			m.appendReplacement(sbuf, m.group().toUpperCase());//ï¿½ï¿½Æ¥ï¿½äµ½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½É´ï¿½Ð´ï¿½ï¿½ï¿½Æµï¿½sbufï¿½Ð¡ï¿½
+		m.appendTail(sbuf);//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½sÊ£ï¿½ï¿½Ä²ï¿½ï¿½Ö¸ï¿½ï¿½Æµï¿½sbufï¿½Ð¡ï¿½
 		
 		System.out.println(sbuf);
 		

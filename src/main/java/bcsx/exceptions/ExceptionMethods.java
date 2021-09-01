@@ -1,13 +1,13 @@
-package bcsx.exceptions;
+package main.java.bcsx.exceptions;
 
 /**
- * Í¨¹ý²¶»ñÒì³£ÀàÐÍµÄ»ùÀàExceptionÀ´²¶»ñËùÓÐÀàÐÍµÄÒì³£¡£
+ * Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ÍµÄ»ï¿½ï¿½ï¿½Exceptionï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½ï¿½ì³£ï¿½ï¿½
 catch(Exception e){
 	System.out.println("Caught an exception");
 }
-×îºÃ°ÑËü·ÅÔÚ´¦Àí³ÌÐòÁÐ±íµÄÄ©Î²£¬ÒÔ·ÀËüÇÀÔÚÆäËû´¦Àí³ÌÐòÖ®Ç°ÏÈ°ÑÒì³£²¶»ñÁË¡£
-ÒòÎªExceptionÊÇÓë±à³ÌÓÐ¹ØµÄËùÓÐÒì³£ÀàµÄ»ùÀà£¬Ëü²»»áº¬ÓÐÌ«¶à¾ßÌåµÄÐÅÏ¢¡£
-ÏÂÃæµÄÀý×ÓÕ¹Ê¾ÁËÈçºÎÊ¹ÓÃExceptionÀàÐÍµÄ·½·¨£º
+ï¿½ï¿½Ã°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½Ä©Î²ï¿½ï¿½ï¿½Ô·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö®Ç°ï¿½È°ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½Ë¡ï¿½
+ï¿½ï¿½ÎªExceptionï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¹Øµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½Ä»ï¿½ï¿½à£¬ï¿½ï¿½ï¿½ï¿½ï¿½áº¬ï¿½ï¿½Ì«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¹Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½Exceptionï¿½ï¿½ï¿½ÍµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½
  * */
 
 public class ExceptionMethods {

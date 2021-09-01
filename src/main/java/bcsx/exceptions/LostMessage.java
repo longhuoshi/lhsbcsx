@@ -1,14 +1,14 @@
-package bcsx.exceptions;
+package main.java.bcsx.exceptions;
 
 /**
- * ÒÅº¶µÄÊÇ£¬javaµÄÒì³£ÊµÏÖÒ²ÓÐè¦´Ã¡£Òì³£×÷Îª³ÌÐò³ö´íµÄ±êÖ¾£¬¾ö²»Ó¦¸Ã±»ºöÂÔ£¬µ«Ëü»¹ÊÇ
-ÓÐ¿ÉÄÜ±»ÇáÒ×µØºöÂÔ¡£ÓÃÄ³Ð©ÌØÊâµÄ·½Ê½Ê¹ÓÃfinally×Ó¾ä£¬¾Í»á·¢ÉúÕâÖÖÇé¿ö¡£
+ * ï¿½Åºï¿½ï¿½ï¿½ï¿½Ç£ï¿½javaï¿½ï¿½ï¿½ì³£Êµï¿½ï¿½Ò²ï¿½ï¿½è¦´Ã¡ï¿½ï¿½ì³£ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½Ö¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½Ã±ï¿½ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½Ð¿ï¿½ï¿½Ü±ï¿½ï¿½ï¿½ï¿½×µØºï¿½ï¿½Ô¡ï¿½ï¿½ï¿½Ä³Ð©ï¿½ï¿½ï¿½ï¿½Ä·ï¿½Ê½Ê¹ï¿½ï¿½finallyï¿½Ó¾ä£¬ï¿½Í»á·¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 code 
-´ÓÊä³öÖÐ¿ÉÒÔ¿´³öVeryImportantException²»¼ûÁË£¬Ëü±»finally×Ó¾äÀïµÄHoHumExceptionËùÈ¡´ú¡£
-ÕâÊÇÏàµ±ÑÏÖØµÄÈ±ÏÝ£¬ÒòÎªÒì³£¿ÉÄÜ»áÒÔÒ»ÖÖ±ÈÇ°ÃæÀý×ÓËùÊ¾¸üÎ¢ÃîºÍÄÑÒÔ²ì¾õµÄ·½Ê½ÍêÈ«¶ªÊ§¡£
-Ïà±ÈÖ®ÏÂ£¬c++°Ñ¡°Ç°Ò»¸öÒì³£»¹Ã»´¦Àí¾ÍÅ×³öÏÂÒ»¸öÒì³£¡±µÄÇéÐÎ¿´³ÉÊÇÔã¸âµÄ±à³Ì´íÎó¡£Ò²ÐíÔÚ
-javaµÄÎ´À´°æ±¾ÖÐ»áÐÞÕýÕâ¸öÎÊÌâ£¨ÁíÒ»·½Ãæ£¬Òª°ÑËùÓÐÅ×³öÒì³£µÄ·½·¨£¬ÈçÉÏÀýÖÐµÄdispose()
-·½·¨£¬È«²¿´ò°ü·Åµ½try-catch×Ó¾äÀïÃæ£©¡£
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½VeryImportantExceptionï¿½ï¿½ï¿½ï¿½ï¿½Ë£ï¿½ï¿½ï¿½ï¿½ï¿½finallyï¿½Ó¾ï¿½ï¿½ï¿½ï¿½HoHumExceptionï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½àµ±ï¿½ï¿½ï¿½Øµï¿½È±ï¿½Ý£ï¿½ï¿½ï¿½Îªï¿½ì³£ï¿½ï¿½ï¿½Ü»ï¿½ï¿½ï¿½Ò»ï¿½Ö±ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Î¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô²ï¿½ï¿½ï¿½Ä·ï¿½Ê½ï¿½ï¿½È«ï¿½ï¿½Ê§ï¿½ï¿½
+ï¿½ï¿½ï¿½Ö®ï¿½Â£ï¿½c++ï¿½Ñ¡ï¿½Ç°Ò»ï¿½ï¿½ï¿½ì³£ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×³ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½Ì´ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½
+javaï¿½ï¿½Î´ï¿½ï¿½ï¿½æ±¾ï¿½Ð»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â£¨ï¿½ï¿½Ò»ï¿½ï¿½ï¿½æ£¬Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×³ï¿½ï¿½ì³£ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½dispose()
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Åµï¿½try-catchï¿½Ó¾ï¿½ï¿½ï¿½ï¿½æ£©ï¿½ï¿½
  * */
 
 class VeryImportantException extends Exception{

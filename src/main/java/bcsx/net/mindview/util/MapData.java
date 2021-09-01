@@ -1,6 +1,6 @@
 //: net/mindview/util/MapData.java
 // A Map filled with data using a generator object.
-package bcsx.net.mindview.util;
+package main.java.bcsx.net.mindview.util;
 import java.util.*;
 
 public class MapData<K,V> extends LinkedHashMap<K,V> {

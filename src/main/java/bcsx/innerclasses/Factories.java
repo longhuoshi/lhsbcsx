@@ -1,4 +1,4 @@
-package bcsx.innerclasses;
+package main.java.bcsx.innerclasses;
 
 interface Service{
 	void method1();

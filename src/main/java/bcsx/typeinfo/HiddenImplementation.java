@@ -1,16 +1,16 @@
-package bcsx.typeinfo;
+package main.java.bcsx.typeinfo;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-import bcsx.typeinfo.interfacea.A;
-import bcsx.typeinfo.packageaccess.HiddenC;
+import main.java.bcsx.typeinfo.interfacea.A;
+import main.java.bcsx.typeinfo.packageaccess.HiddenC;
 
 /**
- * 14.9 ½Ó¿ÚÓëÀàĞÍĞÅÏ¢¡£
- * Í¨¹ı ·´Éä¿ÉÒÔµ÷ÓÃ ÓÃÀàµÄÒş²Ø·½·¨ºÍË½ÓĞ·½·¨¡£
+ * 14.9 ï¿½Ó¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½
+ * Í¨ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø·ï¿½ï¿½ï¿½ï¿½ï¿½Ë½ï¿½Ğ·ï¿½ï¿½ï¿½ï¿½ï¿½
  * 
- * ·´±àÒëjavap -private ÀàÃû(ÀàµÄClassÎÄ¼şÃû)
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½javap -private ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½Classï¿½Ä¼ï¿½ï¿½ï¿½)
  * */
 
 public class HiddenImplementation {

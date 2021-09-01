@@ -1,9 +1,9 @@
-package bcsx.strings;
+package main.java.bcsx.strings;
 
 import java.util.Scanner;
 
 /**
- * É¨ÃèÊäÈë¸ÄÁ¼°æ
+ * É¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * */
 
 public class BetterRead {

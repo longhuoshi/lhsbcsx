@@ -1,7 +1,7 @@
 //: net/mindview/util/New.java
 // Utilities to simplify generic container creation
 // by using type argument inference.
-package bcsx.net.mindview.util;
+package main.java.bcsx.net.mindview.util;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
 /**
- *  ÀàĞÍ²ÎÊıÍÆ¶Ï (type argument inference)
+ *  ï¿½ï¿½ï¿½Í²ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ (type argument inference)
  * */
 public class New {
 

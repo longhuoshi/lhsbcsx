@@ -1,4 +1,4 @@
-package bcsx.exceptions;
+package main.java.bcsx.exceptions;
 
 class ThreeException extends Exception{}
 

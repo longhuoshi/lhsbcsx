@@ -1,7 +1,7 @@
-package bcsx.innerclasses;
+package main.java.bcsx.innerclasses;
 
 /**
- * ÔÚÓµÓÐÍâ²¿ÀàÖ®Ç°ÄãÊÇ²»¿ÉÄÜ ´´½¨ÄÚ²¿Àà¶ÔÏóµÄ£¬ÕâÊÇÒòÎªÄÚ²¿Àà¶ÔÏó»á°µ°µÁ¬½Óµ½´´½¨ËüµÄÍâ²¿Àà¶ÔÏóÉÏ¡£
+ * ï¿½ï¿½Óµï¿½ï¿½ï¿½â²¿ï¿½ï¿½Ö®Ç°ï¿½ï¿½ï¿½Ç²ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á°µï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¡ï¿½
  * */
 public class DotNew {
 	public class Inner{};

@@ -1,4 +1,4 @@
-package bcsx.practice.generics;
+package main.java.bcsx.practice.generics;
 /**
  * 15.8.1 创建类型实例。 
  * 练习23:（1）修改FactoryConstraint.java,使用create()可以接受一个参数

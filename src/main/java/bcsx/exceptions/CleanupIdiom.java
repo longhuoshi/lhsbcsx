@@ -1,13 +1,13 @@
-package bcsx.exceptions;
+package main.java.bcsx.exceptions;
 /**
- * ÕâÖÖÍ¨ÖªµÄÇåÀí¹ßÓÃ·¨ÔÚ¹¹ÔìÆ÷²»Å×³öÈÎºÎÒì³£Ê±Ò²Ó¦¸ÃÔËÓÃ£¬Æä»ù±¾¹æÔòÊÇ£ºÔÚ´´½¨ÐèÒªÇåÀíµÄ¶ÔÏóÖ®ºó£¬
-Á¢¼´½øÈëÒ»¸ötry-finallyÓï¾ä¿é£º
+ * ï¿½ï¿½ï¿½ï¿½Í¨Öªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã·ï¿½ï¿½Ú¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×³ï¿½ï¿½Îºï¿½ï¿½ì³£Ê±Ò²Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½Ö®ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½try-finallyï¿½ï¿½ï¿½é£º
 code CleanupIdiom.java
-ÔÚmain()ÖÐ£¬Section 1Ïàµ±¼òµ¥£º×ñÑ­ÁËÔÚ¿ÉÈ¥³ý¶ÔÏóÖ®ºó½ô¸útry-finallyµÄÔ­Ôò¡£Èç¹û¶ÔÏó¹¹Ôì²»ÄÜÊ§°Ü£¬¾Í
-²»ÐèÒªÈÎºÎcatch¡£ÔÚSection 2ÖÐ£¬ÎªÁË¹¹ÔìºÍÇåÀí£¬¿ÉÒÔ¿´µ½¾ßÓÐ²»ÄÜÊ§°ÜµÄ¹¹ÔìÆ÷µÄ¶ÔÏó¿ÉÒÔÈº×éÔÚÒ»Æð¡£
-	Section 3Õ¹Ê¾ÁËÈçºÎ´¦ÀíÄÇÐ©¾ßÓÐ¿ÉÒÔÊ§°ÜµÄ¹¹ÔìÆ÷£¬ÇÒÐèÒªÇåÀíµÄ¶ÔÏó¡£ÎªÁËÕýÈ·´¦ÀíÕâÖÖÇé¿ö£¬ÊÂÇé±ä
-µÃºÜ¼¬ÊÖ£¬ÒòÎª¶ÔÓÚÃ¿Ò»¸ö¹¹ÔìÆ÷£¬¶¼±ØÐë°üÀ¨ÔÚÆä×Ô¼ºµÄtry-finallyÓï¾ä¿éÖÐ£¬²¢ÇÒÃ¿Ò»¸ö¶ÔÏó¹¹Ôì±ØÐë¶¼
-×·ËæÒ»¸ötry-finallyÓï¾ä¿éÒÔÈ·±£ÇåÀí¡£
+ï¿½ï¿½main()ï¿½Ð£ï¿½Section 1ï¿½àµ±ï¿½òµ¥£ï¿½ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½Ú¿ï¿½È¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½ï¿½ï¿½ï¿½try-finallyï¿½ï¿½Ô­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì²»ï¿½ï¿½Ê§ï¿½Ü£ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½Òªï¿½Îºï¿½catchï¿½ï¿½ï¿½ï¿½Section 2ï¿½Ð£ï¿½Îªï¿½Ë¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½Ê§ï¿½ÜµÄ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Èºï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½
+	Section 3Õ¹Ê¾ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½ï¿½ï¿½ï¿½Ð©ï¿½ï¿½ï¿½Ð¿ï¿½ï¿½ï¿½Ê§ï¿½ÜµÄ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ÃºÜ¼ï¿½ï¿½Ö£ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½Ã¿Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½try-finallyï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½Ã¿Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë¶¼
+×·ï¿½ï¿½Ò»ï¿½ï¿½try-finallyï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * */
 //Each disposable object must be followed by a try-finally
 class NeedsCleanup{//Construction can't fail

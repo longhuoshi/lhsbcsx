@@ -1,10 +1,10 @@
-package bcsx.holding;
+package main.java.bcsx.holding;
 
 import java.util.List;
 import java.util.ListIterator;
 
-import bcsx.typeinfo.pets.Pet;
-import bcsx.typeinfo.pets.Pets;
+import main.java.bcsx.typeinfo.pets.Pet;
+import main.java.bcsx.typeinfo.pets.Pets;
 
 public class ListIteration {
 

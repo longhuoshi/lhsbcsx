@@ -1,4 +1,4 @@
-package myjava.worker_thread;
+package main.java.myjava.worker_thread;
 
 /**
  * 是表示工人线程的类。

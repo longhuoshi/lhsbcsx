@@ -1,11 +1,11 @@
-package bcsx.exceptions;
+package main.java.bcsx.exceptions;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.logging.Logger;
 
 /**
- * Òì³£Óë¼ÇÂ¼ÈÕÖ¾
+ * ï¿½ì³£ï¿½ï¿½ï¿½Â¼ï¿½ï¿½Ö¾
  * */
 
 class LoggingException extends Exception{

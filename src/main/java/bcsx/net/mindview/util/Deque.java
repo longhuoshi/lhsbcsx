@@ -1,6 +1,6 @@
 //: net/mindview/util/Deque.java
 // Creating a Deque from a LinkedList.
-package bcsx.net.mindview.util;
+package main.java.bcsx.net.mindview.util;
 import java.util.*;
 
 public class Deque<T> {

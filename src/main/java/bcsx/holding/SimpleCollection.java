@@ -1,6 +1,6 @@
-package bcsx.holding;
+package main.java.bcsx.holding;
 /**
- * Integer¶ÔÏóÌî³äÁËÒ»ÈËCollection
+ * Integerï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Collection
  * */
 import java.util.ArrayList;
 import java.util.Collection;

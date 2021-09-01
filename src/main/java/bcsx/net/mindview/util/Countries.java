@@ -1,8 +1,8 @@
 //: net/mindview/util/Countries.java
 // "Flyweight" Maps and Lists of sample data.
-package bcsx.net.mindview.util;
+package main.java.bcsx.net.mindview.util;
 import java.util.*;
-import static bcsx.net.mindview.util.Print.*;
+import static main.java.bcsx.net.mindview.util.Print.*;
 
 public class Countries {
   public static final String[][] DATA = {

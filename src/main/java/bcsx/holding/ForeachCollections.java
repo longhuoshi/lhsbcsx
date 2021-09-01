@@ -1,11 +1,11 @@
-package bcsx.holding;
+package main.java.bcsx.holding;
 
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.LinkedList;
 /**
- * ForeachÓëµü´úÆ÷
-µ½Ä¿Ç°ÎªÖ¹foreachÓï·¨Ö÷ÒªÓÃÓÚÊı×é£¬µ«ÊÇËüÒ²¿ÉÒÔÓ¦ÓÃÓÚÈÎºÎCollection¶ÔÏó¡£
+ * Foreachï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½Ä¿Ç°ÎªÖ¹foreachï¿½ï·¨ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½Îºï¿½Collectionï¿½ï¿½ï¿½ï¿½
  * */
 
 public class ForeachCollections {

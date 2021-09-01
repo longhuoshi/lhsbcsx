@@ -1,4 +1,4 @@
-package bcsx.strings;
+package main.java.bcsx.strings;
 
 
 

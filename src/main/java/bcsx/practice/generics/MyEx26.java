@@ -1,4 +1,4 @@
-package bcsx.practice.generics;
+package main.java.bcsx.practice.generics;
 //generics/Ex26.java
 //TIJ4 Chapter Generics, Exercise 26, page 680
 //Demonstrate array covariance using Numbers and Integers.

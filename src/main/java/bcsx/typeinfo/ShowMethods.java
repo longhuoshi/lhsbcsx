@@ -1,10 +1,10 @@
-package bcsx.typeinfo;
+package main.java.bcsx.typeinfo;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.util.regex.*;
 /**
- * 14.6.1 类方法提取器
+ * 14.6.1 锟洁方锟斤拷锟斤拷取锟斤拷
  * 
  * */
 

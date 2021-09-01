@@ -1,4 +1,4 @@
-package bcsx.generics;
+package main.java.bcsx.generics;
 //下一页SuperTypeWildcards  上一页CompilerIntelligence
 /**
  * 配符上限和通配符下限的简单解释

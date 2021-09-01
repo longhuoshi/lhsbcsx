@@ -1,4 +1,4 @@
-package net_tcp_ip_udp;
+package main.java.net_tcp_ip_udp;
 
 import java.io.IOException;
 import java.net.*;

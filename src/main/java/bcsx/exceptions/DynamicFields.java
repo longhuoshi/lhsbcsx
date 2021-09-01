@@ -1,32 +1,32 @@
-package bcsx.exceptions;
+package main.java.bcsx.exceptions;
 
 class DynamicFieldsException extends Exception{}
 
 /**
  * 
- * 12.6.3Òì³£Á´
-³£³£»áÏëÒªÔÚ²¶»ñÒ»¸öÒì³£ºóÅ×³öÁíÒ»¸öÒì³££¬²¢ÇÒÏ£Íû°ÑÔ­Ê¼Òì³£µÄÐÅÏ¢±£´æÏÂÀ´£¬Õâ±»³ÆÎª
-Òì³£Á´¡£ÔÚjdk1.4ÒÔÇ°£¬³ÌÐòÔ±±ØÐë×Ô¼º±àÐ´´úÂëÀ´±£´æÔ­Ê¼Òì³£µÄÐÅÏ¢¡£ÏÖÔÚËùÓÐThrowableµÄ
-×ÓÀàÔÚ¹¹ÔìÆ÷ÖÐ¶¼¿ÉÒÔ½ÓÊÜÒ»¸öcause£¨ÒòÓÉ£©¶ÔÏó×÷Îª²ÎÊý¡£Õâ¸öcause¾ÍÓÃÀ´±íÊ¾Ô­Ê¼Òì³££¬
-ÕâÑùÍ¨¹ý°ÑÔ­Ê¼Òì³£´«µÝ¸øÐÂµÄÒì³£¡£Ê¹µÃ¼´Ê¹ÔÚµ±Ç°Î»ÖÃ´´½¨²¢Å×³öÁËÐÂµÄÒì³££¬Ò²Í¨¹ýÕâ¸öÒì³£
-Á´×·×Ùµ½Òì³£×î³õ·¢ÉúµÄÎ»ÖÃ¡£
-	ÓÐÈ¤µÄÊÇ£¬ÔÚThrowableµÄ×ÓÀàÖÐ£¬Ö»ÓÐÈýÖÖ»ù±¾µÄÒì³£ÀàÌá¹©ÁË´øcause²ÎÊýµÄ¹¹ÔìÆ÷¡£ËüÃÇÊÇerror
-(ÓÃÓÚjavaÐéÄâ»ú±¨¸æÏµÍ³´íÎó)¡¢ExceptionÒÔ¼°RuntimeException¡£Èç¹ûÒª°ÑÆäËüÀàÐÍµÄÒì³£Á´½ÓÆðÀ´£¬
-Ó¦¸ÃÊ¹ÓÃinitCause()·½·¨¶ø²»ÊÇ¹¹ÔìÆ÷¡£
-	ÏÂÃæÀý×ÓÄÜÈÃÄãÔÚÔËÐÐÊ±¶¯Ì¬µÄÏòDynamieFieclds¶ÔÏóÌí¼Ó×Ö¶Î¡£
+ * 12.6.3ï¿½ì³£ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½Ú²ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½×³ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï£ï¿½ï¿½ï¿½ï¿½Ô­Ê¼ï¿½ì³£ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â±»ï¿½ï¿½Îª
+ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½jdk1.4ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô­Ê¼ï¿½ì³£ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Throwableï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½Ú¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½causeï¿½ï¿½ï¿½ï¿½ï¿½É£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½causeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾Ô­Ê¼ï¿½ì³£ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½Ô­Ê¼ï¿½ì³£ï¿½ï¿½ï¿½Ý¸ï¿½ï¿½Âµï¿½ï¿½ì³£ï¿½ï¿½Ê¹ï¿½Ã¼ï¿½Ê¹ï¿½Úµï¿½Ç°Î»ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×³ï¿½ï¿½ï¿½ï¿½Âµï¿½ï¿½ì³£ï¿½ï¿½Ò²Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£
+ï¿½ï¿½×·ï¿½Ùµï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½Ã¡ï¿½
+	ï¿½ï¿½È¤ï¿½ï¿½ï¿½Ç£ï¿½ï¿½ï¿½Throwableï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½á¹©ï¿½Ë´ï¿½causeï¿½ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½error
+(ï¿½ï¿½ï¿½ï¿½javaï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½Exceptionï¿½Ô¼ï¿½RuntimeExceptionï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+Ó¦ï¿½ï¿½Ê¹ï¿½ï¿½initCause()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½DynamieFiecldsï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶Î¡ï¿½
 code DynamicFields.java
-Ã¿¸öDynamicFields¶ÔÏó¶¼º¬ÓÐÒ»¸öÊý×é£¬ÆäÔªËØÊÇ¡°³É¶ÔµÄ¶ÔÏó¡±¡£µÚÒ»¸ö¶ÔÏó±íÊ¾×Ö¶Î±êÊ¶·û£¨Ò»¸ö×Ö·û´®£©£¬
-µÚ¶þ¸ö±íÊ¾×Ö¶ÎÖµ£¬ÖµµÄÀàÐÍ¿ÉÒÔÊÇ³ý»ù±¾ÀàÐÍÍâµÄÈÎÒâÀàÐÍ¡£µ±´´½¨¶ÔÏóµÄÊ±ºò£¬ÒªºÏÀí¹À¼ÆÒ»ÏÂÐèÒª
-¶àÉÙ×Ö¶Î¡£µ±µ÷ÓÃsetField()·½·¨µÄÊ±ºò£¬Ëü½«ÊÔÍ¼Í¨¹ý±êÊ¶ÐÞ¸ÄÒÑÓÐ×Ö¶ÎµÄÖµ£¬·ñÔò¾Í½¨Ò»¸öÐÂµÄ
-×Ö¶Î¡£²¢°ÑÖµ·ÅÈë¡£Èç¹û¿Õ¼ä²»¹»ÁË£¬½«½¨Á¢Ò»¸ö¸ü³¤µÄÊý×é£¬²¢°ÑÔ­À´Êý×éµÄÔªËØ¸´ÖÆ½øÈ¥¡£Èç¹ûÄãÊÔÍ¼
-Îª×Ö¶ÎÉèÖÃÒ»¸ö¿ÕÖµ£¬½«Å×³öÒ»¸öDynamicFieldsExceptionÒì³££¬ËüÍ¨¹ýÊ¹ÓÃinitCause()·½·¨°ÑNullPointerException
-¶ÔÏó²åÈë¶ø½¨Á¢µÄ¡£
-	ÖÁÓÚ·µ»Ø´«£¬setField()½«ÓÃgetField()·½·¨°Ñ´ËÎ»ÖÃµÄ¾ÉÖµÈ¡³ö£¬Õâ¸ö²Ù×÷¿ÉÄÜ»áÅ×³öNoSuchFieldExceptionÒì³£¡£
-Èç¹û¿Í»§¶Ë³ÌÐòÔ±µ÷ÓÃÁËgetField()·½·¨£¬ÄÇÃ´Ëû¾ÍÓÐÔðÈÎ´¦ÀíÕâ¸ö¿ÉÄÜÅ×³öµÄNoSuchFieldExceptionÒì³££¬µ«Èç¹û
-Òì³£ÊÇ´ÓsetField()·½·¨ÀïÅ×³öµÄ£¬ÕâÖÖÇé¿ö½«±»ÊÓÎª±à³Ì´íÎó£¬ËùÒÔ¾ÍÊ¹ÓÃ½ÓÊÜcause²ÎÊýµÄ¹¹ÔìÆ÷°Ñ
-NoSuchFieldExceptionÒì³£×ª»»ÎªRuntimeExceptionÒì³£¡£
-	Äã»á×¢Òâµ½£¬toString()·½·¨Ê¹ÓÃÁËÒ»¸öStringBuilderÀ´´´½¨Æä½á¹û¡£Ö»ÒªÄã±àÐ´Éè¼ÆÑ­»·µÄtoString()·½·¨£¬
-Í¨³£¶¼»áÏëÊ¹ÓÃËü¡£
+Ã¿ï¿½ï¿½DynamicFieldsï¿½ï¿½ï¿½ó¶¼ºï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½é£¬ï¿½ï¿½Ôªï¿½ï¿½ï¿½Ç¡ï¿½ï¿½É¶ÔµÄ¶ï¿½ï¿½ó¡±¡ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½Ö¶Î±ï¿½Ê¶ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½Ö¶ï¿½Öµï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½Í¿ï¿½ï¿½ï¿½ï¿½Ç³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Òª
+ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶Î¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½setField()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Í¨ï¿½ï¿½ï¿½ï¿½Ê¶ï¿½Þ¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶Îµï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í½ï¿½Ò»ï¿½ï¿½ï¿½Âµï¿½
+ï¿½Ö¶Î¡ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ë¡£ï¿½ï¿½ï¿½ï¿½Õ¼ä²»ï¿½ï¿½ï¿½Ë£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é£¬ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø¸ï¿½ï¿½Æ½ï¿½È¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼
+Îªï¿½Ö¶ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½×³ï¿½Ò»ï¿½ï¿½DynamicFieldsExceptionï¿½ì³£ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½Ê¹ï¿½ï¿½initCause()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½NullPointerException
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¡ï¿½
+	ï¿½ï¿½ï¿½Ú·ï¿½ï¿½Ø´ï¿½ï¿½ï¿½setField()ï¿½ï¿½ï¿½ï¿½getField()ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½Î»ï¿½ÃµÄ¾ï¿½ÖµÈ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü»ï¿½ï¿½×³ï¿½NoSuchFieldExceptionï¿½ì³£ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½Í»ï¿½ï¿½Ë³ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½getField()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×³ï¿½ï¿½ï¿½NoSuchFieldExceptionï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ì³£ï¿½Ç´ï¿½setField()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×³ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Ì´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¾ï¿½Ê¹ï¿½Ã½ï¿½ï¿½ï¿½causeï¿½ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+NoSuchFieldExceptionï¿½ì³£×ªï¿½ï¿½ÎªRuntimeExceptionï¿½ì³£ï¿½ï¿½
+	ï¿½ï¿½ï¿½×¢ï¿½âµ½ï¿½ï¿½toString()ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½StringBuilderï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö»Òªï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½toString()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * */
 
 public class DynamicFields {
@@ -93,7 +93,7 @@ public class DynamicFields {
 	}
 	
 	/**
-	 * ÉèÖÃÖµ£¬²¢·µ»Ø¾ÉÖµ ¡£Èç¹ûÃ»ÓÐ¾ÉÖµ£¬·µ»Ønull
+	 * ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø¾ï¿½Öµ ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ð¾ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½null
 	 * */
 	public Object setField(String id,Object value) throws DynamicFieldsException{
 		if(value == null){

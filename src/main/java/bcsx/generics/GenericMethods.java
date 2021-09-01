@@ -1,13 +1,13 @@
-package bcsx.generics;
+package main.java.bcsx.generics;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class GenericMethods {
 	/**
-	 * ×¢Òâ£¬µ±Ê¹ÓÃ·ºÐÍÀàÊ±£¬±ØÐëÔÚ´´½¨¶ÔÏóµÄÊ±ºòÖ¸¶¨ÀàÐÍ²ÎÊýµÄÖµ£¬¶øÊ¹ÓÃ·ºÐÍ·½·¨µÄÊ±ºò£¬Í¨³£²»±ØÖ¸Ã÷²ÎÊýÀàÐÍ£¬
-	 * ÒòÎª±àÒëÆ÷»áÎªÎÒÃÇÕÒ³ö¾ßÌå µÄÀàÐÍ¡£Õâ³ÆÎª ÀàÐÍ²ÎÊýÍÆ¶Ï (type argument inference)¡£Òò´ËÎÒÃÇ¿ÉÒÔ
-	 * Ïñµ÷ÓÃÆÕÍ¨·½·¨Ò»Ñùµ÷ÓÃf()£¬¶øÇÒ¾ÍºÃÏñÊÇf()ÎÞÏÞ´ÎµØÖØÔØ¹ý¡£	
+	 * ×¢ï¿½â£¬ï¿½ï¿½Ê¹ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Í²ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã·ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½
+	 * ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¡ï¿½ï¿½ï¿½ï¿½Îª ï¿½ï¿½ï¿½Í²ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ (type argument inference)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½f()ï¿½ï¿½ï¿½ï¿½ï¿½Ò¾Íºï¿½ï¿½ï¿½ï¿½ï¿½f()ï¿½ï¿½ï¿½Þ´Îµï¿½ï¿½ï¿½ï¿½Ø¹ï¿½ï¿½ï¿½	
 	 * */
 	public <T> void f(T t){
 		System.out.println(t.getClass().getName());

@@ -1,5 +1,5 @@
 //: net/mindview/util/FourTuple.java
-package bcsx.net.mindview.util;
+package main.java.bcsx.net.mindview.util;
 
 public class FourTuple<A,B,C,D> extends ThreeTuple<A,B,C> {
   public final D fourth;

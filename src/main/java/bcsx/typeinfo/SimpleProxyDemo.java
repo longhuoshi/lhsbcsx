@@ -1,6 +1,6 @@
-package bcsx.typeinfo;
+package main.java.bcsx.typeinfo;
 /**
- * 14.7 ¶¯Ì¬´úÀí¡£
+ * 14.7 ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½
  * */
 interface Interface{
 	void doSomething();

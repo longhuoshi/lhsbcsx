@@ -1,6 +1,6 @@
-package bcsx.typeinfo;
+package main.java.bcsx.typeinfo;
 /**
- * ÔÚÕâ¸öÀý×ÓÖÐ
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * */
 import java.util.Arrays;
 import java.util.List;
@@ -8,10 +8,10 @@ import java.util.List;
 import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
 
 abstract class Shape{
-	//×¢Òâthis¡£Èç¹ûÄ³¸ö¶ÔÏó³öÏÖÔÚ×Ö·û´®±í´ïÊ½ÖÐ(Éæ¼°"+")£¬toString()·½·¨¾Í»á±»×Ô¶¯µ÷ÓÃ ¡£
+	//×¢ï¿½ï¿½thisï¿½ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½(ï¿½æ¼°"+")ï¿½ï¿½toString()ï¿½ï¿½ï¿½ï¿½ï¿½Í»á±»ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
 	void draw(){System.out.println(this+".drwa()");}
 	
-	abstract public String toString();//±»ÉùÃ÷ ÎªabstractÇ¿ÖÆ¼Ì³ÐÕß¸²Ð´´Ë·½·¨¡£
+	abstract public String toString();//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ÎªabstractÇ¿ï¿½Æ¼Ì³ï¿½ï¿½ß¸ï¿½Ð´ï¿½Ë·ï¿½ï¿½ï¿½ï¿½ï¿½
 }
 
 class Circle extends Shape{

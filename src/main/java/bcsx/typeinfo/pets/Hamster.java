@@ -1,5 +1,5 @@
 //: typeinfo/pets/Hamster.java
-package  bcsx.typeinfo.pets;
+package  main.java.bcsx.typeinfo.pets;
 
 public class Hamster extends Rodent {
   public Hamster(String name) { super(name); }

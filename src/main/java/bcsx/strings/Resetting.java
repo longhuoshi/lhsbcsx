@@ -1,4 +1,4 @@
-package bcsx.strings;
+package main.java.bcsx.strings;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

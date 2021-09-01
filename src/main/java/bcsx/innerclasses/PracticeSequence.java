@@ -1,4 +1,4 @@
-package bcsx.innerclasses;
+package main.java.bcsx.innerclasses;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;

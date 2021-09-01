@@ -1,12 +1,12 @@
-package bcsx.strings;
+package main.java.bcsx.strings;
 /**
- * ±ÈÆð¹¦ÄÜ ÓÐÏÞµÄStringÀà£¬ÎÒÃÇ¸üÔ¸Òâ¹¹ÔìÇ¿´ó µÄ±í´ïÊ½¶ÔÏó¡£
- * ÓÃstatic Pattern.compile()·½·¨À´±àÒëÄãµÄÕýÔò±í´ïÊ½¼´¿É¡£
- * Ëü»á¸ù¾ÝÄãµÄStringÀàÐÍµÄÕýÔò±í´ïÊ½Éú³ÉÒ»¸öPattern¶ÔÏó¡£
- * ½ÓÏÂÀ´£¬°ÑÄãÏëÒª¼ìË÷µÄ×Ö·û´®´«ÈëPattern¶ÔÏó µÄmatcher()·½·¨¡£
- * matcher()·½·¨»áÉú³ÉÒ»¸öMatcher¶ÔÏó£¬ËüÓÐºÜ¶à¹¦ÄÜ¿ÉÓÃ¡£
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Þµï¿½Stringï¿½à£¬ï¿½ï¿½ï¿½Ç¸ï¿½Ô¸ï¿½â¹¹ï¿½ï¿½Ç¿ï¿½ï¿½ ï¿½Ä±ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½static Pattern.compile()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½É¡ï¿½
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Stringï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Patternï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Patternï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½matcher()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * matcher()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Matcherï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÐºÜ¶à¹¦ï¿½Ü¿ï¿½ï¿½Ã¡ï¿½
  * 
- * ÏÂÃæµÄÀà¿ÉÒÔÓÃÀ´¿ÉÒÔÓÃÀ´²âÊÔÕýÔò±í´ïÊ½£¬¿´¿´ËüÃÇÄÜ·ñÆ¥ÅäÒ»¸öÊäÈë ×Ö·û´®¡£
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü·ï¿½Æ¥ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
  * */
 import java.util.regex.*;
 

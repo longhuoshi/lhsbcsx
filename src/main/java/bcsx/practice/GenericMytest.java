@@ -1,4 +1,4 @@
-package bcsx.practice;
+package main.java.bcsx.practice;
 
 class Generic1<T>{
 	T a;

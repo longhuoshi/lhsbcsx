@@ -1,10 +1,10 @@
-package bcsx.innerclasses.controller;
+package main.java.bcsx.innerclasses.controller;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Ò»¸öÓÃÀ´¹ÜÀí²¢´¥·¢ÊÂ¼þµÄÊµ¼Ê¿ØÖÆ¿ò¼Ü¡£
+ * Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½Êµï¿½Ê¿ï¿½ï¿½Æ¿ï¿½Ü¡ï¿½
  * */
 
 public class Controller {
@@ -15,7 +15,7 @@ public class Controller {
 	}
 	public void run(){
 		while(eventList.size()>0){
-			//²»¼Ónew ArrayList<Event>() »á±¨java.util.ConcurrentModificationException 
+			//ï¿½ï¿½ï¿½ï¿½new ArrayList<Event>() ï¿½á±¨java.util.ConcurrentModificationException 
 			for(Event e :  new ArrayList<Event>(eventList)){
 				if(e.ready()){
 					System.out.println(e);

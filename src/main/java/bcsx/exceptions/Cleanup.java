@@ -1,11 +1,11 @@
-package bcsx.exceptions;
+package main.java.bcsx.exceptions;
 /**
- * ¶ÔÓÚÔÚ¹¹Ôì½×¶Î¿ÉÄÜ»áÅ×³öÒì³££¬²¢ÇÒÒªÇóÇåÀíµÄÀà£¬×î°²È«µÄÊ¹ÓÃ·½Ê½ÊÇÊ¹ÓÃÇ¶Ì×µÄtry×Ó¾ä£º
+ * ï¿½ï¿½ï¿½ï¿½ï¿½Ú¹ï¿½ï¿½ï¿½×¶Î¿ï¿½ï¿½Ü»ï¿½ï¿½×³ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½à£¬ï¿½î°²È«ï¿½ï¿½Ê¹ï¿½Ã·ï¿½Ê½ï¿½ï¿½Ê¹ï¿½ï¿½Ç¶ï¿½×µï¿½tryï¿½Ó¾ä£º
 code  Cleanup.java
-	Çë×ÐÏ¸¹Û²ìÕâÀïµÄÂß¼­£º¶ÔInputFile¶ÔÏóµÄ¹¹ÔìÔÚÆä×Ô¼ºµÄtryÓï¾ä¿éÖÐÓÐÐ§£¬Èç¹û¹¹ÔìÊ§°Ü£¬½«½øÈëÍâ²¿
-µÄcatch×Ó¾ä£¬¶ødispose()·½·¨²»»á±»µ÷ÓÃ¡£µ«ÊÇ£¬Èç¹û¹¹Ôì³É¹¦£¬ÎÒÃÇ¿Ï¶¨ÏëÈ·±£¶ÔÏóÄÜ¹»±»ÇåÀí£¬Òò´ËÔÚ
-¹¹ÔìÖ®ºóÁ¢¼´´´½¨ÁËÒ»¸öÐÂµÄtryÓï¾ä¿é¡£Ö´ÐÐÇåÀíµÄfinallyÓëÄÚ²¿µÄtryÓï¾ä¿éÏà¹ØÁª¡£ÔÚÕâÖÖ·½Ê½ÖÐ£¬finally
-×Ó¾äÔÚ¹¹ÔìÊ§°ÜÊ±ÊÇ²»»áÖ´ÐÐµÄ£¬¶øÔÚ¹¹Ôì³É¹¦Ê±×ÜÊÇÖ´ÐÐ¡£
+	ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½Û²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß¼ï¿½ï¿½ï¿½ï¿½ï¿½InputFileï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½tryï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â²¿
+ï¿½ï¿½catchï¿½Ó¾ä£¬ï¿½ï¿½dispose()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á±»ï¿½ï¿½ï¿½Ã¡ï¿½ï¿½ï¿½ï¿½Ç£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¿Ï¶ï¿½ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Âµï¿½tryï¿½ï¿½ï¿½é¡£Ö´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½finallyï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½tryï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½Ê½ï¿½Ð£ï¿½finally
+ï¿½Ó¾ï¿½ï¿½Ú¹ï¿½ï¿½ï¿½Ê§ï¿½ï¿½Ê±ï¿½Ç²ï¿½ï¿½ï¿½Ö´ï¿½ÐµÄ£ï¿½ï¿½ï¿½ï¿½Ú¹ï¿½ï¿½ï¿½É¹ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Ö´ï¿½Ð¡ï¿½
  * */
 public class Cleanup {
 	public static void main(String[] args) {

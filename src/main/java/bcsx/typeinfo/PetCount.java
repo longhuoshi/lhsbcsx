@@ -1,21 +1,21 @@
-package bcsx.typeinfo;
+package main.java.bcsx.typeinfo;
 
 import java.util.HashMap;
 
-import bcsx.typeinfo.pets.Cat;
-import bcsx.typeinfo.pets.Cymric;
-import bcsx.typeinfo.pets.Dog;
-import bcsx.typeinfo.pets.EgyptianMau;
-import bcsx.typeinfo.pets.ForNameCreator;
-import bcsx.typeinfo.pets.Hamster;
-import bcsx.typeinfo.pets.Manx;
-import bcsx.typeinfo.pets.Mouse;
-import bcsx.typeinfo.pets.Mutt;
-import bcsx.typeinfo.pets.Pet;
-import bcsx.typeinfo.pets.PetCreator;
-import bcsx.typeinfo.pets.Pug;
-import bcsx.typeinfo.pets.Rat;
-import bcsx.typeinfo.pets.Rodent;
+import main.java.bcsx.typeinfo.pets.Cat;
+import main.java.bcsx.typeinfo.pets.Cymric;
+import main.java.bcsx.typeinfo.pets.Dog;
+import main.java.bcsx.typeinfo.pets.EgyptianMau;
+import main.java.bcsx.typeinfo.pets.ForNameCreator;
+import main.java.bcsx.typeinfo.pets.Hamster;
+import main.java.bcsx.typeinfo.pets.Manx;
+import main.java.bcsx.typeinfo.pets.Mouse;
+import main.java.bcsx.typeinfo.pets.Mutt;
+import main.java.bcsx.typeinfo.pets.Pet;
+import main.java.bcsx.typeinfo.pets.PetCreator;
+import main.java.bcsx.typeinfo.pets.Pug;
+import main.java.bcsx.typeinfo.pets.Rat;
+import main.java.bcsx.typeinfo.pets.Rodent;
 
 public class PetCount {
 	static class PetCounter extends HashMap<String, Integer> {

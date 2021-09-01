@@ -1,8 +1,8 @@
-package bcsx.strings;
+package main.java.bcsx.strings;
 
 /**
  * 13.5.6 String.format()
- * 其实在String.format()内部，它也是创建 一个Formatter对象 ，然后将你传入的参数转给该Formatter。
+ * 锟斤拷实锟斤拷String.format()锟节诧拷锟斤拷锟斤拷也锟角达拷锟斤拷 一锟斤拷Formatter锟斤拷锟斤拷 锟斤拷然锟斤拷锟姐传锟斤拷牟锟斤拷锟阶拷锟斤拷锟紽ormatter锟斤拷
  * 
  * */
 

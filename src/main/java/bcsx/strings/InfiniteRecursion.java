@@ -1,23 +1,23 @@
-package bcsx.strings;
+package main.java.bcsx.strings;
 
 import java.util.ArrayList;
 import java.util.List;
 /**
- * Èç¹ûÄãÏ£ÍûtoString()·½·¨´òÓ¡³ö¶ÔÏóµÄÄÚ´æµØÖ·£¬Ò²ÐíÄã»á¿¼ÂÇÓÃthis¹Ø¼ü×Ö¡£
+ * ï¿½ï¿½ï¿½ï¿½ï¿½Ï£ï¿½ï¿½toString()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½Ö·ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½á¿¼ï¿½ï¿½ï¿½ï¿½thisï¿½Ø¼ï¿½ï¿½Ö¡ï¿½
 code InfiniteRecursion.java
-µ±Äã´´½¨ÁËInfiniteRecursion¶ÔÏó£¬²¢½«Æä´òÓ¡³öÀ´µÄÊ±ºò£¬Äã»áµÃµ½Ò»´®·Ç³£³¤µÄÒì³£¡£
-Èç¹ûÄã°ÑInfiniteRecursion¶ÔÏó´æµ½ListÖÐ£¬È»ºó´òÓ¡List£¬ÄãËû»áµÃµ½Í¬ÑùµÄÒì³£¡£ÆäÊµ£¬
-µ±ÈçÏÂ´úÂëÔËÐÐÊ±£º
+ï¿½ï¿½ï¿½ã´´ï¿½ï¿½ï¿½ï¿½InfiniteRecursionï¿½ï¿½ï¿½ó£¬²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½Ò»ï¿½ï¿½ï¿½Ç³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½InfiniteRecursionï¿½ï¿½ï¿½ï¿½æµ½Listï¿½Ð£ï¿½È»ï¿½ï¿½ï¿½Ó¡Listï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½Â´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
 " InfiniteRecursion address: " + this
-	ÕâÀï·¢ÉúÁË×Ô¶¯ÀàÐÍ×ª»»£¬ÓÉInfiniteRecursionÀàÐÍ×ª»»³ÉStringÀàÐÍ£¬ËüÔõÃ´×ª»»ÄØ£¬ÕýÊÇ
-Í¨¹ýµ÷ÓÃthisÉÏµÄtoString·½·¨£¬ÓÚÊÇ·¢ÉúÁËµÝ¹éµ÷ÓÃ¡£
-	Èç¹ûÄãÕæµÄÏëÒª´òÓ¡³ö¶ÔÏóµÄÄÚ´æµØÖ·£¬Ó¦¸Ãµ÷ÓÃObject.toString()·½·¨£¬Õâ²ÅÊÇ¸ºÔð´ËÈÎÎñµÄ·½·¨£¬
-ËùÒÔÄã²»Ó¦¸ÃÓÃthis,¶øÊÇÓ¦¸Ãµ÷ÓÃsuper.toString()·½·¨¡£
+	ï¿½ï¿½ï¿½ï·¢ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½InfiniteRecursionï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½Stringï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½ï¿½ï¿½Ã´×ªï¿½ï¿½ï¿½Ø£ï¿½ï¿½ï¿½ï¿½ï¿½
+Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½thisï¿½Ïµï¿½toStringï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ËµÝ¹ï¿½ï¿½ï¿½Ã¡ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½Ö·ï¿½ï¿½Ó¦ï¿½Ãµï¿½ï¿½ï¿½Object.toString()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ã²»Ó¦ï¿½ï¿½ï¿½ï¿½this,ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½Ãµï¿½ï¿½ï¿½super.toString()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * */
 public class InfiniteRecursion {
 	
 	public String toString(){
-		//µÝ¹éµ÷ÓÃ¡£(this×ª»»×Ö·û´®£¬µ÷ÓÃtoString()·½·¨¡£)
+		//ï¿½Ý¹ï¿½ï¿½ï¿½Ã¡ï¿½(this×ªï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½toString()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
 		return " InfiniteRecursion address: " + this + "\n";
 //		return " InfiniteRecursion address: " + super.toString() + "\n";
 	}

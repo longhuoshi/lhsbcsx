@@ -1,6 +1,6 @@
-package bcsx.innerclasses;
+package main.java.bcsx.innerclasses;
 /**
- * 明确的继承某个内部类也是可以的。
+ * 锟斤拷确锟侥继筹拷某锟斤拷锟节诧拷锟斤拷也锟角匡拷锟皆的★拷
  * 
  * */
 class Egg2{

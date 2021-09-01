@@ -1,7 +1,7 @@
-package bcsx.practice.generics;
+package main.java.bcsx.practice.generics;
 
-import bcsx.typeinfo.pets.Dog;
-import bcsx.typeinfo.pets.Pet;
+import main.java.bcsx.typeinfo.pets.Dog;
+import main.java.bcsx.typeinfo.pets.Pet;
 
 import java.util.ArrayList;
 import java.util.List;

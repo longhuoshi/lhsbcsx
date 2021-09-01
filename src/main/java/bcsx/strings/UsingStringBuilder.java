@@ -1,14 +1,14 @@
-package bcsx.strings;
+package main.java.bcsx.strings;
 
 import java.util.Random;
 
 /**
  * 
- * Èç¹ûÄãÒªÔÚtoString()·½·¨ÖÐÊ¹ÓÃÑ­»·£¬ÄÇÃ´×îºÃ×Ô¼º´´ÔìÒ»¸öStringBuilder¶ÔÏó£¬ÓÃËüÀ´¹¹Ôì×îÖÕµÄ½á¹û¡£
-Çë²Î¿¼ÒÔÏÂÊ¾Àý£º
+ * ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½toString()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½StringBuilderï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÕµÄ½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½Î¿ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½
 code UsingStringBuilder.java
-×îÖÕµÄ½á¹ûÊÇÓÃappend()Óï¾äÒ»µãµãÆ´½ÓÆðÀ´µÄ¡£Èç¹ûÄãÏë×ß½Ý¾¶£¬ÀýÈç£ºappend(a+":"+c),ÄÇ±àÒëÆ÷¾Í»áµôÈëÏÝÚå£¬
-´Ó¶øÎªÄãÁíÍâ´´½¨Ò»¸öStringBuilder¶ÔÏó´¦ÀíÀ¨ºÅÄÚµÄ×Ö·û´®²Ù×÷¡£
+ï¿½ï¿½ï¿½ÕµÄ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½append()ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Æ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß½Ý¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ç£ºappend(a+":"+c),ï¿½Ç±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½å£¬
+ï¿½Ó¶ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½â´´ï¿½ï¿½Ò»ï¿½ï¿½StringBuilderï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * */
 
 public class UsingStringBuilder {

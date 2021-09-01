@@ -1,4 +1,4 @@
-package bcsx.generics;
+package main.java.bcsx.generics;
 
 import java.util.ArrayList;
 import java.util.List;

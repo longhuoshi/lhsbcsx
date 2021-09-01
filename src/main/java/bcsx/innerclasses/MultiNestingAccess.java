@@ -1,7 +1,7 @@
-package bcsx.innerclasses;
+package main.java.bcsx.innerclasses;
 
 /**
- * 从多层嵌套类中访问外部类成员
+ * 锟接讹拷锟角讹拷锟斤拷锟斤拷蟹锟斤拷锟斤拷獠匡拷锟斤拷员
  * 
  * */
 

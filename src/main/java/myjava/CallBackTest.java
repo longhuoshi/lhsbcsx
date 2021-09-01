@@ -1,41 +1,42 @@
-package myjava;
+package main.java.myjava;
 
-//»Øµ÷½Ó¿Ú
+
+//å›è°ƒæ¥å£
 interface CallBack{
 	void receiveResult(int result);
 }
 
-//Ìá¹©·şÎñ
+//æä¾›æœåŠ¡
 class OfferServer{
-	//½ÓÊÜÒ»¸ö»Øµ÷¶ÔÏó
+	//æ¥å—ä¸€ä¸ªå›è°ƒå¯¹è±¡
 	public void dojob(int num,int num2,CallBack cb){
-		//ÒµÎñÂß¼­Ëã·¨ 
+		//ä¸šåŠ¡é€»è¾‘ç®—æ³•
 		int result = num + num2;
-		
-		//´¥·¢»Øµ÷·½·¨£¬°Ñ´¦ÀíºÃµÄ½á¹û·¢ËÍ³öÈ¥
+
+		//è§¦å‘å›è°ƒæ–¹æ³•ï¼ŒæŠŠå¤„ç†å¥½çš„ç»“æœå‘é€å‡ºå»
 		cb.receiveResult(result);
 	}
 }
 
-//±»·şÎñµÄ¶ÔÏó
+//è¢«æœåŠ¡çš„å¯¹è±¡
 class AnyPerson{
 	private String name;
-	
+
 	public AnyPerson(String name){
 		this.name = name;
 	}
-	
-	//¼Ì³Ğ»Øµ÷½Ó¿Ú£¬½ÓÊÜ·şÎñ¶Ë´¦ÀíºÃµÄ½á¹û¡£
+
+	//ç»§æ‰¿å›è°ƒæ¥å£ï¼Œæ¥å—æœåŠ¡ç«¯å¤„ç†å¥½çš„ç»“æœã€‚
 	class JobResult implements CallBack{
 
 		@Override
 		public void receiveResult(int result) {
-			System.out.println(name+"µÄ³É¼¨ÊÇ£º"+result);
+			System.out.println(name+"çš„æˆç»©æ˜¯ï¼š"+result);
 		}
 	}
-	
+
 	public void findHelp(int num,int num2){
-		//µ÷ÓÃ ·şÎñ¶Ë¶ÔÏó£¬µÇ¼Ç»Øµ÷º¯Êı
+		//è°ƒç”¨ æœåŠ¡ç«¯å¯¹è±¡ï¼Œç™»è®°å›è°ƒå‡½æ•°
 		new OfferServer().dojob(num, num2, new JobResult());
 	}
 }
@@ -43,9 +44,9 @@ class AnyPerson{
 public class CallBackTest {
 
 	public static void main(String[] args) {
-		AnyPerson student = new AnyPerson("ÕÅÈı");
+		AnyPerson student = new AnyPerson("å¼ ä¸‰");
 		student.findHelp(2, 5);
-		
+
 	}
 
 }

@@ -1,31 +1,31 @@
 //: net/mindview/util/TypeCounter.java
 // Counts instances of a type family.
-package bcsx.net.mindview.util;
+package main.java.bcsx.net.mindview.util;
 import java.util.*;
 /**
- * 14.3.3 µİ¹é¼ÆÊı
+ * 14.3.3 ï¿½İ¹ï¿½ï¿½ï¿½ï¿½
  * 
  * Counts instances of a type family.
- * ClassÀàµÄisAssignableFromÊÇ¸ö²»³£ÓÃµÄ·½·¨£¬¸Ğ¾õÕâ¸ö·½·¨µÄÃû×ÖÈ¡µÃ²»ÊÇºÜºÃ£¬ËùÒÔÓĞ±ØÒªÔÚ´Ë½âÎöÒ»ÏÂ£¬ÒÔÃâÔÚ¿´Ô´ÂëÊ±²úÉúÆçÒå£¬Õâ¸ö·½·¨µÄÇ©ÃûÈçÏÂ£º
- * ÓÉ·½·¨Ç©Ãû¿É¼ûÊÇÒ»¸ö±¾µØ·½·¨£¬¼´C´úÂë±àĞ´µÄ¡£
+ * Classï¿½ï¿½ï¿½isAssignableFromï¿½Ç¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÃµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½Ã²ï¿½ï¿½ÇºÜºÃ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ±ï¿½Òªï¿½Ú´Ë½ï¿½ï¿½ï¿½Ò»ï¿½Â£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¿ï¿½Ô´ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½å£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç©ï¿½ï¿½ï¿½ï¿½ï¿½Â£ï¿½
+ * ï¿½É·ï¿½ï¿½ï¿½Ç©ï¿½ï¿½ï¿½É¼ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ø·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½Ğ´ï¿½Ä¡ï¿½
 
-ÒÔÏÂÊÇJDKÖĞµÄ×¢ÊÍ£º
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½JDKï¿½Ğµï¿½×¢ï¿½Í£ï¿½
 Determines if the class or interface represented by this Class object is either the same as,  
 or is a superclass or superinterface of, the class or interface represented by the specified Class parameter.
 It returns true if so; otherwise it returns false.
 If this Class object represents a primitive type, this method returns true if the specified Class parameter is exactly this Class object; otherwise it returns false.
-ÒâË¼ÈçÏÂ£º
-ÓĞÁ½¸öClassÀàĞÍµÄÀàÏó£¬Ò»¸öÊÇµ÷ÓÃisAssignableFrom·½·¨µÄÀà¶ÔÏó£¨ºó³Æ¶ÔÏóa£©£¬ÒÔ¼°·½·¨ÖĞ×÷Îª²ÎÊıµÄÕâ¸öÀà¶ÔÏó£¨³ÆÖ®Îª¶ÔÏób£©£¬ÕâÁ½¸ö¶ÔÏóÈç¹ûÂú×ãÒÔÏÂÌõ¼şÔò·µ»Øtrue£¬·ñÔò·µ»Øfalse£º
-    a¶ÔÏóËù¶ÔÓ¦ÀàĞÅÏ¢ÊÇb¶ÔÏóËù¶ÔÓ¦µÄÀàĞÅÏ¢µÄ¸¸Àà»òÕßÊÇ¸¸½Ó¿Ú£¬¼òµ¥Àí½â¼´aÊÇbµÄ¸¸Àà»ò½Ó¿Ú
-    a¶ÔÏóËù¶ÔÓ¦ÀàĞÅÏ¢Óëb¶ÔÏóËù¶ÔÓ¦µÄÀàĞÅÏ¢ÏàÍ¬£¬¼òµ¥Àí½â¼´aºÍbÎªÍ¬Ò»¸öÀà»òÍ¬Ò»¸ö½Ó¿Ú
-²âÊÔ´úÂë£º
-//ËµÃ÷£ºProtocolÊÇ½Ó¿Ú£¬DubboProtocolÊÇProtocolµÄÊµÏÖ
+ï¿½ï¿½Ë¼ï¿½ï¿½ï¿½Â£ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Classï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Çµï¿½ï¿½ï¿½isAssignableFromï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ó£¨ºï¿½Æ¶ï¿½ï¿½ï¿½aï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ó£¨³ï¿½Ö®Îªï¿½ï¿½ï¿½ï¿½bï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ò·µ»ï¿½trueï¿½ï¿½ï¿½ï¿½ï¿½ò·µ»ï¿½falseï¿½ï¿½
+    aï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½bï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¸ï¿½ï¿½Ó¿Ú£ï¿½ï¿½ï¿½ï¿½ï¿½â¼´aï¿½ï¿½bï¿½Ä¸ï¿½ï¿½ï¿½ï¿½Ó¿ï¿½
+    aï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½bï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â¼´aï¿½ï¿½bÎªÍ¬Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Í¬Ò»ï¿½ï¿½ï¿½Ó¿ï¿½
+ï¿½ï¿½ï¿½Ô´ï¿½ï¿½ë£º
+//Ëµï¿½ï¿½ï¿½ï¿½Protocolï¿½Ç½Ó¿Ú£ï¿½DubboProtocolï¿½ï¿½Protocolï¿½ï¿½Êµï¿½ï¿½
 Class protocolClass = Protocol.class ;   
 Class dubboProtocolClass = DubboProtocol.class ;
         
- protocolClass.isAssignableFrom(dubboProtocolClass )) ;   //·µ»Øtrue
- protocolClass.isAssignableFrom(protocolClass )) ;        //·µ»Øtrue
- dubboProtocolClass.isAssignableFrom(protocolClass )) ;   //·µ»Øfalse
+ protocolClass.isAssignableFrom(dubboProtocolClass )) ;   //ï¿½ï¿½ï¿½ï¿½true
+ protocolClass.isAssignableFrom(protocolClass )) ;        //ï¿½ï¿½ï¿½ï¿½true
+ dubboProtocolClass.isAssignableFrom(protocolClass )) ;   //ï¿½ï¿½ï¿½ï¿½false
  * */
 
 public class TypeCounter extends HashMap<Class<?>, Integer>{

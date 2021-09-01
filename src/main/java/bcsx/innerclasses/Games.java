@@ -1,6 +1,6 @@
-package bcsx.innerclasses;
+package main.java.bcsx.innerclasses;
 /**
- * 优先使用类而不是接口，如果你的设计中需要某个接口，你必须了解它。否则，不到迫不得已，不要将其放到你的设计中。
+ * 锟斤拷锟斤拷使锟斤拷锟斤拷锟斤拷锟斤拷墙涌冢锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷要某锟斤拷锟接口ｏ拷锟斤拷锟斤拷锟斤拷私锟斤拷锟斤拷锟斤拷锟斤拷颍锟斤拷锟斤拷炔锟斤拷锟斤拷眩锟斤拷锟揭拷锟斤拷锟脚碉拷锟斤拷锟斤拷锟斤拷锟叫★拷
  * */
 interface Game{boolean move();}
 interface GameFactory{Game getGame();}

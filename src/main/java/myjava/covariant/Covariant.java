@@ -1,4 +1,4 @@
-package myjava.covariant;
+package main.java.main.java.myjava.covariant;
 
 /**
  * @author l

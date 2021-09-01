@@ -1,4 +1,4 @@
-package bcsx.holding;
+package main.java.bcsx.holding;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,14 +6,14 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Ìí¼ÓÒ»×éÔªËØ
+ * ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½ï¿½
  * 
  * Arrays.asList()
- * Æäµ×²ã±íÊ¾µÄÊÇÊı×é£¬Òò´Ë²»ÄÜµ÷Õû³ß´ç¡£Èç¹û³¢ÊÔµ÷ÓÃadd()»òdelete()·½·¨¿ÉÄÜ»áÒı·¢¸Ä±äÊı×é³ß´ç¡£
- * »á±¨Unsupported Operation.
+ * ï¿½ï¿½×²ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é£¬ï¿½ï¿½Ë²ï¿½ï¿½Üµï¿½ï¿½ï¿½ï¿½ß´ç¡£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôµï¿½ï¿½ï¿½add()ï¿½ï¿½delete()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½ß´ç¡£
+ * ï¿½á±¨Unsupported Operation.
  * 
- * Arrays.asList()·½·¨µÄÏŞÖÆÊÇËü¶ÔËù²úÉúµÄListÀàĞÍ×ö³öÁË×îÀíÏëµÄ¼ÙÉè£¬¶ø²¢Ã»ÓĞ×¢ÒâÄã¶ÔËü»á
- * ¸³ÓèÊ²Ã´ÑùµÄÀàĞÍ¡£ÓĞÊ±Õâ¾Í»áÒı·¢ÎÊÌâ£º
+ * Arrays.asList()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Listï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½è£¬ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½ï¿½Ê²Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¡ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Í»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â£º
  * 
  * */
 class Snow{}
@@ -40,7 +40,7 @@ public class AsListInference {
 		
 		// Give a hint using an
 	    // explicit type argument specification:
-		List<Snow> snow4 = Arrays.<Snow>asList(new Light(),new Heavy());//ÏÔÊ¾ÀàĞÍ²ÎÊıËµÃ÷¡£
+		List<Snow> snow4 = Arrays.<Snow>asList(new Light(),new Heavy());//ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Í²ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½
 		
 		
 	}

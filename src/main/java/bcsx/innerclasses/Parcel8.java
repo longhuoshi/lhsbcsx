@@ -1,7 +1,7 @@
-package bcsx.innerclasses;
+package main.java.bcsx.innerclasses;
 /**
- *匿名内部类
- *基类中需要一个有参的构造器
+ *锟斤拷锟斤拷锟节诧拷锟斤拷
+ *锟斤拷锟斤拷锟斤拷锟斤拷要一锟斤拷锟叫参的癸拷锟斤拷锟斤拷
  * 
  * */
 public class Parcel8 {

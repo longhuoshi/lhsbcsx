@@ -1,8 +1,8 @@
-package bcsx.exceptions;
+package main.java.bcsx.exceptions;
 /**
- * 一种更加简单的丢失异常的方式是从finally子句中返回：
+ * 一锟街革拷锟接简单的讹拷失锟届常锟侥凤拷式锟角达拷finally锟接撅拷锟叫凤拷锟截ｏ拷
 code 
-如果运行这个程序，就会看到即使抛出了异常，它也不会产生任何输出。
+锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟津，就会看锟斤拷锟斤拷使锟阶筹拷锟斤拷锟届常锟斤拷锟斤拷也锟斤拷锟斤拷锟斤拷锟斤拷魏锟斤拷锟斤拷锟斤拷
  * */
 public class ExceptionSilence {
 	public static void main(String[] args) {

@@ -1,7 +1,7 @@
 //: net/mindview/util/SwingConsole.java
 // Tool for running Swing demos from the
 // console, both applets and JFrames.
-package bcsx.net.mindview.util;
+package main.java.bcsx.net.mindview.util;
 import javax.swing.*;
 
 public class SwingConsole {

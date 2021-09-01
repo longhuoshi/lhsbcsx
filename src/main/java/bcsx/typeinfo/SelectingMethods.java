@@ -1,11 +1,11 @@
-package bcsx.typeinfo;
+package main.java.bcsx.typeinfo;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
- * 14.7 ¶¯Ì¬´úÀí¡£
+ * 14.7 ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½
  * */
 class MethodSelector implements InvocationHandler{
 	private Object proxied;

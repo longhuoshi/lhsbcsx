@@ -1,5 +1,5 @@
 //: net/mindview/util/ContainerMethodDifferences.java
-package bcsx.net.mindview.util;
+package main.java.bcsx.net.mindview.util;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -19,7 +19,7 @@ import java.util.SortedMap;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-import bcsx.generics.watercolors.Watercolors;
+import main.java.bcsx.generics.watercolors.Watercolors;
 
 public class ContainerMethodDifferences {
 	static Set<String> methodSet(Class<?> type){

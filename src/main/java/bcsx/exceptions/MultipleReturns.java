@@ -1,10 +1,10 @@
-package bcsx.exceptions;
+package main.java.bcsx.exceptions;
 /**
- * 12.8.2 ÔÚreturnÖÐÊ¹ÓÃfinally.
-ÒòÎªfinally×Ó¾ä×ÜÊÇ»áÖ´ÐÐµÄ£¬ËùÒÔÔÚÒ»¸ö·½·¨ÖÐ£¬¿ÉÒÔ´Ó¶à¸öµã·µ»Ø£¬²¢ÇÒ¿ÉÒÔ±£Ö¤ÖØÒª
-µÄÇåÀí¹¤×÷ÈÔ¾É»áÖ´ÐÐ:
+ * 12.8.2 ï¿½ï¿½returnï¿½ï¿½Ê¹ï¿½ï¿½finally.
+ï¿½ï¿½Îªfinallyï¿½Ó¾ï¿½ï¿½ï¿½ï¿½Ç»ï¿½Ö´ï¿½ÐµÄ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½Ô´Ó¶ï¿½ï¿½ï¿½ã·µï¿½Ø£ï¿½ï¿½ï¿½ï¿½Ò¿ï¿½ï¿½Ô±ï¿½Ö¤ï¿½ï¿½Òª
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¾É»ï¿½Ö´ï¿½ï¿½:
 code 
-´ÓÊä³öÖÐ¿ÉÒÔ¿´³ö£¬ÔÚfinallyÀàÄÚ²¿£¬´ÓºÎ´¦·µ»ØÎÞ¹Ø½ôÒª¡£
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½finallyï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ÓºÎ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ¹Ø½ï¿½Òªï¿½ï¿½
  * */
 public class MultipleReturns {
 	

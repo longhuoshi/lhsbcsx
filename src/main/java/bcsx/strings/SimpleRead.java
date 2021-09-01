@@ -1,11 +1,11 @@
-package bcsx.strings;
+package main.java.bcsx.strings;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.StringReader;
 
 /**
- * É¨ÃèÊäÈë
+ * É¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * */
 
 public class SimpleRead {

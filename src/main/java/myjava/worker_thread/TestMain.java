@@ -1,4 +1,4 @@
-package myjava.worker_thread;
+package main.java.myjava.worker_thread;
 
 /**
  * https://blog.csdn.net/smartdt/article/details/79350970

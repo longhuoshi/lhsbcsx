@@ -1,7 +1,7 @@
-package bcsx.exceptions;
+package main.java.bcsx.exceptions;
 
 /**
- * ´ø²ÎÊýµÄ×Ô¶¨ÒåÒì³£¡£
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½
  * */
 class MyException extends Exception{
 	public MyException(){}

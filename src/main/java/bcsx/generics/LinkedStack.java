@@ -1,4 +1,4 @@
-package bcsx.generics;
+package main.java.bcsx.generics;
 
 public class LinkedStack<T> {
 	private static class Node<U>{

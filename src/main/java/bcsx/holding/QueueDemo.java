@@ -1,10 +1,10 @@
-package bcsx.holding;
+package main.java.bcsx.holding;
 
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Random;
 /**
- * ╤сапё╨ох╫ЬохЁЖё╛╡╒╥╒╠ЮЁлсц╣╫
+ * О©╫О©╫О©╫пёО©╫О©╫х╫О©╫О©╫хЁО©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ц╣О©╫
  * */
 public class QueueDemo {
 	public static void printQ(Queue queue){

@@ -1,9 +1,9 @@
 //: typeinfo/pets/LiteralPetCreator.java
 // Using class literals.
-package  bcsx.typeinfo.pets;
+package  main.java.bcsx.typeinfo.pets;
 import java.util.*;
 /**
- * 14.3.1 Ê¹ÓÃÀà×ÖÃæ³£Á¿¡£
+ * 14.3.1 Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ³£ï¿½ï¿½ï¿½ï¿½
  * */
 public class LiteralPetCreator extends PetCreator {
   // No try block needed.
@@ -24,5 +24,5 @@ public class LiteralPetCreator extends PetCreator {
     System.out.println(types);
   }
 } /* Output:
-[class  bcsx.typeinfo.pets.Mutt, class  bcsx.typeinfo.pets.Pug, class  bcsx.typeinfo.pets.EgyptianMau, class  bcsx.typeinfo.pets.Manx, class  bcsx.typeinfo.pets.Cymric, class  bcsx.typeinfo.pets.Rat, class  bcsx.typeinfo.pets.Mouse, class  bcsx.typeinfo.pets.Hamster]
+[class  main.java.bcsx.typeinfo.pets.Mutt, class  main.java.bcsx.typeinfo.pets.Pug, class  main.java.bcsx.typeinfo.pets.EgyptianMau, class  main.java.bcsx.typeinfo.pets.Manx, class  main.java.bcsx.typeinfo.pets.Cymric, class  main.java.bcsx.typeinfo.pets.Rat, class  main.java.bcsx.typeinfo.pets.Mouse, class  main.java.bcsx.typeinfo.pets.Hamster]
 *///:~

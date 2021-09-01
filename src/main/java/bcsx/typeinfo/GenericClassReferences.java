@@ -1,4 +1,4 @@
-package bcsx.typeinfo;
+package main.java.bcsx.typeinfo;
 
 public class GenericClassReferences {
 

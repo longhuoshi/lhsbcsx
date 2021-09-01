@@ -1,4 +1,4 @@
-package bcsx.holding;
+package main.java.bcsx.holding;
 
 import java.util.Collections;
 import java.util.HashSet;

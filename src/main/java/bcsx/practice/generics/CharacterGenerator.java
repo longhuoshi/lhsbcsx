@@ -1,10 +1,10 @@
-package bcsx.practice.generics;
+package main.java.bcsx.practice.generics;
 
 import java.util.Iterator;
 import java.util.Random;
 
-import bcsx.generics.coffee.Americano;
-import bcsx.net.mindview.util.Generator;
+import main.java.bcsx.generics.coffee.Americano;
+import main.java.bcsx.net.mindview.util.Generator;
 
 public class CharacterGenerator implements Generator<StoryCharacters>,Iterable<StoryCharacters>{
 	private Class types[] = {IronMan.class,CaptainAmerica.class,BlackWidow.class,Loki.class,Thanos.class};

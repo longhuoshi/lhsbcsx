@@ -1,7 +1,7 @@
 //: typeinfo/toys/ToyTest.java
 // Testing class Class.
-package bcsx.typeinfo.toys;
-import static bcsx.net.mindview.util.Print.*;
+package main.java.bcsx.typeinfo.toys;
+import static main.java.bcsx.net.mindview.util.Print.*;
 
 interface HasBatteries {}
 interface Waterproof {}
@@ -30,7 +30,7 @@ public class ToyTest {
 	 
     Class c = null;
     try {
-      c = Class.forName("bcsx.typeinfo.toys.FancyToy");
+      c = Class.forName("main.java.bcsx.typeinfo.toys.FancyToy");
     } catch(ClassNotFoundException e) {
       print("Can't find FancyToy");
       System.exit(1);

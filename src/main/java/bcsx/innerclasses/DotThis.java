@@ -1,4 +1,4 @@
-package bcsx.innerclasses;
+package main.java.bcsx.innerclasses;
 
 public class DotThis {
     void f(){System.out.println("DotThis.f()");}

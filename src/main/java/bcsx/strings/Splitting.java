@@ -1,8 +1,8 @@
-package bcsx.strings;
+package main.java.bcsx.strings;
 /**
- * String ×Ô´øÁËÒ»¸ö·Ç³£ÓÐÓÃµÄÕýÔò±í´ïÊ½¹¤¾ßsplit()·½·¨¡£Æä¹¦ÄÜ ÊÇ¡°½«×Ö·û´®
- * ´ÓÕýÔò±í´ïÊ½Æ¥ÅäµÄµØ·½ÇÐ¿ª¡£¡±
- * String.split()»¹ÓÐÒ»¸öÖØÔØ°æ±¾£¬ÔÊÐíÄãÏÞÖÆ×Ö·û´®·Ö¸îµÄ´ÎÊý¡£
+ * String ï¿½Ô´ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ç³ï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½split()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ä¹¦ï¿½ï¿½ ï¿½Ç¡ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½Æ¥ï¿½ï¿½ÄµØ·ï¿½ï¿½Ð¿ï¿½ï¿½ï¿½ï¿½ï¿½
+ * String.split()ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ø°æ±¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½
  * */
 import java.util.Arrays;
 
@@ -18,7 +18,7 @@ public class Splitting {
 		Splitting s = new Splitting();
 		Class c2 = s.getClass();
 		try {
-			Class c3 = Class.forName("bcsx.strings.Splitting");
+			Class c3 = Class.forName("main.java.bcsx.strings.Splitting");
 			
 			System.out.println(c.getName());
 			System.out.println(c2.getCanonicalName());

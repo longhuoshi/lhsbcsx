@@ -1,4 +1,4 @@
-package bcsx.holding;
+package main.java.bcsx.holding;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,16 +7,16 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 /**
- * 	Í¨¹ıÕâÖÖ·½Ê½£¬ÎÒ¿ÉÒÔÔÚIterableClass.javaÊ¾ÀıÖĞÌí¼ÓÁ½ÖÖÊÊÅäÆ÷·½·¨£º
+ * 	Í¨ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½Ê½ï¿½ï¿½ï¿½Ò¿ï¿½ï¿½ï¿½ï¿½ï¿½IterableClass.javaÊ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 code
-´ÓÉÏÃæµÄÊä³ö¿ÉÒÔ¿´µ½£¬Collections.shuffle()·½·¨Ã»ÓĞÓ°Ïìµ½Ô­À´µÄÊı×é£¬¶øÖ»ÊÇ
-´òÂÒÁËshuffledÖĞµÄÒıÓÃ¡£Ö®ËùÒÔÕâÑù£¬Ö»ÊÇÒòÎªrandomized()·½·¨ÓÃÒ»¸öArrayList½«
-Arrays.asList()·½·¨µÄ½á¹û°ü×°ÁËÆğÀ´¡£Èç¹ûÕâ¸öArrays.asList()¾ÍÈ¥²úÉúµÄList±»
-Ö±½Ó´òÂÒ£¬ÄÇÃ´Ëü»áĞŞ¸Äµ×²ãµÄÊı×é
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½ï¿½ï¿½Collections.shuffle()ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Ó°ï¿½ìµ½Ô­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é£¬ï¿½ï¿½Ö»ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½shuffledï¿½Ğµï¿½ï¿½ï¿½ï¿½Ã¡ï¿½Ö®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½Îªrandomized()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ArrayListï¿½ï¿½
+Arrays.asList()ï¿½ï¿½ï¿½ï¿½ï¿½Ä½ï¿½ï¿½ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Arrays.asList()ï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Listï¿½ï¿½
+Ö±ï¿½Ó´ï¿½ï¿½Ò£ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½Ş¸Äµ×²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * */
 public class MultiIterableClass extends IterableClass {
 	
-	//ÄæÏò±éÀú
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	public Iterable<String> reversed(){
 		return new Iterable<String>() {
 			
@@ -43,13 +43,13 @@ public class MultiIterableClass extends IterableClass {
 	}
 	
 	
-	//Ëæ»ú±éÀú
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	public Iterable<String> randomized(){
 		return new Iterable<String>() {
 			
 			@Override
 			public Iterator<String> iterator() {
-				//ÓÃArrayList()°üÆğÀ´¾ÍÊÇÎªÁË²»Ó°ÏìÔ­Ê¼wordsµÄË³Ğò
+				//ï¿½ï¿½ArrayList()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½Ë²ï¿½Ó°ï¿½ï¿½Ô­Ê¼wordsï¿½ï¿½Ë³ï¿½ï¿½
 				List<String> list = new ArrayList<String>(Arrays.asList(words));
 				Collections.shuffle(list,new Random(47));
 				return list.iterator();

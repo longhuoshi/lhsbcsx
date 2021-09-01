@@ -1,4 +1,4 @@
-package bcsx.generics;
+package main.java.bcsx.generics;
 
 /**
  * 下面的示例展示了边界的基本要素。

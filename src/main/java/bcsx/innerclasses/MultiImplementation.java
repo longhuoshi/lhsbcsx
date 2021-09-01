@@ -1,9 +1,9 @@
-package bcsx.innerclasses;
+package main.java.bcsx.innerclasses;
 
 class D{}
 abstract class E{}
 
-//用内部类实现多重继承。
+//锟斤拷锟节诧拷锟斤拷实锟街讹拷锟截继承★拷
 class Z extends D{
 	E makeE(){return new E(){};}
 }

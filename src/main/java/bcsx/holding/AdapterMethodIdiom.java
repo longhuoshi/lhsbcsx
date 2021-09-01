@@ -1,4 +1,4 @@
-package bcsx.holding;
+package main.java.bcsx.holding;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,22 +6,22 @@ import java.util.Collection;
 import java.util.Iterator;
 
 /**
- * ÊÊÅäÆ÷·½·¨¹ßÓÃ·¨
-Èç¹ûÓÐÒ»¸öIterableÀà£¬ÄãÏëÒªÌí¼ÓÒ»ÖÖ»ò¶àÖÖÔÚforeachÓï¾äÖÐÊ¹ÓÃÕâ¸öÀàµÄ·½·¨£¬
-Ó¦¸ÃÔõÃ´×öÄØ£¿ÀýÈç£¬¼ÙÉèÄãÏ£Íû¿ÉÒÔÑ¡ÔñÒÔÏòÇ°µÄ·½Ïò»òÊÇÏòºóµÄ·½Ïòµü´úÒ»¸öµ¥´Ê
-ÁÐ±í¡£Èç¹ûÖ±½Ó¼Ì³ÐÕâ¸öÀà£¬²¢¸²¸Çiterator()·½·¨£¬ÄãÖ»ÄÜÌæ»»ÏÖÓÐ·½·¨£¬¶ø²»ÄÜ
-ÊµÏÖÑ¡Ôñ¡£
-	Ò»ÖÖ½â¾ö·½°¸ÊÇËùÎ½ÊÊÅäÆ÷·½·¨µÄ¹ßÓÃ·¨¡£¡°ÊÊÅäÆ÷¡±²¿·ÖÀ´×ÔÓÚÉè¼ÆÄ£Ê½¡£ÒòÎªÄã±ØÐë
-Ìá¹©ÌØ¶¨½Ó¿ÚÒÔÂú×ãforeachÓï¾ä¡£µ±ÄãÓÐÒ»¸ö½Ó¿Ú²¢ÐèÒªÁíÒ»¸ö½Ó¿ÚÊ±£¬±àÐ´ÊÊÅäÆ÷¾Í
-¿ÉÒÔ½â¾öÎÊÌâ¡£ÕâÀï£¬ÎÒÏ£ÍûÔÚÄ¬ÈÏµÄÇ°Ïòµü´úÆ÷µÄ»ù´¡ÉÏ£¬Ìí¼Ó²úÉú·´Ïòµü´úÆ÷µÄÄÜÁ¦¡£
-Òò´ËÎÒ²»ÄÜÊ¹ÓÃ¸²¸Ç£¬¶øÊÇÌí¼ÓÁíÒ»¸öÄÜ²úÉúIterable¶ÔÏóµÄ·½·¨£¬¸Ã ¶ÔÏó¿ÉÒÔÓÃÓÚforeach
-Óï¾ä¡£ÕýÈçÄãËù¼û£¬ÕâÊ¹µÃÎÒÃÇ¿ÉÒÔÌá¹©¶àÖÖÊ¹ÓÃforeachµÄ·½Ê½¡£
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã·ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Iterableï¿½à£¬ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½Ò»ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½foreachï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½
+Ó¦ï¿½ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½Ø£ï¿½ï¿½ï¿½ï¿½ç£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½Ð±ï¿½ï¿½ï¿½ï¿½Ö±ï¿½Ó¼Ì³ï¿½ï¿½ï¿½ï¿½ï¿½à£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½iterator()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½ï¿½æ»»ï¿½ï¿½ï¿½Ð·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+Êµï¿½ï¿½Ñ¡ï¿½ï¿½
+	Ò»ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½á¹©ï¿½Ø¶ï¿½ï¿½Ó¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½foreachï¿½ï¿½ä¡£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ó¿Ú²ï¿½ï¿½ï¿½Òªï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ó¿ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½ï¿½ï¿½â¡£ï¿½ï¿½ï¿½ï£¬ï¿½ï¿½Ï£ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½Ïµï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½Ï£ï¿½ï¿½ï¿½Ó²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½Ê¹ï¿½Ã¸ï¿½ï¿½Ç£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ü²ï¿½ï¿½ï¿½Iterableï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½foreach
+ï¿½ï¿½ä¡£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½ï¿½á¹©ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½foreachï¿½Ä·ï¿½Ê½ï¿½ï¿½
 code
-Èç¹ûÖ±½Ó½«ral¶ÔÏóÖÃÓÚforeachÓï¾äÖÐ£¬½«µÃµ½£¨Ä¬ÈÏ£©Ç°Ïòµü´úÆ÷¡£µ«ÊÇÈç¹ûÔÚ¸Ã¶ÔÏóÉÏ
-µ÷ÓÃreversed()·½·¨£¬¾Í»á²úÉú²»Í¬µÄÐÐÎª¡£
+ï¿½ï¿½ï¿½Ö±ï¿½Ó½ï¿½ralï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½foreachï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½Ä¬ï¿½Ï£ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸Ã¶ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½reversed()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½
 
-tip:ÔÚÔ­ÓÐµÄIterableÌí¼Ó·´Ïò±éÀú¡£ÄÇ¾Í¼ÌÐøÒ»ÖÖIterableÀàÐÍ£¬ÔÙ¶îÍâÌí¼ÓÒ»¸ö
-ÄÜ²úÉúIterableµÄ·½·¨¡£
+tip:ï¿½ï¿½Ô­ï¿½Ðµï¿½Iterableï¿½ï¿½Ó·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾Í¼ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Iterableï¿½ï¿½ï¿½Í£ï¿½ï¿½Ù¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½
+ï¿½Ü²ï¿½ï¿½ï¿½Iterableï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½
  * */
 
 class ReversibleArrayList<T> extends ArrayList<T>{
@@ -62,7 +62,7 @@ public class AdapterMethodIdiom {
 			System.out.print(string+" ");
 		}
 		System.out.println();
-		//ÄæÏò±éÀú¡£
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		for (String string : ral.reversed()) {
 			System.out.print(string+" ");
 		}

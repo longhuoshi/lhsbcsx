@@ -1,4 +1,4 @@
-package bcsx.generics.coffee;
+package main.java.bcsx.generics.coffee;
 
 public class Coffee {
 	private static long counter = 0;

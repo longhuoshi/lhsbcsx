@@ -1,4 +1,4 @@
-package bcsx.holding;
+package main.java.bcsx.holding;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,22 +7,22 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * ¾ÍÏñÏÂÃæÕâÑù£º
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 code
-ÒâÊ¶µ½Arrays.asList()²úÉúµÄList¶ÔÏó»áÊ¹ÓÃµ×²ãÊı×é×÷ÎªÆäÎïÀíÊµÏÖÊÇºÜÖØÒªµÄ¡£Ö»ÒªÄãÖ´ĞĞ
-µÄ²Ù×÷»áĞŞ¸ÄÕâ¸öList£¬²¢ÇÒÄã²»ÏëÔ­À´µÄÊı×é±»ĞŞ¸Ä£¬ÄÇÃ´Äã¾ÍÓ¦¸ÃÔÚÁíÒ»¸öÈİÆ÷ÖĞ´´½¨Ò»¸ö¸±±¾¡£
+ï¿½ï¿½Ê¶ï¿½ï¿½Arrays.asList()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Listï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ãµ×²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½Çºï¿½ï¿½ï¿½Òªï¿½Ä¡ï¿½Ö»Òªï¿½ï¿½Ö´ï¿½ï¿½
+ï¿½Ä²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ş¸ï¿½ï¿½ï¿½ï¿½Listï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ã²»ï¿½ï¿½Ô­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é±»ï¿½Ş¸Ä£ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ´ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * */
 public class ModifyingArraysAsList {
 	public static void main(String[] args) {
 		Random rand = new Random(47);
 		Integer[] ia = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-		List<Integer> list1 = new ArrayList<Integer>(Arrays.asList(ia));//ArrayList°ü×°¹ıµÄÊı×é
+		List<Integer> list1 = new ArrayList<Integer>(Arrays.asList(ia));//ArrayListï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		System.out.println("Before shuffling:"+list1);
 		Collections.shuffle(list1,rand);
 		System.out.println("After shuffling:"+list1);
 		System.out.println("Array:"+Arrays.toString(ia));
 		System.out.println("---------------------------------------");
-		List<Integer> list2 = Arrays.asList(ia);//Ã»±»ArrayList°ü×°¹ıµÄÊı×é
+		List<Integer> list2 = Arrays.asList(ia);//Ã»ï¿½ï¿½ArrayListï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		System.out.println("Before shuffling:"+list2);
 		Collections.shuffle(list2,rand);
 		System.out.println("After shuffling:"+list2);

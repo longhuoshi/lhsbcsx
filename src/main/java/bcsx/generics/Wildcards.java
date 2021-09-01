@@ -1,4 +1,4 @@
-package bcsx.generics;
+package main.java.bcsx.generics;
 
 /**
  * @author l
@@ -107,7 +107,7 @@ public class Wildcards {
         Long r12 = wildSubtype(bounded,lng);
 
         wildSupertype(raw,lng);//Warnings
-        //Unchecked assignment: 'bcsx.generics.Holder' to 'bcsx.generics.Holder<? super java.lang.Long>'
+        //Unchecked assignment: 'main.java.bcsx.generics.Holder' to 'main.java.bcsx.generics.Holder<? super java.lang.Long>'
         wildSupertype(qualified,lng);
 //        wildSupertype(unbouded,lng);//Error
         //'wildSupertype(Holder<? super T>, T)' in 'Wildcards' cannot be applied to '(Holder<capture<?>>, Long)'

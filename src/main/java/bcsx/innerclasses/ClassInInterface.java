@@ -1,6 +1,6 @@
-package bcsx.innerclasses;
+package main.java.bcsx.innerclasses;
 /**
- * 接口内部 的类
+ * 锟接匡拷锟节诧拷 锟斤拷锟斤拷
  * */
 public interface ClassInInterface {
 	void howdy();

@@ -1,7 +1,7 @@
-package bcsx.generics;
+package main.java.bcsx.generics;
 
-import bcsx.net.mindview.util.*;
-import static bcsx.net.mindview.util.Tuple.*;
+import main.java.bcsx.net.mindview.util.*;
+import static main.java.bcsx.net.mindview.util.Tuple.*;
 
 public class TupleTest2 {
 	static TwoTuple<String,Integer> f(){

@@ -1,15 +1,15 @@
-package bcsx.typeinfo;
+package main.java.bcsx.typeinfo;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import bcsx.net.mindview.util.MapData;
-import bcsx.typeinfo.pets.LiteralPetCreator;
-import bcsx.typeinfo.pets.Pet;
-import bcsx.typeinfo.pets.Pets;
+import main.java.bcsx.net.mindview.util.MapData;
+import main.java.bcsx.typeinfo.pets.LiteralPetCreator;
+import main.java.bcsx.typeinfo.pets.Pet;
+import main.java.bcsx.typeinfo.pets.Pets;
 
 /**
- * 14.3.2 ¶¯Ì¬µÄinstanceof¡£
+ * 14.3.2 ï¿½ï¿½Ì¬ï¿½ï¿½instanceofï¿½ï¿½
  *  Using isInstance()
  * */
 public class PetCount3 {
@@ -54,7 +54,7 @@ public class PetCount3 {
 		
 	}
 	
-	/**²âÊÔÓÃ¹ýµÄ¡£*/
+	/**ï¿½ï¿½ï¿½ï¿½ï¿½Ã¹ï¿½ï¿½Ä¡ï¿½*/
 	public static void test(Iterable<Class<? extends Pet>> genK, Integer value){
 		for(Class<? extends Pet> key : genK) {
 		      System.out.println(key);

@@ -1,43 +1,43 @@
-package myjava;
+package main.java.myjava;
 
-//»Øµ÷½Ó¿Ú
+//å›è°ƒæ¥å£
 interface CallBack2{
 	void receiveResult(int result);
 }
-//Ìá¹©·şÎñ
+//æä¾›æœåŠ¡
 class OfferServer2{
 	private CallBack2 cb;
-	//×¢²á»Øµ÷º¯Êı
+	//æ³¨å†Œå›è°ƒå‡½æ•°
 	public boolean register(CallBack2 cb){
 		this.cb = cb;
 		return true;
 	}
-	
+
 	public void dojob(int num,int num2){
 		if(cb !=null){
-			//ÒµÎñÂß¼­Ëã·¨ 
+			//ä¸šåŠ¡é€»è¾‘ç®—æ³•
 			int result = num + num2;
-			//´¥·¢»Øµ÷·½·¨£¬°Ñ´¦ÀíºÃµÄ½á¹û·¢ËÍ³öÈ¥
+			//è§¦å‘å›è°ƒæ–¹æ³•ï¼ŒæŠŠå¤„ç†å¥½çš„ç»“æœå‘é€å‡ºå»
 			cb.receiveResult(result);
 		}else{
-			System.out.println("Çë×¢²á»Øµ÷º¯Êı!");
+			System.out.println("è¯·æ³¨å†Œå›è°ƒå‡½æ•°!");
 		}
 	}
 }
 
-//±»·şÎñµÄ¶ÔÏó £¬¼Ì³Ğ»Øµ÷½Ó¿Ú¡£
+//è¢«æœåŠ¡çš„å¯¹è±¡ ï¼Œç»§æ‰¿å›è°ƒæ¥å£ã€‚
 class AnyPerson2 implements CallBack2{
 	private String name;
 	public AnyPerson2(String name,OfferServer2 os){
 		this.name = name;
-		//·şÎñ×¢²á
+		//æœåŠ¡æ³¨å†Œ
 		os.register(this);
 	}
-	
-	//½ÓÊÜ·şÎñ¶Ë´¦ÀíºÃµÄ½á¹û
+
+	//æ¥å—æœåŠ¡ç«¯å¤„ç†å¥½çš„ç»“æœ
 	@Override
 	public void receiveResult(int result) {
-		System.out.println(name+"µÄ³É¼¨ÊÇ£º"+result);
+		System.out.println(name+"çš„æˆç»©æ˜¯ï¼š"+result);
 	}
 }
 
@@ -45,8 +45,8 @@ public class CallBackTest2 {
 	public static void main(String[] args) {
 		final OfferServer2 os = new OfferServer2();
 		os.dojob(2, 66);
-		AnyPerson2 student = new AnyPerson2("ÕÅÈı",os);
+		AnyPerson2 student = new AnyPerson2("å¼ ä¸‰",os);
 		os.dojob(2, 66);
-		
+
 	}
 }

@@ -1,24 +1,24 @@
 //: strings/JGrep.java
 // A very simple version of the "grep" program.
 // {Args: JGrep.java "\\b[Ssct]\\w+"}
-package bcsx.strings;
+package main.java.bcsx.strings;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import bcsx.net.mindview.util.TextFile;
+import main.java.bcsx.net.mindview.util.TextFile;
 /**
- * 演示：如何用正则表达式在一个文件进行搜索匹配操作。
+ * 锟斤拷示锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟绞斤拷锟揭伙拷锟斤拷募锟斤拷锟斤拷锟斤拷锟斤拷锟狡ワ拷锟斤拷锟斤拷锟斤拷
  * 
- * 读入所有行，并存储在一个arraylist里面。
- * 在for循环外创建一个空的Matcher对象 。
- * 然后用reset方法每次为Matcher加载一行输入。
+ * 锟斤拷锟斤拷锟斤拷锟斤拷锟叫ｏ拷锟斤拷锟芥储锟斤拷一锟斤拷arraylist锟斤拷锟芥。
+ * 锟斤拷for循锟斤拷锟解创锟斤拷一锟斤拷锟秸碉拷Matcher锟斤拷锟斤拷 锟斤拷
+ * 然锟斤拷锟斤拷reset锟斤拷锟斤拷每锟斤拷为Matcher锟斤拷锟斤拷一锟斤拷锟斤拷锟诫。
  * 
  * */
 public class JGrep {
 
 	public static void main(String[] args) {
-		//搜索以[Ssct]开头的单词。
+		//锟斤拷锟斤拷锟斤拷[Ssct]锟斤拷头锟侥碉拷锟绞★拷
 		String regex = "\\b[Ssct]\\w+";
 		Pattern p = Pattern.compile(regex);
 		int index = 0;

@@ -1,13 +1,13 @@
-package bcsx.holding;
+package main.java.bcsx.holding;
 
 import java.util.Iterator;
 /**
- * Ö®ËùÒÔCollectionÄÜ¹»ÓëforeachÒ»Æğ¹¤×÷£¬ÊÇÒòÎªjava se5ÒıÈëÁËĞÂµÄ±»³ÆÎªIterableµÄ½Ó¿Ú£¬
-¸Ã½Ó¿Ú°üº¬ÁËÒ»¸öÄÜ¹»²úÉúIteratorµÄiterator()·½·¨£¬²¢ÇÒIterable½Ó¿Ú±»foreachÓÃÀ´ÔÚĞòÁĞÖĞÒÆ¶¯¡£
-Òò´ËÈç¹ûÄã´´½¨ÁËÈÎºÎÊµÏÖIterableµÄÀà£¬¶¼¿ÉÒÔ½«ËüÓÃÓÚforeachÓï¾äÖĞ£º
+ * Ö®ï¿½ï¿½ï¿½ï¿½Collectionï¿½Ü¹ï¿½ï¿½ï¿½foreachÒ»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªjava se5ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½ÎªIterableï¿½Ä½Ó¿Ú£ï¿½
+ï¿½Ã½Ó¿Ú°ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ü¹ï¿½ï¿½ï¿½ï¿½ï¿½Iteratorï¿½ï¿½iterator()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Iterableï¿½Ó¿Ú±ï¿½foreachï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ã´´ï¿½ï¿½ï¿½ï¿½ï¿½Îºï¿½Êµï¿½ï¿½Iterableï¿½ï¿½ï¿½à£¬ï¿½ï¿½ï¿½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½foreachï¿½ï¿½ï¿½ï¿½Ğ£ï¿½
 code
-iterator()·½·¨·µ»ØµÄÊÇÊµÏÖÁËIterator<String>µÄÄäÃûÄÚ²¿ÀàµÄÊµÀı£¬¸ÃÄäÃûÄÚ²¿Àà¿ÉÒÔ±éÀúÊı×é
-ÖĞµÄËùÓĞµ¥´Ê¡£
+iterator()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½Iterator<String>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½Ğµï¿½ï¿½ï¿½ï¿½Ğµï¿½ï¿½Ê¡ï¿½
  * */
 public class IterableClass implements Iterable<String> {
 	protected String[] words = ("And that is how we know the Earth to be banana-shaped.").split(" ");

@@ -1,8 +1,8 @@
-package bcsx.strings;
+package main.java.bcsx.strings;
 
 /**
- * String×Ô´øµÄ×îºóÒ»¸öÕýÔò±í´ïÊ½¹¤¾ßÊÇ¡±Ìæ»»¡°£¬Äã¿ÉÒÔÖ»Ìæ»»ÕýÔò±í´ïÊ½µÚÒ»¸öÆ¥Åä
- * µÄ×Ó´®£¬»òÊÇÌæ»»ËùÓÐÆ¥ÅäµÄµØ·½¡£
+ * Stringï¿½Ô´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¡ï¿½ï¿½æ»»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö»ï¿½æ»»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½Ò»ï¿½ï¿½Æ¥ï¿½ï¿½
+ * ï¿½ï¿½ï¿½Ó´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ»»ï¿½ï¿½ï¿½ï¿½Æ¥ï¿½ï¿½ÄµØ·ï¿½ï¿½ï¿½
  * */
 
 public class Replacing {

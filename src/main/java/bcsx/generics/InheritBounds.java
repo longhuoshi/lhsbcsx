@@ -1,4 +1,4 @@
-package bcsx.generics;
+package main.java.bcsx.generics;
 
 /**
  * 演示如何在继承的每个层次上添加边界限制

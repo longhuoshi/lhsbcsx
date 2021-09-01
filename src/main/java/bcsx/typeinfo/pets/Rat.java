@@ -1,5 +1,5 @@
 //: typeinfo/pets/Rat.java
-package  bcsx.typeinfo.pets;
+package  main.java.bcsx.typeinfo.pets;
 
 public class Rat extends Rodent {
   public Rat(String name) { super(name); }

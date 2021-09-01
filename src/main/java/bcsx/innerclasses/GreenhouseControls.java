@@ -1,10 +1,10 @@
-package bcsx.innerclasses;
+package main.java.bcsx.innerclasses;
 
-import bcsx.innerclasses.controller.Controller;
-import bcsx.innerclasses.controller.Event;
+import main.java.bcsx.innerclasses.controller.Controller;
+import main.java.bcsx.innerclasses.controller.Event;
 
 /**
- * ×÷ÎªµäÐÍµÄÓ¦ÓÃ³ÌÐò¿ò¼Ü£¬GreenhouseControls¼Ì³Ð×ÔController:
+ * ï¿½ï¿½Îªï¿½ï¿½ï¿½Íµï¿½Ó¦ï¿½Ã³ï¿½ï¿½ï¿½ï¿½Ü£ï¿½GreenhouseControlsï¿½Ì³ï¿½ï¿½ï¿½Controller:
  * */
 public class GreenhouseControls extends Controller {
 	

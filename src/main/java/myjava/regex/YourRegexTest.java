@@ -1,4 +1,4 @@
-package myjava.regex;
+package main.java.myjava.regex;
 
 import java.util.Arrays;
 
