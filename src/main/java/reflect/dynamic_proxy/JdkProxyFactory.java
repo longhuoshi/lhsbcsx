@@ -1,6 +1,5 @@
-package reflex;
+package reflect.dynamic_proxy;
 
-import javax.naming.event.ObjectChangeListener;
 import java.lang.reflect.Proxy;
 
 /**
