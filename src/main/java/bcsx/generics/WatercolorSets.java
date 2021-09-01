@@ -3,9 +3,9 @@ package main.java.bcsx.generics;
 import java.util.EnumSet;
 import java.util.Set;
 
-import main.java.bcsx.generics.watercolors.*;
+import main.java.bcsx.main.java.generics.watercolors.*;
 import main.java.bcsx.net.mindview.util.Sets;
-import static main.java.bcsx.generics.watercolors.Watercolors.*;
+import static main.java.bcsx.main.java.generics.watercolors.Watercolors.*;
 import static main.java.bcsx.net.mindview.util.Sets.*;
 
 public class WatercolorSets {

@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Queue;
 import java.util.Set;
 
-import main.java.bcsx.generics.coffee.Coffee;
-import main.java.bcsx.generics.coffee.CoffeeGenerator;
+import main.java.bcsx.main.java.generics.coffee.Coffee;
+import main.java.bcsx.main.java.generics.coffee.CoffeeGenerator;
 import main.java.bcsx.net.mindview.util.BasicGenerator;
 import main.java.bcsx.net.mindview.util.Generator;
 

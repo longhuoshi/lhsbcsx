@@ -2,8 +2,8 @@ package main.java.bcsx.strings;
 
 import java.util.ArrayList;
 
-import main.java.bcsx.generics.coffee.Coffee;
-import main.java.bcsx.generics.coffee.CoffeeGenerator;
+import main.java.bcsx.main.java.generics.coffee.Coffee;
+import main.java.bcsx.main.java.generics.coffee.CoffeeGenerator;
 /**
  * java�е�ÿ����Ӹ����϶��Ǽ̳���Object����׼��������ȻҲ�����⡣��������඼��toString����������
 ��д�˸÷�����ʹ�������ɵ�String����ܹ�������������Լ������������Ķ�������ArrayList.toString()��

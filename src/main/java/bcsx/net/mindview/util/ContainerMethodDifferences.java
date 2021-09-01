@@ -19,7 +19,7 @@ import java.util.SortedMap;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-import main.java.bcsx.generics.watercolors.Watercolors;
+import main.java.bcsx.main.java.generics.watercolors.Watercolors;
 
 public class ContainerMethodDifferences {
 	static Set<String> methodSet(Class<?> type){

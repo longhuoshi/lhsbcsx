@@ -1,6 +1,6 @@
 //: generics/coffee/CoffeeGenerator.java
 // Generate different types of Coffee:
-package main.java.bcsx.generics.coffee;
+package main.java.bcsx.main.java.generics.coffee;
 
 import java.util.Iterator;
 import java.util.Random;
