@@ -1,6 +1,6 @@
-package main.java.bcsx.typeinfo;
+package bcsx.typeinfo;
 
-import main.java.bcsx.net.mindview.util.CountingGenerator.String;
+import bcsx.net.mindview.util.CountingGenerator.String;
 
 public class BoundedClassReferences {
 

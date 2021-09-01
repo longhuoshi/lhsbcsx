@@ -1,4 +1,4 @@
-package main.java.bcsx.generics;
+package bcsx.generics;
 
 import java.lang.reflect.Array;
 import java.util.Random;

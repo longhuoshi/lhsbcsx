@@ -1,4 +1,4 @@
-package main.java.bcsx.typeinfo.interfacea;
+package bcsx.typeinfo.interfacea;
 
 public interface A {
 	void f();

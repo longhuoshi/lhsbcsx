@@ -1,6 +1,6 @@
 package bcsx.generics;
 
-import bcsx.main.java.generics.coffee.Coffee;
+import bcsx.generics.coffee.Coffee;
 
 import java.util.ArrayList;
 import java.util.Collection;

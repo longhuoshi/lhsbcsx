@@ -1,4 +1,4 @@
-package main.java.bcsx.innerclasses;
+package bcsx.innerclasses;
 
 public class Parcel11 {
 	private static class ParcelContents implements Contents{

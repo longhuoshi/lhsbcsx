@@ -138,7 +138,7 @@ public class ListPerformance {
                 int size = tp.size;
                 for (int i = 0; i < loops; i++) {
                     container.clear();
-                    container.addAll(new CountingIntegerList(size));
+                    container.addAll(new bcsx.net.mindview.util.CountingIntegerList(size));
                     while (container.size() >0)
                         container.removeFirst();
                 }
@@ -194,7 +194,7 @@ public class ListPerformance {
             // produces a non-resizeable array-backed list:
             @Override
             protected List<Integer> initialize(int size) {
-                Integer[] ia = Generated.array(Integer.class,new CountingGenerator.Integer(),size);
+                Integer[] ia = Generated.array(Integer.class,new bcsx.net.mindview.util.CountingGenerator.Integer(),size);
                 return Arrays.asList(ia);
             }
         };

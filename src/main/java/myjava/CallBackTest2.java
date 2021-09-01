@@ -1,4 +1,4 @@
-package main.java.myjava;
+package myjava;
 
 //回调接口
 interface CallBack2{

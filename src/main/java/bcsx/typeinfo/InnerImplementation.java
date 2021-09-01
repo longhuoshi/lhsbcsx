@@ -1,6 +1,6 @@
-package main.java.bcsx.typeinfo;
+package bcsx.typeinfo;
 
-import main.java.bcsx.typeinfo.interfacea.A;
+import bcsx.typeinfo.interfacea.A;
 
 /**
  * Private inner class can't hide from reflection

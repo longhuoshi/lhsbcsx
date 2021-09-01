@@ -1,5 +1,5 @@
 //: net/mindview/util/ContainerMethodDifferences.java
-package main.java.bcsx.net.mindview.util;
+package bcsx.net.mindview.util;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -19,7 +19,7 @@ import java.util.SortedMap;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-import main.java.bcsx.main.java.generics.watercolors.Watercolors;
+import bcsx.main.java.generics.watercolors.Watercolors;
 
 public class ContainerMethodDifferences {
 	static Set<String> methodSet(Class<?> type){
@@ -41,7 +41,7 @@ public class ContainerMethodDifferences {
 	static{object.add("clone");}
 	static 	void difference(Class<?> superset,Class<?> subset){
 		System.out.print(superset.getSimpleName()+" extends " + subset.getSimpleName()+", adds :");
-		Set<String> comp = Sets.difference(methodSet(superset), methodSet(subset));
+		Set<String> comp = bcsx.net.mindview.util.Sets.difference(methodSet(superset), methodSet(subset));
 		comp.removeAll(object);
 		System.out.println(comp);
 		interfaces(superset);

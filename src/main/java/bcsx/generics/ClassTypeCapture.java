@@ -1,4 +1,4 @@
-package main.java.bcsx.generics;
+package bcsx.generics;
 
 import java.util.HashMap;
 import java.util.Map;

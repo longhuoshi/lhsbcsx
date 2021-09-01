@@ -1,6 +1,6 @@
-package main.java.bcsx.typeinfo;
+package bcsx.typeinfo;
 
-import main.java.bcsx.typeinfo.interfacea.A;
+import bcsx.typeinfo.interfacea.A;
 
 /**
  * Anonymous inner calsses can't hide from reflection.

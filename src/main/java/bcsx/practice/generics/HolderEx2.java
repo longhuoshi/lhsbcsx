@@ -1,4 +1,4 @@
-package main.java.bcsx.practice.generics;
+package bcsx.practice.generics;
 
 class Robot{
 	private String name;

@@ -1,6 +1,6 @@
-package main.java.bcsx.generics;
+package bcsx.generics;
 
-import main.java.bcsx.net.mindview.util.CountingGenerator;
+import bcsx.net.mindview.util.CountingGenerator;
 
 import java.util.HashMap;
 import java.util.Map;

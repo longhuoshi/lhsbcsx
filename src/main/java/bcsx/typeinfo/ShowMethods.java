@@ -1,4 +1,4 @@
-package main.java.bcsx.typeinfo;
+package bcsx.typeinfo;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;

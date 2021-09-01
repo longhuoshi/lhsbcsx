@@ -1,4 +1,4 @@
-package main.java.bcsx.generics;
+package bcsx.generics;
 
 import jdk.nashorn.internal.runtime.PrototypeObject;
 

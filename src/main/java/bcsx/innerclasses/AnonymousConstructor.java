@@ -1,4 +1,4 @@
-package main.java.bcsx.innerclasses;
+package bcsx.innerclasses;
 
 abstract class Base{
 	public Base(int i){

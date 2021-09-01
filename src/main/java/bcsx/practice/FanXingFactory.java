@@ -1,4 +1,4 @@
-package main.java.bcsx.practice;
+package bcsx.practice;
 
 import jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode;
 

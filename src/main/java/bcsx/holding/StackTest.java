@@ -1,6 +1,6 @@
-package main.java.bcsx.holding;
+package bcsx.holding;
 
-import main.java.bcsx.net.mindview.util.Stack;
+import bcsx.net.mindview.util.Stack;
 
 public class StackTest {
 

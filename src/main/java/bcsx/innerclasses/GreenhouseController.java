@@ -1,6 +1,6 @@
-package main.java.bcsx.innerclasses;
+package bcsx.innerclasses;
 
-import main.java.bcsx.innerclasses.controller.Event;
+import bcsx.innerclasses.controller.Event;
 
 public class GreenhouseController {
 

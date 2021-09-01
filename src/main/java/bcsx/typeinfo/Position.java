@@ -1,4 +1,4 @@
-package main.java.bcsx.typeinfo;
+package bcsx.typeinfo;
 
 class Position {
 	private String title;

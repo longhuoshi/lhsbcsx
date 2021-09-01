@@ -1,4 +1,4 @@
-package main.java.bcsx.holding;
+package bcsx.holding;
 /**
  * ʹ�÷��ͺ�
  * ������������ֹOrange���õ�apples�У���˱����һ�������ڴ��󣬶�����������ʱ�����

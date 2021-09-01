@@ -1,4 +1,4 @@
-package main.java.bcsx.exceptions;
+package bcsx.exceptions;
 /**
  * �����ڹ���׶ο��ܻ��׳��쳣������Ҫ��������࣬�ȫ��ʹ�÷�ʽ��ʹ��Ƕ�׵�try�Ӿ䣺
 code  Cleanup.java

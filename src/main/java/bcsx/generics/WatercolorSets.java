@@ -1,12 +1,12 @@
-package main.java.bcsx.generics;
+package bcsx.generics;
 
 import java.util.EnumSet;
 import java.util.Set;
 
-import main.java.bcsx.main.java.generics.watercolors.*;
-import main.java.bcsx.net.mindview.util.Sets;
-import static main.java.bcsx.main.java.generics.watercolors.Watercolors.*;
-import static main.java.bcsx.net.mindview.util.Sets.*;
+import bcsx.main.java.generics.watercolors.*;
+import bcsx.net.mindview.util.Sets;
+import static bcsx.main.java.generics.watercolors.Watercolors.*;
+import static bcsx.net.mindview.util.Sets.*;
 
 public class WatercolorSets {
 	public static void main(String[] args) {

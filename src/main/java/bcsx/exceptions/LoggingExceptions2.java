@@ -1,4 +1,4 @@
-package main.java.bcsx.exceptions;
+package bcsx.exceptions;
 
 import java.io.PrintStream;
 import java.io.PrintWriter;

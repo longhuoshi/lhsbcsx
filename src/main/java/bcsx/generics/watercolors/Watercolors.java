@@ -1,4 +1,4 @@
-package main.java.bcsx.main.java.generics.watercolors;
+package bcsx.main.java.generics.watercolors;
 
 public enum Watercolors {
 	ZINC, LEMON_YELLOW, MEDIUM_YELLOW, DEEP_YELLOW, ORANGE,

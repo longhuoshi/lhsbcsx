@@ -1,5 +1,5 @@
 //: net/mindview/util/Sets.java
-package main.java.bcsx.practice;
+package bcsx.practice;
 
 import java.util.EnumSet;
 import java.util.HashSet;

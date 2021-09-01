@@ -1,4 +1,4 @@
-package main.java.bcsx.strings;
+package bcsx.strings;
 
 public class Rudolph {
 

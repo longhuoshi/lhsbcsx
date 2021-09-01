@@ -1,4 +1,4 @@
-package main.java.bcsx.exceptions;
+package bcsx.exceptions;
 /**
  * һ�ָ��Ӽ򵥵Ķ�ʧ�쳣�ķ�ʽ�Ǵ�finally�Ӿ��з��أ�
 code 

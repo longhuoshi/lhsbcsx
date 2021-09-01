@@ -1,4 +1,4 @@
-package main.java.bcsx.generics;
+package bcsx.generics;
 
 public class GenericArray2<T> {
 	private Object[] array;

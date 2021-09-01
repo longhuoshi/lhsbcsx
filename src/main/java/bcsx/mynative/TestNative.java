@@ -1,4 +1,4 @@
-package main.java.bcsx.mynative;
+package bcsx.mynative;
 
 public class TestNative {
 	static{

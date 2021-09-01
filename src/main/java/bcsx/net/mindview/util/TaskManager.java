@@ -1,6 +1,6 @@
 //: net/mindview/util/TaskManager.java
 // Managing and executing a queue of tasks.
-package main.java.bcsx.net.mindview.util;
+package bcsx.net.mindview.util;
 import java.util.concurrent.*;
 import java.util.*;
 

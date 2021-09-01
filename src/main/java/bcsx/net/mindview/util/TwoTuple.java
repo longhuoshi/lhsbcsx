@@ -1,4 +1,4 @@
-package main.java.bcsx.net.mindview.util;
+package bcsx.net.mindview.util;
 
 public class TwoTuple<A, B> {
 	public final A first;

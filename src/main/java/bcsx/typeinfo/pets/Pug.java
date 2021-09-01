@@ -1,5 +1,5 @@
 //: typeinfo/pets/Pug.java
-package  main.java.bcsx.typeinfo.pets;
+package  bcsx.typeinfo.pets;
 
 public class Pug extends Dog {
   public Pug(String name) { super(name); }

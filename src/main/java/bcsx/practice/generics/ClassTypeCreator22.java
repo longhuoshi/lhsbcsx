@@ -1,7 +1,7 @@
-package main.java.bcsx.practice.generics;
+package bcsx.practice.generics;
 
 import java.lang.reflect.InvocationTargetException;
-import static main.java.bcsx.net.mindview.util.Print.*;
+import static bcsx.net.mindview.util.Print.*;
 
 /**
  * 15.8.1 创建类型实例。 
@@ -58,14 +58,14 @@ public class ClassTypeCreator22 {//ClassTypeCreator22<T>
 //		ClassTypeCreator22<House> cth = new ClassTypeCreator22<House>(House.class);
 		try {
 //			Building b = (Building) ctb.createNew("Building");
-//			House h = (House) cth.createNew("main.java.bcsx.practice.main.java.generics.House");
-//			House h2 = (House) cth.createNew("main.java.bcsx.practice.main.java.generics.House","shanghai");
+//			House h = (House) cth.createNew("bcsx.practice.main.java.generics.House");
+//			House h2 = (House) cth.createNew("bcsx.practice.main.java.generics.House","shanghai");
 			
 			
 			
 			ClassTypeCreator22 ct = new ClassTypeCreator22();
-			Building b = (Building) ct.createNew("main.java.bcsx.practice.main.java.generics.Building");
-			House h3 = (House) ct.createNew("main.java.bcsx.practice.main.java.generics.House","shanghai",1000);
+			Building b = (Building) ct.createNew("bcsx.practice.main.java.generics.Building");
+			House h3 = (House) ct.createNew("bcsx.practice.main.java.generics.House","shanghai",1000);
 			print(b);
 			print(h3);
 			

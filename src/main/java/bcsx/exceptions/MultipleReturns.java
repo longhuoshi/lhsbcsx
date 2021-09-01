@@ -1,4 +1,4 @@
-package main.java.bcsx.exceptions;
+package bcsx.exceptions;
 /**
  * 12.8.2 ��return��ʹ��finally.
 ��Ϊfinally�Ӿ����ǻ�ִ�еģ�������һ�������У����ԴӶ���㷵�أ����ҿ��Ա�֤��Ҫ

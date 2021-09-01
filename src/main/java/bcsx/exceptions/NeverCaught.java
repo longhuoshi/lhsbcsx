@@ -1,4 +1,4 @@
-package main.java.bcsx.exceptions;
+package bcsx.exceptions;
 
 
 /**
@@ -32,7 +32,7 @@ if(t == null)
 	����������������͵��쳣�ᷢ��ʲô���أ���Ϊ������û������������϶��쳣˵������ǿ�Ƽ�飬
 RuntimeException���͵��쳣Ҳ��ᴩԽ���е�ִ��·��ֱ��main()�����������ᱻ����Ҫ���׵���
 ������ʲô������������������ӣ�
-main.java.bcsx.exceptions NeverCaught.java
+bcsx.exceptions NeverCaught.java
 ���ܶ����Ѿ����֣�RuntimeException(���κδ����̳е��쳣)��һ�����������������쳣���ͣ�
 ����������Ҫ�쳣˵������������������System.err:
 

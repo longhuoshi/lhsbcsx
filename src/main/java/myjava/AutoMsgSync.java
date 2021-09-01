@@ -1,4 +1,4 @@
-package main.java.myjava;
+package myjava;
 
 import java.util.Timer;
 import java.util.TimerTask;

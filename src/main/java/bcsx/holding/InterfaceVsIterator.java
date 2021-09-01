@@ -1,4 +1,4 @@
-package main.java.bcsx.holding;
+package bcsx.holding;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import main.java.bcsx.typeinfo.pets.*;
+import bcsx.typeinfo.pets.*;
 
 public class InterfaceVsIterator {
 	public static void display(Iterator<Pet> it){

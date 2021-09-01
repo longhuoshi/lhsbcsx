@@ -1,4 +1,4 @@
-package main.java.bcsx.strings;
+package bcsx.strings;
 /**
  * String �Դ���һ���ǳ����õ�������ʽ����split()�������书�� �ǡ����ַ���
  * ��������ʽƥ��ĵط��п�����
@@ -18,7 +18,7 @@ public class Splitting {
 		Splitting s = new Splitting();
 		Class c2 = s.getClass();
 		try {
-			Class c3 = Class.forName("main.java.bcsx.strings.Splitting");
+			Class c3 = Class.forName("bcsx.strings.Splitting");
 			
 			System.out.println(c.getName());
 			System.out.println(c2.getCanonicalName());

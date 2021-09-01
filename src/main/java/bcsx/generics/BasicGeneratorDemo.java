@@ -1,9 +1,9 @@
-package main.java.bcsx.generics;
+package bcsx.generics;
 
 import java.util.List;
 
-import main.java.bcsx.net.mindview.util.BasicGenerator;
-import main.java.bcsx.net.mindview.util.Generator;
+import bcsx.net.mindview.util.BasicGenerator;
+import bcsx.net.mindview.util.Generator;
 
 public class BasicGeneratorDemo {
 

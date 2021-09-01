@@ -1,6 +1,6 @@
 //: net/mindview/util/TaskItem.java
 // A Future and the Callable that produced it.
-package main.java.bcsx.net.mindview.util;
+package bcsx.net.mindview.util;
 import java.util.concurrent.*;
 
 public class TaskItem<R,C extends Callable<R>> {

@@ -1,6 +1,6 @@
 //: net/mindview/util/PPrint.java
 // Pretty-printer for collections
-package main.java.bcsx.net.mindview.util;
+package bcsx.net.mindview.util;
 import java.util.*;
 
 public class PPrint {

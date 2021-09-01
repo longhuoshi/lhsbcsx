@@ -1,4 +1,4 @@
-package main.java.bcsx.generics;
+package bcsx.generics;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -8,10 +8,10 @@ import java.util.List;
 import java.util.Queue;
 import java.util.Set;
 
-import main.java.bcsx.main.java.generics.coffee.Coffee;
-import main.java.bcsx.main.java.generics.coffee.CoffeeGenerator;
-import main.java.bcsx.net.mindview.util.BasicGenerator;
-import main.java.bcsx.net.mindview.util.Generator;
+import bcsx.generics.coffee.Coffee;
+import bcsx.generics.coffee.CoffeeGenerator;
+import bcsx.net.mindview.util.BasicGenerator;
+import bcsx.net.mindview.util.Generator;
 
 public class Generators {
 	public static <T> Collection<T> fill(Collection<T> coll,Generator<T> gen,int n){

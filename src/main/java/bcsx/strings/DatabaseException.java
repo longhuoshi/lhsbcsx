@@ -1,4 +1,4 @@
-package main.java.bcsx.strings;
+package bcsx.strings;
 
 /**
  * 13.5.6 String.format()

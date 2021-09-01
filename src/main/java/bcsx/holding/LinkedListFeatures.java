@@ -1,12 +1,12 @@
-	package main.java.bcsx.holding;
+	package bcsx.holding;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-import main.java.bcsx.typeinfo.pets.Hamster;
-import main.java.bcsx.typeinfo.pets.Pet;
-import main.java.bcsx.typeinfo.pets.Pets;
-import main.java.bcsx.typeinfo.pets.Rat;
+import bcsx.typeinfo.pets.Hamster;
+import bcsx.typeinfo.pets.Pet;
+import bcsx.typeinfo.pets.Pets;
+import bcsx.typeinfo.pets.Rat;
 
 public class LinkedListFeatures {
 

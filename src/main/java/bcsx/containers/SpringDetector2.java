@@ -20,6 +20,6 @@ import static bcsx.net.mindview.util.Print.print;
  */
 public class SpringDetector2 {
     public static void main(String[] args)throws Exception  {
-        SpringDetector.detectSpring(Groundhog2.class);
+        bcsx.containers.SpringDetector.detectSpring(bcsx.containers.Groundhog2.class);
     }
 }

@@ -1,4 +1,4 @@
-package main.java.bcsx.innerclasses.controller;
+package bcsx.innerclasses.controller;
 /**
  * �ڲ�������ƿ��
  * 

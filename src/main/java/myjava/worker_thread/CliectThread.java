@@ -1,4 +1,4 @@
-package main.java.myjava.worker_thread;
+package myjava.worker_thread;
 
 
 import java.util.Random;

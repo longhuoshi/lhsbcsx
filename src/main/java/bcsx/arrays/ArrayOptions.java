@@ -1,4 +1,4 @@
-package main.java.bcsx.arrays;
+package bcsx.arrays;
 
 import java.util.Arrays;
 

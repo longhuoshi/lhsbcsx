@@ -1,13 +1,19 @@
 //: net/mindview/util/Print.java
 // Print methods that can be used without
 // qualifiers, using Java SE5 static imports:
-package main.java.bcsx.net.mindview.util;
+package bcsx.net.mindview.util;
 import java.io.*;
 
 public class Print {
   // Print with a newline:
   public static void print(Object obj) {
     System.out.println(obj);
+  }
+  public static void println(Object obj) {
+    System.out.println(obj);
+  }
+  public static void println() {
+    System.out.println();
   }
   // Print a newline by itself:
   public static void print() {
@@ -22,4 +28,5 @@ public class Print {
   printf(String format, Object... args) {
     return System.out.printf(format, args);
   }
+
 } ///:~

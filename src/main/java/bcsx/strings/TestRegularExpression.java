@@ -1,4 +1,4 @@
-package main.java.bcsx.strings;
+package bcsx.strings;
 /**
  * ������ ���޵�String�࣬���Ǹ�Ը�⹹��ǿ�� �ı��ʽ����
  * ��static Pattern.compile()�������������������ʽ���ɡ�

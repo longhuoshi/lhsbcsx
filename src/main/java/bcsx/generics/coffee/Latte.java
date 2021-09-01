@@ -1,4 +1,6 @@
-package main.java.bcsx.main.java.generics.coffee;
+package bcsx.generics.coffee;
+
+import bcsx.generics.coffee.Coffee;
 
 public class Latte extends Coffee {
 }

@@ -1,4 +1,4 @@
-package main.java.bcsx.net.mindview.util;
+package bcsx.net.mindview.util;
 
 public class BasicGenerator<T> implements Generator<T> {
 	private Class<T> type;

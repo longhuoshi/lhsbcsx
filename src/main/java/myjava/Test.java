@@ -1,4 +1,4 @@
-package main.java.myjava;
+package myjava;
 
 import java.io.BufferedInputStream;
 import java.io.File;

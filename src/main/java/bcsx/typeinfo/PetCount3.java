@@ -1,12 +1,12 @@
-package main.java.bcsx.typeinfo;
+package bcsx.typeinfo;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import main.java.bcsx.net.mindview.util.MapData;
-import main.java.bcsx.typeinfo.pets.LiteralPetCreator;
-import main.java.bcsx.typeinfo.pets.Pet;
-import main.java.bcsx.typeinfo.pets.Pets;
+import bcsx.net.mindview.util.MapData;
+import bcsx.typeinfo.pets.LiteralPetCreator;
+import bcsx.typeinfo.pets.Pet;
+import bcsx.typeinfo.pets.Pets;
 
 /**
  * 14.3.2 ��̬��instanceof��

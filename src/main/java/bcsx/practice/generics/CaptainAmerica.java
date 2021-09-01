@@ -1,4 +1,4 @@
-package main.java.bcsx.practice.generics;
+package bcsx.practice.generics;
 
 public class CaptainAmerica extends GoodGuys {
 

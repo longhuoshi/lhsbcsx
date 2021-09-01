@@ -1,8 +1,8 @@
-package main.java.bcsx.typeinfo;
+package bcsx.typeinfo;
 
-import main.java.bcsx.net.mindview.util.TypeCounter;
-import main.java.bcsx.typeinfo.pets.Pet;
-import main.java.bcsx.typeinfo.pets.Pets;
+import bcsx.net.mindview.util.TypeCounter;
+import bcsx.typeinfo.pets.Pet;
+import bcsx.typeinfo.pets.Pets;
 
 public class PetCount4 {
 

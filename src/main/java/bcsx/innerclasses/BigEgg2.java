@@ -1,4 +1,4 @@
-package main.java.bcsx.innerclasses;
+package bcsx.innerclasses;
 /**
  * ��ȷ�ļ̳�ĳ���ڲ���Ҳ�ǿ��Եġ�
  * 

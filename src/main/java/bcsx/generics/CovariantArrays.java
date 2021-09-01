@@ -1,4 +1,4 @@
-package main.java.bcsx.generics;
+package bcsx.generics;
 //下一个 NonCovariantmain.java.generics.java
 import java.util.Arrays;
 

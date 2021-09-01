@@ -1,4 +1,4 @@
-package main.java.bcsx.generics;
+package bcsx.generics;
 
 public class GenericHolder<T> {
 	private T obj;

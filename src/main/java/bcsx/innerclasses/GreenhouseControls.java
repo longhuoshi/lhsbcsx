@@ -1,7 +1,7 @@
-package main.java.bcsx.innerclasses;
+package bcsx.innerclasses;
 
-import main.java.bcsx.innerclasses.controller.Controller;
-import main.java.bcsx.innerclasses.controller.Event;
+import bcsx.innerclasses.controller.Controller;
+import bcsx.innerclasses.controller.Event;
 
 /**
  * ��Ϊ���͵�Ӧ�ó����ܣ�GreenhouseControls�̳���Controller:

@@ -1,4 +1,4 @@
-package main.java.bcsx.practice.generics;
+package bcsx.practice.generics;
 
 //generics/Ex25.java
 //TIJ4 Chapter Generics, Exercise 25, page 677

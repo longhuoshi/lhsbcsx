@@ -1,4 +1,4 @@
-package main.java.bcsx.generics;
+package bcsx.generics;
 
 abstract class GenericWithCreate<T>{
 	final T element;

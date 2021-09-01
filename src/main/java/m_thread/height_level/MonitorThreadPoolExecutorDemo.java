@@ -1,4 +1,4 @@
-package main.java.m_thread.height_level;
+package m_thread.height_level;
 
 import java.sql.SQLOutput;
 import java.util.concurrent.*;

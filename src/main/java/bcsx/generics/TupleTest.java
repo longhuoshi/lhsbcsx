@@ -1,9 +1,9 @@
-package main.java.bcsx.generics;
+package bcsx.generics;
 
-import main.java.bcsx.net.mindview.util.FiveTuple;
-import main.java.bcsx.net.mindview.util.FourTuple;
-import main.java.bcsx.net.mindview.util.ThreeTuple;
-import main.java.bcsx.net.mindview.util.TwoTuple;
+import bcsx.net.mindview.util.FiveTuple;
+import bcsx.net.mindview.util.FourTuple;
+import bcsx.net.mindview.util.ThreeTuple;
+import bcsx.net.mindview.util.TwoTuple;
 
 class Amphibian{}
 class Vehicle{}

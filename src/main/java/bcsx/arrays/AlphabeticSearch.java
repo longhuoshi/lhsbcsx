@@ -1,8 +1,8 @@
-package main.java.bcsx.arrays;
+package bcsx.arrays;
 
-import main.java.bcsx.net.mindview.util.Generated;
-import main.java.bcsx.net.mindview.util.Generator;
-import main.java.bcsx.net.mindview.util.RandomGenerator;
+import bcsx.net.mindview.util.Generated;
+import bcsx.net.mindview.util.Generator;
+import bcsx.net.mindview.util.RandomGenerator;
 
 import java.util.Arrays;
 

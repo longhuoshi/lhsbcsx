@@ -1,8 +1,8 @@
 package bcsx.generics;
 
-import bcsx.main.java.generics.coffee.Coffee;
-import bcsx.main.java.generics.coffee.Latte;
-import bcsx.main.java.generics.coffee.Mocha;
+import bcsx.generics.coffee.Coffee;
+import bcsx.generics.coffee.Latte;
+import bcsx.generics.coffee.Mocha;
 import bcsx.net.mindview.util.Generator;
 
 import java.util.ArrayList;
@@ -19,26 +19,24 @@ import java.util.function.Consumer;
  * 15.17.4 用适配器仿真潜在类型机制
  */
 
-interface Addable<T>{ void add(T t);}
+interface Addable<T> { void add(T t); }
 
 public class Fill2 {
-    //Classtoken version:
-    public static <T> void  fill(Addable<T> addable,Class<? extends T> classToken,int size){
-        for(int i = 0;i<size ; i++) {
+    // Classtoken version:
+    public static <T> void fill(Addable<T> addable,
+                                Class<? extends T> classToken, int size) {
+        for(int i = 0; i < size; i++)
             try {
                 addable.add(classToken.newInstance());
-            } catch (Exception e) {
-                throw new RuntimeException();
+            } catch(Exception e) {
+                throw new RuntimeException(e);
             }
-        }
-
     }
-
-    //Generator version:
-    public static <T> void fill(Addable<T> addable, Generator<T> generator,int size){
-        for (int i = 0; i < size; i++) {
+    // Generator version:
+    public static <T> void fill(Addable<T> addable,
+                                Generator<T> generator, int size) {
+        for(int i = 0; i < size; i++)
             addable.add(generator.next());
-        }
     }
 }
 
@@ -63,7 +61,7 @@ class Adapter{
 
 //to adapt a specific type , you can use inheritance.
 //make a SimpleQueue Addable use inheritance.
-class AddableSimpleQueue<T> extends SimpleQueue<T>  implements Addable<T>{
+class AddableSimpleQueue<T> extends bcsx.generics.SimpleQueue<T> implements Addable<T>{
     public void add(T item) {
         super.add(item);
     }

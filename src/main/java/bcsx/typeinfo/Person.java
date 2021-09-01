@@ -1,6 +1,6 @@
-package main.java.bcsx.typeinfo;
+package bcsx.typeinfo;
 
-import main.java.bcsx.net.mindview.util.Null;
+import bcsx.net.mindview.util.Null;
 
 public class Person {
 	public final String first;

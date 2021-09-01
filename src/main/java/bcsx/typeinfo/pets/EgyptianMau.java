@@ -1,5 +1,5 @@
 //: typeinfo/pets/EgyptianMau.java
-package  main.java.bcsx.typeinfo.pets;
+package  bcsx.typeinfo.pets;
 
 public class EgyptianMau extends Cat {
   public EgyptianMau(String name) { super(name); }

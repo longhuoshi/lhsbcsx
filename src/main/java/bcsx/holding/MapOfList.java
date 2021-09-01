@@ -1,4 +1,4 @@
-package main.java.bcsx.holding;
+package bcsx.holding;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Map;
 
 import sun.misc.Cache;
-import main.java.bcsx.net.mindview.util.New;
-import main.java.bcsx.typeinfo.pets.*;
+import bcsx.net.mindview.util.New;
+import bcsx.typeinfo.pets.*;
 
 public class MapOfList {
 	public static Map<Person, List<? extends Pet>> petPeople = New.map();//new HashMap<Person, List<? extends Pet>>();

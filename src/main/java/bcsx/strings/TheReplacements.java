@@ -1,10 +1,10 @@
-package main.java.bcsx.strings;
+package bcsx.strings;
 
 import java.awt.TextField;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import main.java.bcsx.net.mindview.util.TextFile;
+import bcsx.net.mindview.util.TextFile;
 
 /*! Here's a block of text to use as input to
 the regular expression matcher. Note that we'll

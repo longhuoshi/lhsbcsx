@@ -3,11 +3,11 @@
 // Use composition instead of inheritance to adapt Fibonacci
 // to make it interable.
 
-package main.java.bcsx.practice.generics;
+package bcsx.practice.generics;
 
 import java.util.Iterator;
 
-import main.java.bcsx.net.mindview.util.Generator;
+import bcsx.net.mindview.util.Generator;
 /**
  * 15.3���ͽӿ�
  * ��ϰ7

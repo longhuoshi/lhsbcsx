@@ -1,7 +1,7 @@
 /**
  * 
  */
-package main.java.bcsx.practice.generics;
+package bcsx.practice.generics;
 
 /**
  * @author txlcl

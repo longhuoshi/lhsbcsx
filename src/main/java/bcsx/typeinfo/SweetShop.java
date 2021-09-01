@@ -1,4 +1,4 @@
-package main.java.bcsx.typeinfo;
+package bcsx.typeinfo;
 
 class Candy{
 	static{System.out.println("Loading Candy");}
@@ -20,10 +20,10 @@ public class SweetShop {
 		System.out.println("After creating Candy");
 		try {
 			/**
-			 * main.java.bcsx.typeinfo.Gum дȫ�� 
+			 * bcsx.typeinfo.Gum дȫ��
 			 * ����ᱨjava.lang.ClassNotFoundException: Gum
 			 * */
-			Class.forName("main.java.bcsx.typeinfo.Gum");
+			Class.forName("bcsx.typeinfo.Gum");
 		} catch (ClassNotFoundException e) {
 			System.out.println("Couldn't find Gum");
 			e.printStackTrace();

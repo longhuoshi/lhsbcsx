@@ -1,6 +1,6 @@
-package main.java.bcsx.packageaccess;
+package bcsx.packageaccess;
 
-import main.java.bcsx.typeinfo.interfacea.A;
+import bcsx.typeinfo.interfacea.A;
 
 class C implements A{
 

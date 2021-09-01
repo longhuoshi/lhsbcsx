@@ -1,4 +1,4 @@
-package main.java.weakreference;
+package weakreference;
 
 import java.lang.ref.Reference;
 import java.lang.ref.ReferenceQueue;

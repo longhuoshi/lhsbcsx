@@ -1,12 +1,12 @@
 //: strings/JGrep.java
 // A very simple version of the "grep" program.
 // {Args: JGrep.java "\\b[Ssct]\\w+"}
-package main.java.bcsx.strings;
+package bcsx.strings;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import main.java.bcsx.net.mindview.util.TextFile;
+import bcsx.net.mindview.util.TextFile;
 /**
  * ��ʾ�������������ʽ��һ���ļ���������ƥ�������
  * 

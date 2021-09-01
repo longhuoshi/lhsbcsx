@@ -1,10 +1,10 @@
-package main.java.bcsx.typeinfo;
+package bcsx.typeinfo;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-import main.java.bcsx.typeinfo.interfacea.A;
-import main.java.bcsx.typeinfo.packageaccess.HiddenC;
+import bcsx.typeinfo.interfacea.A;
+import bcsx.typeinfo.packageaccess.HiddenC;
 
 /**
  * 14.9 �ӿ���������Ϣ��

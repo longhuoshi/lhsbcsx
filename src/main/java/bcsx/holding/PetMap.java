@@ -1,9 +1,9 @@
-package main.java.bcsx.holding;
+package bcsx.holding;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import main.java.bcsx.typeinfo.pets.*;
+import bcsx.typeinfo.pets.*;
 
 public class PetMap {
 

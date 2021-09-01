@@ -1,6 +1,6 @@
-package main.java.bcsx.typeinfo;
+package bcsx.typeinfo;
 
-import main.java.bcsx.typeinfo.pets.Pets;
+import bcsx.typeinfo.pets.Pets;
 
 public class PetCount2 {
 

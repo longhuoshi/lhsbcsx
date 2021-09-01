@@ -1,6 +1,6 @@
-package main.java.bcsx.holding;
+package bcsx.holding;
 
-import main.java.bcsx.net.mindview.util.*;
+import bcsx.net.mindview.util.*;
 
 public class StackCollision {
 

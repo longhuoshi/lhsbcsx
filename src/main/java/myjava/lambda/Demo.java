@@ -1,4 +1,4 @@
-package main.java.myjava.lambda;
+package myjava.lambda;
 
 /**
  * @author l

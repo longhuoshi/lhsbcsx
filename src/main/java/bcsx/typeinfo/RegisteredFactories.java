@@ -1,10 +1,10 @@
-package main.java.bcsx.typeinfo;
+package bcsx.typeinfo;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import main.java.bcsx.typeinfo.factory.Factory;
+import bcsx.typeinfo.factory.Factory;
 
 /**
  * 14.4 ע�Ṥ��
@@ -53,26 +53,26 @@ class Filter extends Part{}
 //}
 
 class FuelFilter extends Filter{
-	public static class Factory implements main.java.bcsx.typeinfo.factory.Factory<FuelFilter>{
+	public static class Factory implements bcsx.typeinfo.factory.Factory<FuelFilter>{
 		@Override
 		public FuelFilter create() { return new FuelFilter(); }
 	}
 }
 class AirFilter extends Filter{
-	public static class Factory implements main.java.bcsx.typeinfo.factory.Factory<AirFilter>{
+	public static class Factory implements bcsx.typeinfo.factory.Factory<AirFilter>{
 		@Override
 		public AirFilter create() { return new AirFilter(); }
 	}
 }
 class CabinAirFilter extends Filter{
-	public static class Factory implements main.java.bcsx.typeinfo.factory.Factory<CabinAirFilter>{
+	public static class Factory implements bcsx.typeinfo.factory.Factory<CabinAirFilter>{
 		@Override
 		public CabinAirFilter create() { return new CabinAirFilter(); }
 	}
 }
 
 class OilFilter extends Filter{
-	public static class Factory implements main.java.bcsx.typeinfo.factory.Factory<OilFilter>{
+	public static class Factory implements bcsx.typeinfo.factory.Factory<OilFilter>{
 		@Override
 		public OilFilter create() { return new OilFilter(); }
 	}
@@ -80,19 +80,19 @@ class OilFilter extends Filter{
 
 class Belt extends Part{}
 class FanBelt extends Belt{
-	public static class Factory implements main.java.bcsx.typeinfo.factory.Factory<FanBelt>{
+	public static class Factory implements bcsx.typeinfo.factory.Factory<FanBelt>{
 		@Override
 		public FanBelt create() { return new FanBelt(); }
 	}
 }
 class GeneratorBelt extends Belt{
-	public static class Factory implements main.java.bcsx.typeinfo.factory.Factory<GeneratorBelt>{
+	public static class Factory implements bcsx.typeinfo.factory.Factory<GeneratorBelt>{
 		public GeneratorBelt create(){ return new GeneratorBelt();}
 	}
 }
 
 class PowerSteeringBelt extends Belt{
-	public static class Factory implements main.java.bcsx.typeinfo.factory.Factory<PowerSteeringBelt>{
+	public static class Factory implements bcsx.typeinfo.factory.Factory<PowerSteeringBelt>{
 		public PowerSteeringBelt create(){ return new PowerSteeringBelt();}
 	}
 }

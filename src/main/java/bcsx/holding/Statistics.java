@@ -1,4 +1,4 @@
-package main.java.bcsx.holding;
+package bcsx.holding;
 
 import java.util.HashMap;
 import java.util.Map;

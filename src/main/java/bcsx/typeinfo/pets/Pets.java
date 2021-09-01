@@ -1,6 +1,6 @@
 //: typeinfo/pets/Pets.java
 // Facade to produce a default PetCreator.
-package  main.java.bcsx.typeinfo.pets;
+package  bcsx.typeinfo.pets;
 import java.util.*;
 
 public class Pets {

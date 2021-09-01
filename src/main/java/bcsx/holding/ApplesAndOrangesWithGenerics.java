@@ -1,4 +1,4 @@
-package main.java.bcsx.holding;
+package bcsx.holding;
 /**
  * ���ж���(java�������Ļ���֪ʶ���Լ��Ե����÷����ص����)
 ���ͺ����Ͱ�ȫ������

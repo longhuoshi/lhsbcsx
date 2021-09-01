@@ -1,4 +1,4 @@
-package main.java.bcsx.holding;
+package bcsx.holding;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,12 +6,12 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
-import main.java.bcsx.typeinfo.pets.Cymric;
-import main.java.bcsx.typeinfo.pets.EgyptianMau;
-import main.java.bcsx.typeinfo.pets.Hamster;
-import main.java.bcsx.typeinfo.pets.Mouse;
-import main.java.bcsx.typeinfo.pets.Pet;
-import main.java.bcsx.typeinfo.pets.Pets;
+import bcsx.typeinfo.pets.Cymric;
+import bcsx.typeinfo.pets.EgyptianMau;
+import bcsx.typeinfo.pets.Hamster;
+import bcsx.typeinfo.pets.Mouse;
+import bcsx.typeinfo.pets.Pet;
+import bcsx.typeinfo.pets.Pets;
 
 /**
  * List����

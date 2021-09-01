@@ -1,6 +1,6 @@
 //: net/mindview/util/CollectionData.java
 // A Collection filled with data using a generator object.
-package main.java.bcsx.net.mindview.util;
+package bcsx.net.mindview.util;
 import java.util.*;
 
 public class CollectionData<T> extends ArrayList<T> {

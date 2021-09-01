@@ -1,4 +1,4 @@
-package main.java.bcsx.net.mindview.util;
+package bcsx.net.mindview.util;
 
 public class ThreeTuple<A, B, C> extends TwoTuple<A, B> {
 	public final C third;

@@ -1,7 +1,8 @@
 package bcsx.practice.generics;
 
 import static bcsx.net.mindview.util.Print.*;
-import bcsx.main.java.generics.Holder;
+
+import bcsx.generics.Holder;
 import bcsx.net.mindview.util.CountingGenerator;
 import javafx.beans.binding.ObjectBinding;
 
@@ -15,7 +16,7 @@ import java.util.*;
  */
 public class Ex29 {
 
-    static void f1(Holder<List<?>> holder){
+    static void f1(bcsx.generics.Holder<List<?>> holder){
         System.out.println("Calling methods for the Holder:");
         System.out.println("holder: " + holder);
         System.out.println("holder.get(): " + holder.get());
@@ -27,7 +28,7 @@ public class Ex29 {
         System.out.println("List iaList = Arrays.asList(ia)");
         List iaList = Arrays.asList(ia);
         System.out.println("holder.equals(iaList): " + holder.equals(iaList));
-        List<Integer> il = new ArrayList<>();
+        List<Integer> il = new ArrayList<Integer>();
         for(int i = 0 ; i<4; i++ ) il.add(i);
         System.out.println("il = List<Integer>() and add 1,2,3");
         System.out.println("holder.equals(il): " + holder.equals(il));

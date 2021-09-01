@@ -1,4 +1,4 @@
-package main.java.bcsx.strings;
+package bcsx.strings;
 /**
  * 13.5.3 Formatter��13.5.4 ��ʽ��˵������
 �ڲ�������ʱ�������Ҫ���ƿո�����룬����Ҫ����ϸ���ӵĸ�ʽ���η���

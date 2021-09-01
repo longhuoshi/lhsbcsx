@@ -1,8 +1,8 @@
-package main.java.bcsx.generics;
+package bcsx.generics;
 
 import java.util.ArrayList;
 
-import main.java.bcsx.net.mindview.util.FourTuple;
+import bcsx.net.mindview.util.FourTuple;
 
 public class TupleList<A,B,C,D> extends ArrayList<FourTuple<A, B, C, D>>{
 

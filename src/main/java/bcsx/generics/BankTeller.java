@@ -1,4 +1,4 @@
-package main.java.bcsx.generics;
+package bcsx.generics;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Queue;
 import java.util.Random;
 
-import main.java.bcsx.net.mindview.util.Generator;
+import bcsx.net.mindview.util.Generator;
 
 class Customer{
 	private static long counter = 1;

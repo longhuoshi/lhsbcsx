@@ -1,3 +1,3 @@
-package main.java.bcsx.net.mindview.util;
+package bcsx.net.mindview.util;
 public interface Null {
 }

@@ -1,10 +1,10 @@
-package main.java.bcsx.generics;
+package bcsx.generics;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import main.java.bcsx.net.mindview.util.Generator;
+import bcsx.net.mindview.util.Generator;
 
 class Product{
 	private final int id;

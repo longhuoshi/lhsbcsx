@@ -1,4 +1,4 @@
-package main.java.bcsx.generics;
+package bcsx.generics;
 
 class Manipulator<T>{//给泛型类添加边界才能调用  <T extends HasF>
 	private T obj;

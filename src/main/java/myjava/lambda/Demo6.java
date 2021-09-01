@@ -1,4 +1,4 @@
-package main.java.myjava.lambda;
+package myjava.lambda;
 
 import java.util.Optional;
 

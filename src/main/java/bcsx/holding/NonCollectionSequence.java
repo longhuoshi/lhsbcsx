@@ -1,9 +1,9 @@
-package main.java.bcsx.holding;
+package bcsx.holding;
 
 
 import java.util.Iterator;
 
-import main.java.bcsx.typeinfo.pets.*;
+import bcsx.typeinfo.pets.*;
 
 /**
  * �ӱ����У�����Կ����������ʵ�� Collection,�ͱ��� ʵ��iterator()������ֻ��ʵ��iterator()��̳�AbstractCollection��ȣ�

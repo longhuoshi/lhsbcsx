@@ -1,6 +1,4 @@
-package main.java.m_thread.second.chapter1;
-
-import bcsx.net.mindview.util.Stack;
+package m_thread.second.chapter1;
 
 /**
  * @author l

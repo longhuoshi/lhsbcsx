@@ -1,4 +1,4 @@
-package main.java.bcsx.generics;
+package bcsx.generics;
 
 public class CountedObject {
 	private static long counter = 0;

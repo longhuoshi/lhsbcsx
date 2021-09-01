@@ -1,5 +1,5 @@
 //: net/mindview/util/Pair.java
-package main.java.bcsx.net.mindview.util;
+package bcsx.net.mindview.util;
 
 public class Pair<K,V> {
   public final K key;

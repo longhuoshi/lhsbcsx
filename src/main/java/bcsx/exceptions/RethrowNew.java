@@ -1,4 +1,4 @@
-package main.java.bcsx.exceptions;
+package bcsx.exceptions;
 
 /**
  * ����fillInStackTrace()�����оͳ����쳣���·������ˡ�

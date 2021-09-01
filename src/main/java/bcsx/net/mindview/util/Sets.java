@@ -1,5 +1,5 @@
 //: net/mindview/util/Sets.java
-package main.java.bcsx.net.mindview.util;
+package bcsx.net.mindview.util;
 
 import java.util.HashSet;
 import java.util.Set;

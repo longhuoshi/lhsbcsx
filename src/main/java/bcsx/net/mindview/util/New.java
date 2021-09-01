@@ -1,7 +1,7 @@
 //: net/mindview/util/New.java
 // Utilities to simplify generic container creation
 // by using type argument inference.
-package main.java.bcsx.net.mindview.util;
+package bcsx.net.mindview.util;
 
 import java.util.ArrayList;
 import java.util.HashMap;

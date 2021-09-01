@@ -8,6 +8,7 @@ import java.util.Map;
 
 import static bcsx.net.mindview.util.Print.*;
 
+
 /**
  * @author l
  * @date 2020/9/21 14:24
@@ -16,7 +17,7 @@ import static bcsx.net.mindview.util.Print.*;
  * 17.2.2 Map生成器
  */
 
-class Letters implements Generator<Pair<Integer,String>>,Iterable<Integer>{
+class Letters implements bcsx.net.mindview.util.Generator<Pair<Integer,String>>,Iterable<Integer>{
     private int size = 9 ;
     private int number = 1 ;
     private char letter = 'A';
@@ -55,15 +56,15 @@ class Letters implements Generator<Pair<Integer,String>>,Iterable<Integer>{
 public class MapDataTest {
     public static void main(String[] args) {
         //pair generator
-        print(MapData.map(new Letters(),11));
+        print(bcsx.net.mindview.util.MapData.map(new Letters(),11));
         //Two separate generators ;
-        print(MapData.map(new CountingGenerator.Character(),new RandomGenerator.String(3),8));
+        print(bcsx.net.mindview.util.MapData.map(new bcsx.net.mindview.util.CountingGenerator.Character(),new bcsx.net.mindview.util.RandomGenerator.String(3),8));
         // A key Generator and a single value:
-        print(MapData.map(new CountingGenerator.Character(),"value",6));
+        print(bcsx.net.mindview.util.MapData.map(new bcsx.net.mindview.util.CountingGenerator.Character(),"value",6));
         // An Iterable and a value Generator:
-        print(MapData.map(new Letters(),new RandomGenerator.String(3)));
+        print(bcsx.net.mindview.util.MapData.map(new Letters(),new bcsx.net.mindview.util.RandomGenerator.String(3)));
         // An Iterable and a single value:
-        print(MapData.map(new Letters(),"Pop"));
+        print(bcsx.net.mindview.util.MapData.map(new Letters(),"Pop"));
 
     }
 }

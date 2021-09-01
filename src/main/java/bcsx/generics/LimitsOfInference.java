@@ -1,9 +1,9 @@
-package main.java.bcsx.generics;
+package bcsx.generics;
 
 import java.util.*;
 
-import main.java.bcsx.net.mindview.util.New;
-import main.java.bcsx.typeinfo.pets.*;
+import bcsx.net.mindview.util.New;
+import bcsx.typeinfo.pets.*;
 
 public class LimitsOfInference {
 	static void f(Map<Person,List<? extends Pet>> petPeople){}
