@@ -1,5 +1,16 @@
 E:\learn\java\【No996】2020年最新 Java多线程编程核心基础
 
+09.多线程编程基础-停止线程-使用interrupt方法中断线程
+interrupt不会真正停止线程，而是在当前线程上打上一个停止标记。
+Thread提供interrupted方法检测当前线程是否中断，isInterrupted方法测试线程是否已经中断。
+注意：interrupt只对 执行任务的线程里有 Thread.sleep(20000); 才会终止线程并抛异常InterruptedException。
+注意：java会忽略 循环体对里面 只有 new String() 空字符串的代码。
 
+10.多线程编程基础-暂停线程
+暂停线程使用suspend,重启暂停线程使用resume方法
+为何要废弃?
+1、suspend如果独占公共的同步对象，使其它线程无法访问公共同步对象。
 
+11.多线程编程基础-yield方法
+yield方法的作用是
 
