@@ -1,0 +1,29 @@
+F:\javaxxz\JAVAEE\【No1235】S硅谷_JVM从入门到精通\JVM上篇：内存与垃圾回收篇
+
+13-区分栈的指令集架构和寄存器的指令集架构
+在idea下面的控制台选择Terminal -> Local 中输入 下面的命令，反编译class字节码文件
+1）进行字码文件目录
+cd target\classes\jvm_demo\chapter01
+2）反编译字节码文件
+javap -v StackStruTest.class
+
+
+14-JVM的生命周期
+虚拟机的启动
+Java虚拟机的启动是通过 引导 类加载器(bootstrap class loader) 创建一个
+初始类(initial class)来完成的，这个类是由虚拟机的具体实现指定的。
+虚拟机的执行
+任务是执行Java程序
+程序开始执行时他才运行，程序结束时他就停止 。
+执行一个所谓的Java程序的时候，真真正正在执行的是一个叫做Java虚拟机的进程 。
+虚拟机的退出
+程序正常执行结束
+程序在执行过程中遇到了异常或错误而异常终止 。
+某线程调用Runtime类或System类的exit方法 ，或Runtime类的halt方法，并且Java安全管理器也允许这次exit或halt操作。
+
+windows查看java进程 jps
+
+15-SUN Classic VM的介绍
+16-Exact VM的介绍
+
+
