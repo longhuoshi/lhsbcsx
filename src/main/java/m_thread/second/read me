@@ -12,5 +12,15 @@ Thread提供interrupted方法检测当前线程是否中断，isInterrupted方�
 1、suspend如果独占公共的同步对象，使其它线程无法访问公共同步对象。
 
 11.多线程编程基础-yield方法
-yield方法的作用是
+yield方法的作用是放弃（放弃的时间不确定）当前的cpu资源 ，将资源让给其它 任务去占用cpu执行。
+
+
+线程的优先级
+12.多线程编程基础-线程的优先级
+设置线程的优先级setPriority方法，优先级分为1-10个级别。如果 设置优先级小于1大于10,JDK抛出illegalArgumentException。
+JDK默认3个优先级常。MIN_PRIORITY=1（最小值）,NORM_PRIORITY=5（中间值，默认）,MAX_PRIORITY =10（最大值）
+线程的优先级具有继承性，比如线程A启动线程B，线程B的优先级与线程A是一样的。
+
+13.多线程编程基础-守护线程
+setDaemon设置为守护线程。 垃圾回收器就是守护线程。
 

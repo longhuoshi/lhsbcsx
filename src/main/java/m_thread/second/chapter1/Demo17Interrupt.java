@@ -1,5 +1,7 @@
 package m_thread.second.chapter1;
 
+import java.util.LinkedList;
+
 /**
  * @author l
  * @date 2021/9/2 11:49
@@ -13,6 +15,7 @@ public class Demo17Interrupt {
         t.start();
         Thread.sleep(11);
         t.interrupt();
+
 
     }
 }
