@@ -23,4 +23,19 @@ JDK默认3个优先级常。MIN_PRIORITY=1（最小值）,NORM_PRIORITY=5（中�
 
 13.多线程编程基础-守护线程
 setDaemon设置为守护线程。 垃圾回收器就是守护线程。
+注意：要在start之前设置，否则 会报IllegalThreadStateException
+
+
+线程安全：
+14.线程的同步机制-synchronized同步方法-局部变量为线程安全
+1、局部变量，永远是线程安全的。这是由局部变量是私有的特征所造成的。
+2、成员变量不是线程安全的。需要在操作成员变量的方法前加synchronized锁来保证线程的安全。
+
+16.线程的同步机制-synchronized同步方法-多个对象使用多个对象锁
+synchronized取得的锁都是对象锁。多个线程访问多个对象，JVM会创建出多个对象锁。
+
+17.线程的同步机制-synchronized同步方法-synchronized方法锁定的是整个对象
+
+
+
 
