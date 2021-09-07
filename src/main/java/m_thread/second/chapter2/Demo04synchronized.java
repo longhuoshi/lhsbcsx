@@ -8,6 +8,7 @@ package m_thread.second.chapter2;
  *
  * A线先持有Object对象的对象锁，B线程就不可以异步方式 调用 Object对象使用synchronized修饰 的方法(因为synchronized用的就是Object对象的对象锁)。
  * 线程B只有等线程A的方法执行完，释放Object对象的对象锁才能执行。
+ *
  */
 public class Demo04synchronized {
     public static void main(String[] args) {

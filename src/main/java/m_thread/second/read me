@@ -35,7 +35,34 @@ setDaemon设置为守护线程。 垃圾回收器就是守护线程。
 synchronized取得的锁都是对象锁。多个线程访问多个对象，JVM会创建出多个对象锁。
 
 17.线程的同步机制-synchronized同步方法-synchronized方法锁定的是整个对象
+A线先持有Object对象的对象锁，B线程就不可以异步方式 调用 Object对象使用synchronized修饰 的方法(因为synchronized用的就是Object对象的对象锁)。
+线程B只有等线程A的方法执行完，释放Object对象的对象锁才能执行。
+
+18.线程的同步机制-synchronized同步方法-脏读
+Demo05
+ synchronized用的是对象锁，同一个对象上加了synchronized的方法。是排队执行的，
+ 不管多少个线程执行，都要等拿 到锁的线程 把一个方法执行完，下个拿到锁的线程才能执行下一个方法。
 
 
+19.线程的同步机制-synchronized同步方法-锁重入
+synchronized拥有锁重入的功能 ，就是说在使用synchronized时，当一个线程得到一个对象锁后，
+再次请求这个对象锁时是可以再次得到该 对象锁。
+
+锁重入性，线程调用 一个加锁的方法，要进入这个锁对象的另一个方法。
+*有继承性。
+
+21.线程的同步机制-synchronized同步方法-锁自动释放
+
+当一个线程执行的代码出现了异常，其所有的锁会自动 释放。
+
+22.线程的同步机制-synchronized同步方法-同步不具有继承性
+
+23.线程的同步机制-synchronized同步语句-synchronized方法的缺点
+25.线程的同步机制-synchronized同步语句-使用同步代码块解决同步方法的弊端
+
+30.线程的同步机制-synchronized同步语句-静态同步synchronized方法与synchronized(class)代码块
+静态方法使用的synchronized锁是class
+非静态方法使用的synchronized锁是this
 
 
+32.线程的同步机制-synchronized同步语句-解决synchronized方法无限等待问题
