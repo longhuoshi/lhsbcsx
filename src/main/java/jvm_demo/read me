@@ -25,5 +25,24 @@ windows查看java进程 jps
 
 15-SUN Classic VM的介绍
 16-Exact VM的介绍
+17-HotSpot VM的介绍
+18-JRockit VM的介绍
+19-IBM J9 VM的介绍
+全称：IBM Technology for Java Virtual Machine  简称 IT4J ，内部代号：J9
+
+如果自己手写一个Java虚拟机的话，主要考虑哪些结构呢？
+类加载器和执行引擎。
+
+
+第2章：类加载子系统
+
+27-概述类的加载器及类加载过程
+类加载器ClassLoader角色
+1、class file 存在于本地硬盘上，可以理解为设计师画在纸上的模板，而最终这个模板在执行的时候是要
+加载到jvm当中来，根据这个文件实例化出n个一模一样的实例。
+2、class file加载到jvm中，被 称为DNA元数据，放在方法 区。
+3、在.class文件->jvm->最终成为元数据模板，此过程就要一个运输工具(类装载器class loader)，
+扮演一个快递员的角色。
+
 
 
