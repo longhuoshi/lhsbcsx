@@ -15,7 +15,6 @@ public class Demo06 {
         t.start();
     }
 }
-
 class Demo06Service{
     synchronized public void foo1(){
         foo2();
@@ -31,7 +30,6 @@ class Demo06Service{
         System.out.println("foo3方法");
     }
 }
-
 class Demo06ServiceB extends Demo06Service{
     synchronized public void foo4(){
         System.out.println("foo4方法");
@@ -41,8 +39,10 @@ class Demo06ServiceB extends Demo06Service{
 
 class Demo06Thread extends Thread{
     public void run(){
+        //锁重入性
 //        Demo06Service service = new Demo06Service();
 //        service.foo1();
+        //锁继承性
         Demo06ServiceB service = new Demo06ServiceB();
         service.foo4();
     }
