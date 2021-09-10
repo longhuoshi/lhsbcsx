@@ -1,6 +1,8 @@
 此包内都是java多线程相关知识
 《Java并发编程从入门到精通》
 
+打印目录里的文件:intermediate.ForkJoinTaskDemo2.java
+
 一、基础
 1、Thread的三种实现方法
 2、认识java里的Thread
