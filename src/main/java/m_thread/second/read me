@@ -138,5 +138,16 @@ chapter3.Demo03notify.java
 39.线程间的通信-wait与notify-wait方法自动释放锁与notify方法不会释放锁
 1、 wait方法自动释放锁与notify方法不会释放锁
 
+40.线程间的通信-wait与notify-wait方法遇到intterrup方法
+当线程呈wait状态时，调用线程对象的interrupt方法会产生InterruptedException异常。
+
+41.线程间的通信-wait与notify-只唤醒一个线程或所有线程
+
+42.线程间的通信-wait与notify-wait(long)的使用
+带一个long参数的方法的作用等待某一时间内是否有线程对象锁进行唤醒，如果超过这个等待时间线程会自动唤醒。
+chapter3.Demo05.java
+sleep(long)与wait(long)非常想象，都是在指定的时间后线程会自动唤醒，区别在于sleep是不会释放对象锁，而wait方法可以释放对象锁。
+
+45.线程间的通信-生产者与消费者模式-一个生产者与一个消费者(操作值)
 
 
