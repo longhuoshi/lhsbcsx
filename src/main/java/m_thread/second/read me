@@ -150,5 +150,35 @@ sleep(long)与wait(long)非常想象，都是在指定的时间后线程会自�
 
 45.线程间的通信-生产者与消费者模式-一个生产者与一个消费者(操作值)
 48.线程间的通信-生产者与消费者模式-一生产者多消费者(操作集合)
+51.线程间的通信-join方法- join方法的使用
+Demo15join.java
+在很多情况下，都由主线程创建并运行子线程，如果子线程中需要进行大量的耗时运行，主线程往往将早于子线程结束。
+这时，如果主线程想等待子线程执行完成后再结束，比如子线处理一个数据，主线程需要取得这个数据中的值，
+可以使用join方法。join方法的作用是等待线程对象销毁。
+join与synchroinzed区别：
+join的内部使用wait方法进行等待，而synchronized关键字使用的是『对象锁』的机制作为同步。
+
+52.线程间的通信-join方法-join方法与异常
+Demo16join.java
+join与interrupte方法如果彼此遇到，则会出现异常，但进程并没有结束，原因是ThreadA还在继续运行，线程A并没有出现 异常，是正常状态下继续 执行。
+
+使用join(2000)与sleep(2000)有什么区别？运行效果没有任何区别，但是同步的处理上不一样，sleep不释放锁，而join底层是使用wait来实现所以会释放锁
+
+52.线程间的通信-join方法- join(long)与sleep(long)的区别
+
+方法join(long)的功能在内部使用wait(long)来实现同步，所以joing(long)方法具有释放同步锁的特点。
+
+53.线程间的通信-join方法-ThreadLocal类
+
+变量值共享可以使用静态变量形式，所有的线程都可以使用同一个静态变量。如果想实现每一个线程都有自己的共享变量如何解决？
+Java提供ThreadLocal类来解决这个问题。
+ThreadLocal类主要解决每个线程绑定自己的值，可以将ThreadLocal类比喻成全局存储数据的盒子，盒子中可以存储每个线程的私有数据 。
+Demo20threadLocal.java
+
+54.Lock-ReentranLock-使用RenntranLock
+
+55.Lock-ReentranLock-使用RenntranLock实现wait和notify
+
+
 
 
