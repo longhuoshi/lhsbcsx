@@ -178,7 +178,29 @@ Demo20threadLocal.java
 54.Lock-ReentranLock-使用RenntranLock
 
 55.Lock-ReentranLock-使用RenntranLock实现wait和notify
+关键字synchronized与wait/notify或notifyAll方法想结合可以实现等待/通知模式，类RentrantLock也可以实现同样的功能，但需要借助Condition对象。Condition类是在JDK5中出现的技术，
+使用它有更好的灵活性，比如可以实现多路通知功能，也就是在一个Lock对象里面可以创建多个Condition实例，线程对象可以注册在指定的Condition中，
+从而可以有选择性地进行线程通知，在调试线程上更加灵活。
+在使用notify/notifyAll方法进行通知时，被通知线程是由JVM随机选择的，但使用ReentrantLock结合Condition类可以实现选择性通知，这个功能是非常重要的，而且在Condition在中是默认提供的。
+而synchronized就相当于整个Lock对象中只有一个单一Condition对象，所有的线程都是注册在它一个对象的身上。线程开始notifyAll时需要通知所有正在等待的线程，没有选择权，会出现相当大效率问题。
+chapter4.Demo03condition.java
 
+
+56.Lock-ReentranLock-使用多个Condition实现通知部分线程
+3. 使用Condition唤醒不同的线程
+Demo04condition.java
+分别唤醒不同的线程，就需要使用多个Condition对象，也就是Condition对象可以唤醒部分指定的线程，有助于提升程序的运行效率。
+
+57.Lock-ReentranLock-使用Lock实现生产者、消费者
+多生产多消费
+Demo05producerConsumer
+
+58.Lock-ReentranLock-公平锁与非公平锁
+60.Lock-ReentranLock-ReentrantReadWriteLock
+
+
+
+www.javaxxz.com_OK*&^u8%F
 
 
 
