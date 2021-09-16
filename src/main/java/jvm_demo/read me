@@ -141,8 +141,8 @@ javap -verbose PCRegisterTest.class
 
 
 
-第4章：程序计数器
-43-解决PC寄存器两个面试问题
+第5章：虚拟机栈
+45-虚拟机栈的常见异常与如何设置栈大小.avi
 
 F:\javaxxz\JAVAEE\【No1235】S硅谷_JVM从入门到精通
 www.javaxxz.com)UJ&HY^THJIog
