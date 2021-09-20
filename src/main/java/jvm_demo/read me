@@ -137,12 +137,15 @@ JVM需要保证这两个类型的类型加载器是相同的。
 javap -verbose PCRegisterTest.class
 
 43-解决PC寄存器两个面试问题
+48-局部变量表结构的认识
+49-字节码中方法内部结构的剖析
 
 
 
 
 第5章：虚拟机栈
-48-局部变量表结构的认识.avi
+50-变量槽slot的理解与演示.avi
+
 
 F:\javaxxz\JAVAEE\【No1235】S硅谷_JVM从入门到精通
 www.javaxxz.com)UJ&HY^THJIog
