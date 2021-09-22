@@ -1,4 +1,4 @@
-package main.java.generics.plate;
+package generics.plate;
 
 /**
  * @author l

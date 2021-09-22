@@ -1,5 +1,8 @@
 package myjava.lambda;
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * @author l
  * @date 2019/12/11 11:48
@@ -58,6 +61,7 @@ public class Demo {
         int aValue = 129;
         Demo demo = new Demo();
         demo.aBlockOfCode.doSomeShit("同志这里不能撒尿!");
+
     }
 
 }

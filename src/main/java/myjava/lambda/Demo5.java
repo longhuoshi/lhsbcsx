@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 /**
  * @author l
@@ -68,6 +69,7 @@ public class Demo5 {
         List<Person> guiltyPersons = Arrays.asList(
                 new Person("Yixing","Zhao",25),
                 new Person("Yanggui","Li",30),
+                new Person("MeiNv","Jing",30),
                 new Person("Chao","Ma",29)
         );
 
@@ -95,6 +97,14 @@ public class Demo5 {
         guiltyPersons.stream()
                 .filter(p->p.getLastName().startsWith("Z"))
                 .forEach(System.out::println);
+
+
+        List<String> nameList = guiltyPersons.stream()
+                .filter(item->item.getAge() == 30 )   // 过滤条件
+                .limit(2)    // limit限制条件
+                .map(lhs->lhs.getLastName())  // 获得姓名
+                .collect(Collectors.toList()); // 转化为list
+        System.out.println(nameList);
 
 
     }
