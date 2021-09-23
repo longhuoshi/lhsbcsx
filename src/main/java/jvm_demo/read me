@@ -139,13 +139,12 @@ javap -verbose PCRegisterTest.class
 43-解决PC寄存器两个面试问题
 48-局部变量表结构的认识
 49-字节码中方法内部结构的剖析
-
+51-静态变量与局部变量的对比及小结
 
 
 
 第5章：虚拟机栈
-51-静态变量与局部变量的对比及小结.avi
-
+52-操作数栈的特点.avi
 
 F:\javaxxz\JAVAEE\【No1235】S硅谷_JVM从入门到精通
 www.javaxxz.com)UJ&HY^THJIog
