@@ -140,11 +140,12 @@ javap -verbose PCRegisterTest.class
 48-局部变量表结构的认识
 49-字节码中方法内部结构的剖析
 51-静态变量与局部变量的对比及小结
-
+52-操作数栈的特点
+53-涉及操作数栈的字节码指令执行分析
 
 
 第5章：虚拟机栈
-52-操作数栈的特点.avi
+54-栈顶缓存技术.avi
 
 F:\javaxxz\JAVAEE\【No1235】S硅谷_JVM从入门到精通
 www.javaxxz.com)UJ&HY^THJIog
