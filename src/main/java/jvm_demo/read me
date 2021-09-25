@@ -142,10 +142,13 @@ javap -verbose PCRegisterTest.class
 51-静态变量与局部变量的对比及小结
 52-操作数栈的特点
 53-涉及操作数栈的字节码指令执行分析
-
+54-栈顶缓存技术.
+55-动态链接的理解与常量池的作用
 
 第5章：虚拟机栈
-54-栈顶缓存技术.avi
+55-动态链接的理解与常量池的作用.avi
 
 F:\javaxxz\JAVAEE\【No1235】S硅谷_JVM从入门到精通
+JVM上篇：内存与垃圾回收篇\视频
+
 www.javaxxz.com)UJ&HY^THJIog

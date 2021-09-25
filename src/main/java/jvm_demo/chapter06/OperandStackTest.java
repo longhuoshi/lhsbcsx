@@ -1,4 +1,4 @@
-package jvm_demo.chapter16;
+package jvm_demo.chapter06;
 
 /**
  *53-涉及操作数栈的字节码指令执行分析
