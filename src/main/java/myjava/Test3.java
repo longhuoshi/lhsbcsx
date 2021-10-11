@@ -27,11 +27,8 @@ public class Test3 {
         //测试
 
 //        List<String> aaa =strToListByComma("12,2,4,4565",String.class);
-//        System.out.println(aaa);
-
-
+//        System.out.println(aaa);00000001632383300672
     }
-
 
 
     /**
