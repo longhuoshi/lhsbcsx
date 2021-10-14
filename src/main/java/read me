@@ -1,0 +1,269 @@
+https://blog.csdn.net/u012637358/article/details/90288585
+
+
+此包内都是java多线程相关知识
+《Java并发编程从入门到精通》
+
+打印目录里的文件:intermediate.ForkJoinTaskDemo2.java
+
+一、基础
+1、Thread的三种实现方法
+2、认识java里的Thread
+    1）开启新线线程，要设置一个名字，方便我们跟踪观察线程。
+    2）注意resume、stop、suspend等方法已被废除。建议使用信号量(共享变量)或interrupt方法来代替stop方法。
+    3) main方法主线程结束 了，新开启的子线程不一定结束 。
+3、关于线程的中断机制 。
+    1) boolean interrupted():测试当前线程是否已中断。线程的中断状态由该方法清除。如果连续两次调用该方法，
+    则第二次调用将返回false
+    2) boolean isInterrupted() 测试线程是否已经 中断。线程的中断状态不受该方法的影响。
+    3) void interrupt()：中断线程，但是没有返回结果 。是唯一能将中断状态设置为true的方法。
+
+4、Thread五种状态：new, Runnable, Running, Blocked, Dead；
+new 新建(new Thread): 当创建Thread类的一个实例 (对象)时，此线程进入新建状态 ，有自己的内存空间。(not alive)
+Runnable 就绪: 线程启动，等待被分配给cpu时间片。(调用start()方法，线程就进入就绪状态)  (alive)
+Running 运行：线和获得cpu资源，正在执行任务run()方法。  (alive)
+Blocked 堵塞：由于某种原因导致正在运行的线程让出cpu并暂停自己的执行。  (alive)
+    1)正在睡眠：用sleep(long t)方法，可使线程进入睡眠，一个睡眠的线程在指定睡眠时间过后，可进入就绪状态 。
+    2)正在等待：调用wait()方法，可调用notify()方法回到就绪状态。
+    3）被另一个线程阻塞：调用suspend()方法，可调用resume()方法恢复。
+Dead 死亡：线程执行完毕或被其他线程杀死。
+
+5、守护线程：可简单地理解为后台运行线程，进程结束，守护线程会跟着结束 。不需要手动的去关心和通知其状态。
+    把线程设置为守护线程，只需要调用 线程对象的方法setDaemon(true)。注意：必须在线程启动前调用才有效。
+    注意：JRE判断程序是否执行结束的标准是所有的前台线程执行完成 ，而不管后台线程的状态 。
+
+2.7、线程副本：ThreadLocal
+   当使用ThreadLocal维护变量时，ThreadLocal为每个使用该变量的线程提供独立的变量副本，所以每一个线程都可以
+   独立地改变自己的副本，而不会影响其他线程所对应的副本。
+2.8 线程异常处理。
+
+3.1、初识Java内存模型与多线程
+JLS(Java Language['læŋɡwɪdʒ]  Specification[.spesɪfɪ'keɪʃ(ə)n] Java语言规范)定义了统一的内存管理模型JMM(Java Memory Model).
+Java多线程环境中必须解决可见性和有序性(重排序问题)的问题。
+
+JMM规定了jvm有主内存(Main Memory)和工作内存(Working Memory).
+主内存其实就是堆内存，存放程序中所有的类实例，静态数据等变量，是多个线程共享的。
+而工作内存存放的是该线程从主内存中拷贝过来的变量以及访问方法所取得的局部变量。
+是每个线程私有的，其它 线程不能访问。
+
+问题一、由于多个线程之间是不能互相传递数据通信的，它们之间的沟通只能通过共享变量来进行。
+当线程操作某个对象时，执行顺序如下 ：
+1)、从主存复制变量到当前工作内存 (read and load)
+2)、执行代码，改变共享变量值 (use and assign)
+3)、用工作内存数据刷新主存相关内容 (store and write)
+单个线程与线程的工作内存之间相互隔离的效果，专业术语叫“可见性问题”
+问题二、线程与线程之间对从主内存中引用的变量的操作的先后顺序，决定了你程序对主内存区
+最后的修改是不是正确的，专业术语上称“时序性问题”。
+
+
+3.2、什么是不安全
+当多个线程同时操作一个数据结构的时候产生了相互修改和串行的情况，没有保证数据的一致性，
+通常称“线程不安全的”
+示例：假设5个用户(一个线程是一个用户)，都来给一个数字加1的工作，那么最后数字应该是5
+basic/ThreadUnsafety
+
+3.3、什么是安全
+不敢多少线程处理共享变量的数据，都保证我们的数据的高度一致性和准确性叫线程安全的。
+上面的示例：5个人干一件事会存在线程安全问题。如果5个人干5件事，或者1个人干5件事那么线程是安全的。
+实现线程安全三种方法：
+多实例，也就是不用单例模式了。（缺点会很消耗资源）
+使用java.util.concurrent下面的类库。
+使用锁机制synchronized,lock方式 。
+
+3.4、隐式锁，又称线程同步synchronized
+修饰在方法体上的synchronized默认锁的对象就是当前对象本身；等同于synchronized(this){}修饰代码块的用法 。
+锁的一些隐匿规则如下：
+1)、当两个并发线程访问同一个对象Object中的这个synchronized(this)同步代码块时，一个时间内只能有一个线程
+    得到执行。另一个线程必须等待当前线程执行完这个代码块以后才能执行该代码块。
+2）、然而，当一个线程访问object的一个synchronized(this)同步代码块的同时，另一个线程仍然可以访问该object中的
+    非synchronized(this)同步代码块。
+3）、尤其关键的是，当一个线程访问object的一个synchronized(this)同步代码块时，其它线程对object中所有其它
+    synchronized(this)同步代码块的访问将被阻塞。
+
+锁是对象，加锁和释放锁都需要些对象资源，那肯定对象越小越好，所以造一个一个字节的byte对象最小；工作中这种写法最常见
+    private byte[] lock = new byte[1];
+
+3.5、显示锁Lock和ReentrantLock
+    Lock是一个接口提供了无条件的，可轮询的，定时的，可中断的锁获取操作，所有加锁和解锁的方法都是显式的。
+Lock与synchronized比较
+1)、Lock使用起来比较灵活 ，但是必须有释放锁的动作配合。
+2）、Lock必须手动释放和开启锁，而synchronized不需要手动释放和开启锁
+3)、只适用代码块锁，而synchronized对象之间是互斥关系 。
+
+
+3.5、显示锁ReadWriteLock和ReentrantReadWriteLock
+什么是AQS
+AQS是AbustactQueuedSynchronizer的简称，它是一个Java提供的底层同步工具类，用一个int类型的变量表示同步状态.
+CAS（Compare-and-Swap 比较和交换）
+对于synchronized，锁的升级(发生竞争)情况可能是 偏向锁—>轻量锁—>自适应自旋锁—>重量锁
+
+轻量级锁：长时间得不到锁的线程使用自旋消耗cpu。
+
+3.8、什么是死锁
+
+第4章 线程安全的集合类
+
+第5章 多线程之间交互：线程阀
+5.1、阻塞线程BlockingQueue
+是一个支持两个附加操作的队列。这两个附加操作是：在队列为空时，获取元素的线程会等待队列变为非空；
+当队列满时，存储元素的线程会等待队列可用。
+
+5.8 链表传输队列LinkedTransferQueue
+5.9 同步计数器CountDownLatch
+5.10 抽象队列化同步器AbstractQueuedSynchronizer  （难理解 ）
+5.11 同步计数器Semaphore
+5.12 同步计数器CyclicBarrier
+
+第六章 线程池
+单个任务小，而任务数量巨大，最适合用线程池。
+6.2 newSingleThreadExecutor的使用
+6.3 newCachedThreadPool的使用
+6.4 newFixedThreadPool的使用
+6.7 自定义线程池与ExecutortorService
+    2、自用ThreadFactory他创建一个新线程
+    3、 理解RejectedExecutionHandler
+        如果线程池里的线程已经饱和，并且任务队列也已满。那就要做丢弃处理。
+        线程池任务拒绝策略
+        1)不用线程池线程执行
+            CallerRunsPolicy:只用调用者所在线程来运行任务。
+        2)抛出异常
+            AbortPolicy:直接抛出异常
+        3)丢弃队列中最旧任务
+            DiscardOldestPolicy:丢弃队列里离执行最近（在队列里呆得时间最长）的一个任务，并执行当前任务。
+        4)直接丢弃任务。
+            DiscardPolicy:不处理，丢弃掉。
+    4、ThreadPoolExecutor详解
+       ThreadPoolExecutor类是线程池中最核心的一个类。
+       构造器的几个参数
+       1)int corePoolSize：核心池大小
+       2)int maximumPoolSize: 线程池最大线程数
+       3)long keepAliveTime: 表示线程没有任务执行时最多保持多久的时间会终止。
+       4)TimeUnit unit:参数keepAliveTime的时间单位。
+       5)BlockingQueue workQueue:一个阻塞队列，用来存储等待执行任务。
+       6)ThreadFactory threadFactory:线程工厂，主要用来创建线程。
+       7)RejectedExecutionHandler handler:表示当拒绝处理任务时的策略，也可以是自定义的。
+
+6.8 线程池在工作中的错误说明
+
+第7章 JDK7新增的Fork/Join
+7.1 认识Future任务机制和FutureTask
+7.2 什么是Fork/Join框架
+7.2 认识Fork/Join的JDK里面的家族
+    fork()这个方法决定了ForkJoinTask的异步执行，凭借这个方法可以创建新的任务。
+    join()该方法负责在计算完成后返回结果 ，因此允许一个任务等待另一个任务执行完成 。
+
+    ForkJoinTask 的两个子类
+    RecursiveTask 用于有返回结果 的任务
+    RecursiveAction 用于没有返回结果 的任务
+
+    ForkJoinPool: 用来执行ForkJoinTask，任务分割的子任务会添加到当前工作线程所维护的双端队列中，
+    进入队列的头部。
+
+7.4 Fork/Join 框架的实现原理
+    Fork/Join(分叉/结合)框架是一个比较特殊的线程池框架，专用于需要将一个任务不断分解成子任务（分叉），
+    再不断进行汇总得到最终结果（结合 ）的计算过程 。
+
+7.6 Fork/Join 模式优缺点及其实际应用场景 。
+
+第3部分 实际的使用，监控与拓展
+9.1 Java 线程池的监控
+9.2 ForkJoin如何监控
+9.3 Java内存结构
+9.4 可视化监控工具的使用。
+  VisualVM的使用。 命令jvisualvm
+  JConsole的使用   命令  jconsole
+  Oracle Java Mission Control 命令 jmc
+9.5 Linux线程分析监控使用方法。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
