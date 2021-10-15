@@ -224,9 +224,14 @@ Demo08ReentrantReadWriteLock.java
 ready   就绪状态
 
 
-
-
 62.拾遗增补-线程的状态-通过代码验证
+63.拾遗增补-线程的状态-Callable接口
+    在jdk 1.5中引入的Callable接口是一种具有类型参数的泛型，它的类型参数表示从方法call中返回的值的类型。
+64.拾遗增补-线程池
+
+
+
+
 
 
 
