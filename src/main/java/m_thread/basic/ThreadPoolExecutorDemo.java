@@ -12,6 +12,9 @@ import java.util.concurrent.TimeUnit;
  * 一个简单的线程池 Demo
  * ThreadPoolExecutor
  * 执行任务
+ *
+ *      ExecutorService executorService = Executors.newCachedThreadPool();
+ *         executorService.execute();
  */
 public class ThreadPoolExecutorDemo  {
     private static final int CORE_POOL_SIZE = 5;

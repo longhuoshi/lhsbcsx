@@ -1,4 +1,4 @@
-package m_thread.common;
+package m_thread.third.jucbase.sync;
 
 /**
  * @author l
