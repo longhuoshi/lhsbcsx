@@ -22,11 +22,9 @@ public class CountDownLatchDemo {
         for (int i = 1; i <= 6 ; i++) {
             new Thread(()->{
                 System.out.println(Thread.currentThread().getName()+" 号同学离开了教室");
-
                 //计数器 -1
                 countDownLatch.countDown();
             },String.valueOf(i)).start();
-
         }
 
         //阻塞 等待 (如果计数器不为0就一直await；等计数器变0之后，后面的代码才会被执行。)
