@@ -76,6 +76,27 @@ jdk8说明 ：获取写锁->获取读锁->释放写锁->释放读锁
 35-JUC高并发编程-阻塞队列-核心方法演示
 36-JUC高并发编程-线程池-概述和架构
 
+39-JUC高并发编程-线程池-工作流程和拒绝策略
+int corePoolSize,
+int maximumPoolSize,
+long keepAliveTime,
+TimeUnit unit,
+BlockingQueue<Runnable> workQueue,
+RejectedExecutionHandler handler
+任务过来线程池启动corePoolSize个线程执行，新任务超过corePoolSize个时，线程池会把新任务放进workQueue。
+当workQueue满了，线程池会开启新线程来跑任务。新加线程的个数最多是(maximumPoolSize-corePoolSize)个。
+当队列满了，线程池里的线程数达到maximumPoolSize个了。还有新任务进来就执行handler 拒绝策略。
+共有4种拒绝策略
+1、AbortPolicy:直接拋出RejectedExecutionException异常阻止系统正常运行。
+2、CallerRunsPolicy：调用者运行，一种调节机制，该策略即不会拋弃任务，也不会拋出异常，
+    而是将某些任务回退到调用者，从而降低新任务的流量。
+3、DiscardOldestPolicy：拋弃队列中等待最久的任务，然后把当前任务加入队列中尝试再次提交当前任务。
+4、DiscardPolicy：该策略默默丢弃无法处理的任务，不予任何处理也不拋出异常。
+    (如果允许任务丢失，这是最好的一种策略)
+
+40-JUC高并发编程-线程池-自定义线程池
+
+
 
 
 
