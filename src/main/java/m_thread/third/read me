@@ -95,6 +95,8 @@ RejectedExecutionHandler handler
     (如果允许任务丢失，这是最好的一种策略)
 
 40-JUC高并发编程-线程池-自定义线程池
+41-JUC高并发编程-分支合并框架-概述
+43-JUC高并发编程-异步回调
 
 
 

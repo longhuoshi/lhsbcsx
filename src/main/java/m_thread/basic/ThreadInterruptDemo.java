@@ -1,4 +1,4 @@
-package main.java.m_thread.basic;
+package m_thread.basic;
 
 /**
  * @author l

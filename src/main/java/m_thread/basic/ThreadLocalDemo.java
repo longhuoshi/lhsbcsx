@@ -1,4 +1,4 @@
-package main.java.m_thread.basic;
+package m_thread.basic;
 
 /**
  * @author l
@@ -35,7 +35,7 @@ public class ThreadLocalDemo {
         TestClient t3 = new TestClient(sn);
 
         //设置捕获UncaughtException异常类(类似事件注册机制 | 观察者模式 )
-        ExceptionHandlerThread handlerThread = new ExceptionHandlerThread();
+        main.java.m_thread.basic.ExceptionHandlerThread handlerThread = new main.java.m_thread.basic.ExceptionHandlerThread();
         t1.setUncaughtExceptionHandler(handlerThread);
         t2.setUncaughtExceptionHandler(handlerThread);
         t3.setUncaughtExceptionHandler(handlerThread);
