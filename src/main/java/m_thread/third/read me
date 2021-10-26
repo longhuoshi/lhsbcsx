@@ -102,16 +102,36 @@ RejectedExecutionHandler handler
 
 JUC并发编程与源码分析
 03_进程线程管程
-04_用户线程和守护线程.mp4
+04_用户线程和守护线程
+05_对Future的改进
 
+ 不要阻塞，尽量用轮询替代
+ CompletableFuture 实现了 Future和 CompletionStage接口
+ 提供了非常强大 的Future的扩展功能 。可以帮助我们简化异步编程的复杂性。并且提供 了函数式编程的能力。
+CompletionStage代表异步计算过程中的某一个阶段，一个阶段完成以后可能会触发另外一个阶段。
+有点类似linux系统里的管道分隔符。
 
+ CompletableFuture是FutureTask的加强版本。
 
+06_CompletableFuture
+07_CompletableFuture四个函数
+CompletableFutureDemo.java
+异步任务结束时，会自动回调某个对象的方法
+异步任务出错时，会自动回调某个对象的方法
+主线程设置好回调后，不再关心异步任务的执行，异步任务之间可以顺序执行。
 
+08_get和join方法
+join=get ，一样的，区别就是join不拋出异常。
 
+面试的时候面试官想听的项目亮点是：功能 --> 性能。
+
+09_大厂真实案例比价需求
+CompletableFutureNetMallDemo.java
 
 
 
 www.javaxxz.com_I(*U6y%$refg
+
 
 
 
