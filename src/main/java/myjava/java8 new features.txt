@@ -1,0 +1,78 @@
+1、lambda
+Lambda是一个匿名函数，我们可以把Lambda表达式理解为是一段可以传递的代码(将代码像数据一样进行传递)。
+使用它可以写出更简洁、更灵活的代码 。
+
+格式：
+->lambda操作符 或 箭头操作符
+左边是形参列表（其实就是接口中的抽象方法的形参列表）
+右边是lambda体(其实就是重写的抽象方法的方法体)
+
+lambda表达式的本质是对接口实例化。
+
+java内置的4大核心函数式接口
+消费者接口 Consumer<T> void accept(T t)
+供给型接口 Supplier<T> T get()
+函数型接口 Function<T,R> R apply(T t)
+断定型接口 Predicate<T> boolean test(T t)
+
+基它
+BiFunction<T,U,R> R apply(T t,U u)
+
+方法引用 (Method References)
+是函数式接口的一个实例，通过方法的名字来指向一个方法，可以认为是Lambda表达式的一个语法糖。
+使用要求：要求接口中的抽象方法的形参列表和返回值类型与方法引用的方法的形参列表和返回值类型相同。
+使用场景：当要传递给Lambda体的操作，已经有实现的方法了，可以使用方法引用！
+使用格式 ：
+类(或对象) :: 方法名
+三种情况
+1、对象::非静态方法
+2、类::静态方法
+3、类::非静态方法
+
+
+示例：
+Consumer中的void accept(T t)
+PrintStream 中的void println(T t)
+MethodRefTest.java
+
+
+
+
+2、强大的Stream API
+Stream是java8中处理集合的关键抽象概念，它可以指定你希望对集合进行的操作，
+可以执行非常复杂的查找，过虑和映射数据等操作。使用Stream API对集合数据进行操作，
+就类似于使用SQL执行的数据库查询 。
+
+为什么要使用Stream API
+1、实际开发中，项目中多数数据源都来自Mysql,Oracle等。但现在数据源可能更多了，
+有MongDB,Radis等，而这些NOsql的数据就需要Java层面云处理
+2、Stream和Collection集合的区别：Collection是一种静态的内存数据结构 ，而Stream是有关计算的。
+前者是主要面向内存，存储在内存中，后者主要是面向cpu，通过cpu实现计算。
+
+Stream是什么
+是数据渠道，用于操作数据源（集合，数组等）所生成的元素序列。
+“集合讲的是数据，Stream讲的是计算”
+注意：
+1、Stream 自己不会存储元素
+2、Stream 不会改变源对象 ，相反，他们会返回一个持有结果的新Stream。
+3、Stream 操作是延迟执行的。这意味着他们会等到需要结果的时候才执行。
+
+Stream的操作三个步骤
+1、创建Stream
+一个数源（如：集合，数组），获取一个流。
+2、中间操作
+一个中间操作链，对数据源的数据进行处理
+3、终止操作（终端操作）
+一旦执行终止操作，就执行中间操作链，并产生结果 ，之后， 不会再被 使用。
+
+ 创建Stream方式之一：通过集合
+  java8中的Collection接口被扩展，提供了两个获取流的方法：
+  default Stream<E> stream()  返回一个顺序流
+  default Stream<E> parallelStream() 返回一个并行流
+
+
+
+
+
+
+
