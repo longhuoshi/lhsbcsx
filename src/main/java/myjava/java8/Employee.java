@@ -1,5 +1,7 @@
 package myjava.java8;
 
+import java.util.Objects;
+
 /**
  * @author l
  * @date 2021/10/27 15:40
@@ -72,5 +74,23 @@ public class Employee {
                 ", age=" + age +
                 ", salary=" + salary +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Employee employee = (Employee) o;
+        return id == employee.id &&
+                age == employee.age &&
+                Double.compare(employee.salary, salary) == 0 &&
+                Objects.equals(name, employee.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, age, salary);
     }
 }
