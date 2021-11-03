@@ -27,6 +27,7 @@ public class FutureTaskDemo {
         while (true){
             if (futureTask.isDone()){
                 System.out.println("----result："+futureTask.get());
+                break;
             }else {
                 System.out.println("还在计算中，别催，越催越慢，再催熄火");
             }

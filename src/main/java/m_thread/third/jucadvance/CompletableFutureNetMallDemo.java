@@ -48,7 +48,10 @@ public class CompletableFutureNetMallDemo {
 
     public static List<String> getPriceByAsync(List<NetMall> list , String productName){
         return list.stream().map(netMall -> CompletableFuture.supplyAsync(() -> String.format(productName + " in %s price is %.2f", netMall.getMallName(), netMall.calcPrice(productName))))
-                .collect(Collectors.toList()).stream().map(CompletableFuture::join).collect(Collectors.toList());
+                .collect(Collectors.toList())
+                .stream()
+                .map(CompletableFuture::join)
+                .collect(Collectors.toList());
         //a->a.join() == CompletableFuture::join
         //jdk8中使用了::的用法。就是把方法当做参数传到stream内部，使stream的每个元素都传入到该方法里面执行一下
 

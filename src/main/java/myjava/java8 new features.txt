@@ -113,7 +113,7 @@ sorted(Comparator com) 产生一个新流，其中按比较器顺序排序。
 stream的终止操作
 forEach(Consumer<? super T> action)
 收集collect(Collector c) 将流转换为其它形式。接受一个Collector接口实现，用于给Stream中元素做汇总的方法。
-
+示例：StreamAPITest3.java
 
 Optional类
 为了在程序中避免出现空指针异常而创建的。
