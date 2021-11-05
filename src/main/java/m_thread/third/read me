@@ -130,6 +130,38 @@ CompletableFutureNetMallDemo.java
 
 11_获得结果和触发计算.mp4
 
+whenComplete和whenCompleteAsync的区别：
+whenComplete:是执行当前任务的线程继续执行whenComplete任务。
+whenCompleteAsync：是执行把whenCompleteAsync这个任务丢给线程池来执行。
+
+14_从轻松的乐观锁和悲观锁开讲.mp4
+
+悲观锁的调用方式
+public synchronized void m1(){
+//加锁后的业务逻辑
+}
+//保证多个线程线程使用的是同一个lock对象的前提下。
+ReentrantLock lock = new ReentrantLock();
+public void m2(){
+     lock.lock();
+     try{
+        //操作同步资源 。
+     }finally{
+        lock.unlock();
+     }
+
+}
+//乐观锁的调用方式 。
+//保证多个线程使用的是同一个AtomicInteger
+private AtomicInteger atomicInteger = new AtomicInteger();
+atomicInteger.incrementAndGet();
+
+
+16_sync底层字节码.mp4
+17_公平锁和非公平锁.mp4
+
+
+
 
 
 www.javaxxz.com_I(*U6y%$refg

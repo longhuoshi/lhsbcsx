@@ -4,9 +4,7 @@ import bcsx.containers.Prediction;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ThreadLocalRandom;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
@@ -46,8 +44,8 @@ public class CompletableFutureNetMallDemo {
                 .collect(Collectors.toList());
     }
 
-    public static List<String> getPriceByAsync(List<NetMall> list , String productName){
-        return list.stream().map(netMall -> CompletableFuture.supplyAsync(() -> String.format(productName + " in %s price is %.2f", netMall.getMallName(), netMall.calcPrice(productName))))
+    public static List<String> getPriceByAsync(List<NetMall> list , String productName,ThreadPoolExecutor threadPoolExecutor){
+        return list.stream().map(netMall -> CompletableFuture.supplyAsync(() -> String.format(productName + " in %s price is %.2f", netMall.getMallName(), netMall.calcPrice(productName)),threadPoolExecutor))
                 .collect(Collectors.toList())
                 .stream()
                 .map(CompletableFuture::join)
@@ -58,6 +56,9 @@ public class CompletableFutureNetMallDemo {
     }
 
     public static void main(String[] args) {
+        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(3,5,2L, TimeUnit.SECONDS,new ArrayBlockingQueue<>(50), Executors.defaultThreadFactory(),new ThreadPoolExecutor.AbortPolicy());
+
+
         long startTime = System.currentTimeMillis();
         List<String> list1 =  getPriceByStep(list,"mysql");
         for (String element : list1) {
@@ -67,12 +68,14 @@ public class CompletableFutureNetMallDemo {
         System.out.println("---costTime:"+(endTime-startTime)+"毫秒");
 
         long startTime2 = System.currentTimeMillis();
-        List<String> list2 =  getPriceByAsync(list,"mysql");
+        List<String> list2 =  getPriceByAsync(list,"java",threadPoolExecutor);
         for (String element : list2) {
             System.out.println(element);
         }
         long endTime2 = System.currentTimeMillis();
         System.out.println("---costTime:"+(endTime2-startTime2)+"毫秒");
+
+        threadPoolExecutor.shutdown();
     }
 
 }

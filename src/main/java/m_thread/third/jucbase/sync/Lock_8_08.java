@@ -42,7 +42,7 @@ public class Lock_8_08 {
             }
         },"AA").start();
 
-        Thread.sleep(100);
+        Thread.sleep(200);
 
         new Thread(()->{
             try {
