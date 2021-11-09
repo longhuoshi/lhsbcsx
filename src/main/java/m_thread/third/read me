@@ -149,8 +149,8 @@ public void m2(){
      }finally{
         lock.unlock();
      }
-
 }
+
 //乐观锁的调用方式 。
 //保证多个线程使用的是同一个AtomicInteger
 private AtomicInteger atomicInteger = new AtomicInteger();
@@ -168,6 +168,98 @@ atomicInteger.incrementAndGet();
 每个锁对象拥有一个锁记数器和一个指向持有该 锁的线程的指针。
 
 
+19_死锁
+产生死锁原因
+1、系统资源不足
+2、进程 运行推进 的顺序不合适
+3、资源分配不当。
+
+
+堆栈分析工具(排查死锁)
+查看进程id
+jps -l
+
+跟踪java堆栈
+jstack 进程id
+能看到“Found 1 deadlock” 证明 发生了死锁
+
+查看java堆栈详细信息(推荐)
+应用：排查死锁信息
+jconsole
+
+
+20_中断标志面试题.mp4
+首先一个线程不应该由其它线程来强制中断或停止，而是应该由线程自己自行停止。
+所以，Thread.stop,Thread.suspend,Thread.resume都已经被废弃了。
+
+1、通过一个volatile变量实现
+2、通过AtomicBoolean
+3、interrupt协商机制
+
+然而停止一个线程又很重要，Java提供了另一种用于停止线程的机制：中断
+中断只是一种协作机制，Java没有给中断增加任何语法 ，中断的过程完全需要程序员自己实现。
+若要中断一个线程，你需要手动调用该线程的interrupt方法，该 方法也仅仅是将线程对象的中断标识设成true。
+接着你需要自己写代码 不断地检测当前线程的标识位，如果为true，表示别的线程要求这条线程中断。
+
+public void interrupt() 设置线程的中断状态为true，不会停止线程。
+public static boolean interrupted()判断线程是否被中断，并清除当前中断状态 。
+这个方法做了两件事
+1）返回当前线程的中断状态
+2）将当前线程的中断状态设置为false
+public boolean isInterrupted() 判断当前线程是否被 中断(通过检查中断标致位。)
+
+
+// wait()，join() ,sleep()  methods of this class, then its interrupt status will be cleared and it
+// * will receive an {@link InterruptedException}
+
+sleep方法抛出InterruptedException后，中断标识也被清空置为false，
+我们在catch没有通过调用Thread.currentThread().interrupt()方法再次将中断标识置为true，
+这就导致无限循环了。
+
+22_Object类中的wait和notify方法实现线程等待和唤醒
+
+LockSupport 是用来创建锁和其它同步类的基本线程阻塞原语。
+LockSupport中的park()和unpark()的作用分别是阻塞线程和解除阻塞线程。
+调用park()会将thread的许可证permit设置成1，多次调用 不会累加。
+
+
+为什么要用LockSupport?
+因为Object和Condition使用的限制条件 。
+Object的wait和notify
+1) wait和notify必须在synchronized同步代码块里面，且要成对出现,否则报IllegalMonitorStateException
+2) 顺序要求是先wait后notify。
+Condition
+1) Condition中的线程等待和唤醒方法要在锁代码块里(lock和unlock之间)
+2) 一定要先await后signal。
+
+25_JMM规范下多线程对变量的读写过程
+java memory model 简称jmm
+jmm本身是一种抽象的概念并不真实存在它仅仅描述的是一组约定或规范。
+关键技术 点都是围绕多线程的原子性，可见性和有序性展开的。
+能干嘛？
+1）通过jmm实现线程 和主内存之间的抽象关系 。
+2） 屏蔽各个硬件平台和操作系统的内存访问差异以实现让java程序在各种平台下
+都能达到一致的内存访问效果。
+
+
+
+有序性
+对于一个线程的执行代码 而言，我们总是习惯性认为代码的执行总是从上到下，有序执行。
+但为了提高性能，编译器和处理器通常会对指令序列进行重新排序。
+指令重排可以保证串行语义一致，但没有义务保证 多线程间的语义也一致，即可能产生“脏读”，简单说，
+两行以上不相干的代码在执行的时候有可能先执行的不是第一条，不见得是从上到下顺序执行，执行顺序 会被优化。
+源代码 -> 编译器优化的重排 -> 指令并行的重排 -> 内存系统的重排 -> 最终执行的指令。
+单线程环境里面确保程序最终执行结果和代码 顺序执行的结果一致。
+处理器在进行重排序时必须要考虑指令之间的数据依赖性
+多线程环境中线程交替执行，由于编译器优化重排的存在，两个线程中使用的变量能否保证一致性是无法确定 的，结果无法预测。
+
+
+Java内存模型中规定所有变量都存储在主内存，主内存是共享内存区域，所有线程都可以访问，但线程对变量的操作(读取赋值等)
+必须在工作内存中进行，首先要将变量从主内存拷贝到线程自己的工作内存空间，然后对变量进行操作，操作完成 后再将变量写回
+主内存。不能直接 操作主内存中的变量，各个线程中的工作内存中存储着主内存中的变量副本拷贝 。
+
+
+JMM规范下，多线程先行发生原则之happens-before
 
 
 
