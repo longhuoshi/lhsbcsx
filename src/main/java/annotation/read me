@@ -1,0 +1,28 @@
+什么是注解？
+Annotation的作用
+1)不是程序本身，可以对程序作出解释(这一点和注释(comment)没什么 区别 )
+2)可以被其他程序(比如：编译器等)读取
+
+Annotation在哪里使用？
+可以附加在package,class,method,field等 上面，相当于给他们添加了额外的辅助信息，
+我们可以通过反射机制编程实现对这些元数据的访问。
+
+
+
+元注解：
+作用就是负责注解其它注解，Java定义了4个标准的meta-annotation类型，他们被用来
+提供对其他annotation类型作说明
+
+这些类型和它们所支持的类在java.lang.annotation包中可以找到（@Target,@Retention,
+@Documented,@Inherited）
+@Target:用于描述注解 的使用范围(即：被描述的注解可以用在什么地方)
+@Retention： 表示需要在什么 级别保存该注释信息，用于描述注解 的生命周期
+    (SOURCE < CLASS < RUNTIME)
+@Documented：说明该注释将被包含在javadoc中
+@Inherited：说明子类可以继承父类中的该注解
+
+
+自定义注解
+使用@interface自定义注解时，自动继承了java.lang.annotation.Annotation接口
+
+
