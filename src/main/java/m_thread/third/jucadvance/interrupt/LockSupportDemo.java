@@ -17,8 +17,9 @@ public class LockSupportDemo {
 
     static Lock lock = new ReentrantLock();
     static Condition condition = lock.newCondition();
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
+        //LockSupport
         Thread t1 = new Thread(() -> {
             try {
                 TimeUnit.SECONDS.sleep(1);
@@ -64,15 +65,15 @@ public class LockSupportDemo {
 
 
             lock.lock();
-                try {
-                    System.out.println(Thread.currentThread().getName()+"   ---come in");
-                    condition.await();
-                    System.out.println(Thread.currentThread().getName()+"   ---被唤醒");
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }finally {
-                    lock.unlock();
-                }
+            try {
+                System.out.println(Thread.currentThread().getName()+"   ---come in");
+                condition.await();
+                System.out.println(Thread.currentThread().getName()+"   ---被唤醒");
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }finally {
+                lock.unlock();
+            }
         },"t1").start();
         try {
             TimeUnit.MILLISECONDS.sleep(200);
