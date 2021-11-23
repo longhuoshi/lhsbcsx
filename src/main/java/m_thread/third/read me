@@ -323,9 +323,12 @@ storestore    Load1;storestore;Load2    在store2及其后的写操作执行前�
 loadstore    Load1;loadstore;Load2    在store2及其后的写操作执行前，保证load1的读操作已经已读取完成。
 storeload    Load1;storeload;Load2    保证load1的写操作已刷新到主内存之后，load2及其后的读操作才能执行。
 
+特性:
 当写一个volatile变量时，JMM会把该线程对应的本地内存中的共享变量值立即刷新回主内存中。
 当读一个volatile变量时，JMM会把该线程对应的本地内存设置为无效，直接从主内存中读取共享变量。
 所以volatile的写内存语义是直接刷新到主内存中，读的内存语义是直接从主内存中读取。
+（注意：写的时候如果发现线程工作内存的数据和主内存的数据不一致，会放弃写操作。）
+
 
 java代码中的volatitle变量与底层指令的关系
 1）volatitle写的屏障规则：
@@ -351,13 +354,37 @@ read(读取)->load(加载)->use(使用)->assign(赋值)->store(存储)->write(�
 不存在数据依赖关系，就可以重排序。
 
 JVM的字节码，i++分成三步，间隙期不同步非原子操作(i++)
+32_如何正确使用volatile
+DCL双端锁 用于单例模式，双重判断
 
-33_最后的小总结volatile.mp4
+33_最后的小总结volatile
+
+34_CAS底层原理和UnSafe的理解
+CAS（compare and swap）
+CAS有3个操作数，位置内存值V，旧的预期值A，要修改的更新值B。
+当且仅当旧的预期值A和内存值V相同时，才能将位置内存值修改为B。否则什么都不做或重来。
+AtomicInteger.compareAndSet(int expect, int update)
+compareAndSet方法里调用的是：
+private static final Unsafe unsafe = Unsafe.getUnsafe();
+unsafe.compareAndSwapInt(this, valueOffset, expect, update);
+
+valueOffset：内存位置偏移量，相当于尺子的刻度。
+
+由于CAS是一种系统原语，原语属于操作系统用语范畴，是由若干条指令组成的，用于完成某个功能的一个过程，
+并且原语的执行必须 是连续的，在执行过程 中不允许被中断，也就是说CAS是一条CPU的原子指令，不会造成
+所谓的数据不一致问题。
+
+volatile：保证了可见性，和有序。
+CAS:保证了原子性。
+所以volatile要和CAS一起用。
+
+
+35_自旋锁
 
 
 
 
-
+https://naotu.baidu.com/
 D:\javaxxz\ed\javaEE\【No1417】大厂面试之JUC并发编程与源码分析教程\JUC并发编程与源码分析
 www.javaxxz.com_I(*U6y%$refg
 

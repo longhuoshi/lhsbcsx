@@ -1,3 +1,9 @@
+https://www.bilibili.com/video/BV1p4411P7V3?p=4
+作者：狂神说
+idea小技巧：alt+鼠标选中 可以实现多行选种。
+
+注解加反射，注解操作反射。
+
 什么是注解？
 Annotation的作用
 1)不是程序本身，可以对程序作出解释(这一点和注释(comment)没什么 区别 )
@@ -24,5 +30,38 @@ Annotation在哪里使用？
 
 自定义注解
 使用@interface自定义注解时，自动继承了java.lang.annotation.Annotation接口
+
+分析：
+1) 格式 ：public @interface 注释名 {定义内容}。(在类里面声明注释要把public去掉。)
+2) 其中的每一个方法实际上是声明了一个配置参数，方法的名称就是参数名。
+3）返回值类型就是参数的类型（返回值只能是基本类型Class,String,enum）。
+4）如果只有一个参数成员，一般参数名为value
+
+
+java 反射 Reflection？
+Reflection是java被视为动态语言的关键，反射机制允许在执行期借助Reflection API取得任何类的内部信息，
+并能直接操作任意对象 的内部属性及方法。
+Class c = Class.forName("java.lang.String");
+
+加载完类之后，在堆内存的方法区中就产生了一个 Class类型对象 （一个类只有一个Class对象，但可以有多个实例对象 ），
+这个对象就包含了完整的类的结构信息，我们可以通过 这个对象 看到类的结构 ，这个对象 就像一面镜子，透过这个镜子看
+到类的结构，所以，我们形象 的称之 为：反射。
+正常方式 ：引入 需要 要的“包类”名称 -> 通过new实例化 -> 取得实例化对象
+反射方式 ：实例化对象 -> getClass()方法 -> 得到完整的“包类”名称
+
+反射相关的主要API
+java.lang.Class:代表一个类
+java.lang.reflect.Method:代表类的方法
+java.lang.reflect.Field:代表类的成员变量
+java.lang.reflect.Constructor:代表类的构造器
+
+通过反射获取运行时的完整结构：
+Field,Method,Constructor,SuperClass,Interface,Annotation
+
+
+
+
+
+
 
 
