@@ -2,6 +2,22 @@ jls7:The null reference can always be assigned or cast to any reference type
 从上面的Java语言规范中可以得出：
 Java中所有类的顶级父类是Object，可以认为Null是所有类的子类。
 
+
+类型通配符 ?
+1）类型通配符一般是使用“?”代替具体的类型实参。
+2）所以，类型通配符是类型实参，而不是类型形参。
+
+
+类型通配符的上限
+语法：类/接口<? extends 实参类型>
+要求该泛型的类型，只能是实参类型，或实参类型的子类类型。
+demo01/TestUp.java
+
+类型通配符的下限
+语法：类/接口<? super 实参类型>
+要求该泛型的类型，只能是实参类型，或实参类型的父类类型。
+
+
 Java泛型
 <? extends T>和<? super T>是Java泛型中的“通配符（Wildcards）”和“边界（Bounds）”的概念。
 <? extends T>：是指 “上界通配符（Upper Bounds Wildcards）
@@ -19,6 +35,16 @@ PECS原则总结
 为什么java的泛型会出现？因为Java中的泛型没有协变特性的导致的
 
 
+类型擦除
+概念
+泛型是java  1.5版本才引进 的概念，在这之前是没有泛型的，但是，泛型代码 能够很好地和之前版本的代码兼容。
+那是因为，泛型信息只存在于代码 编译阶段，在进入JVM之前，与泛型相关的信息会被擦除掉，我们称之为---类型擦除。
+
+泛型与数组
+1）可以声明带泛型的数组引用 ，但是不能直接创建带泛型的数组对象。
+2）可以通过java.lang.reflect.Array的newInstance(Class<T>,int)创建T[]数组。
+
+推荐用泛型集合，不要用泛型数组。
 
 
 
