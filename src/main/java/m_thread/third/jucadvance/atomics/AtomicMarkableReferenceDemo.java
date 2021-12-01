@@ -29,7 +29,6 @@ public class AtomicMarkableReferenceDemo {
         },"t2").start();
 
 
-
         //使用场景：双端检索
         if (!atomicMarkableReference.isMarked()){
             //业务逻辑...

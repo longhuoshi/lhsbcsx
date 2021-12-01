@@ -388,6 +388,7 @@ CAS:保证了原子性。
 循环时间长开销很大。
 引出来ABA问题
 用AtomicStampedReference来解决ABA问题。
+m_thread.third.jucadvance.cas.ABADemo.java
 
 37_基本类型原子类
 
@@ -396,6 +397,14 @@ AtomicMarkableReference和AtomicStampedReference是兄弟 类。
 AtomicMarkableReference的标致是一次性的。true/false
 
 40_对象的属性修改原子类
+AtomicIntegerFieldUpdater
+AtomicReferenceFieldUpdater
+
+41_LongAdder和LongAccumulator
+
+42_LongAdder高性能对比
+
+
 
 
 
