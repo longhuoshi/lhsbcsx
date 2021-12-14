@@ -1,8 +1,12 @@
 package weakreference;
 
+import java.lang.ref.PhantomReference;
 import java.lang.ref.Reference;
 import java.lang.ref.ReferenceQueue;
 import java.lang.ref.WeakReference;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author l
@@ -24,7 +28,7 @@ import java.lang.ref.WeakReference;
  *  *1、StrongReference
  *          A a=new A(); 此时引用a强引用对象A；不会被GC
  *  *2、SoftReference
- *      在内存不够时引用对象会被GC；
+ *      在内存不够时引用对象会被GC；  （一般开发高速缓存的系统要用到。）
  *  *3、WeakReference
  *  *   每次GC都会被回收；
  *  *4、PhantomReference
@@ -34,11 +38,31 @@ import java.lang.ref.WeakReference;
  *  * SoftReference和WeakReference可以选择和ReferenceQueue联合使用也可以不选择，这使他们的区别之一。
  *
  *
+ * 软引用实际案例：
+ * 假如有一个应用需要读取大量的本地图片：
+ *  如果每次读取图片都从硬盘读取则会严重影响性能
+ *  如果一次性全部加载到内存中又可能造成内存溢出 OOM。
+ * 此时使用软引用可以解决问题。
+ * 设计思路：用一个hashmMap来保存图片的路径和相应 图片对象关联的软引用 之间的映射关系 ，在内存不足时，
+ * JVM会自动回收这些缓存图片对象所占用的空间，人而有效地避免了OOM问题。
+ * Map<String,SoftReference<Bitmap>> imageCache = new HashMap<String,SoftReference<Bitmap>>();
+ *
+ * 虚引用（写java虚拟机的人用的） 的主要作用是跟踪对象 被 垃圾回收的状态。仅仅是提供了一种确保对象被finalize以后，做某些事情的机制 。
+ * PhantomReference的get方法总是返回 null，因此无法访问对应的引用 对象 。
+ *
+ *
+ *
  */
 class Car{
     String name = "亚州龙";
     public String toString(){
         return name;
+    }
+
+
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("----gc,finalize() invoked ! ");
     }
 }
 public class Demo {
@@ -46,7 +70,42 @@ public class Demo {
 
 
 //        typeString();
-        typeObj();
+//        typeObj();
+        phantomReferenceDemo();
+    }
+
+    //-Xms30m -Xmx30m
+    public static void phantomReferenceDemo(){
+        ReferenceQueue<Car> referenceQueue = new ReferenceQueue<>();
+        PhantomReference<Car> phantomReference = new PhantomReference<>(new Car(),referenceQueue);
+        System.out.println(phantomReference.get());
+        List<byte[]> list = new ArrayList<>();
+        //内存里添加数据，当内存不足时,虚引用所引用的对象回收后 会装到referenceQueue里
+        new Thread(()->{
+            while (true){
+                list.add(new byte[1*1024*1024]);
+                try {
+                    TimeUnit.MILLISECONDS.sleep(600);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                System.out.println(phantomReference.get());
+            }
+        },"t1").start();
+
+        //引用队列里查看虚对象
+        new Thread(()->{
+            while (true){
+                Reference<? extends Car> poll = referenceQueue.poll();
+                if (poll != null)
+                    System.out.println("----有虚对象进入了队列："+poll.get());
+            }
+        },"t2").start();
+        try {
+            TimeUnit.MILLISECONDS.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
     }
 

@@ -404,6 +404,36 @@ AtomicReferenceFieldUpdater
 
 42_LongAdder高性能对比
 
+43_LongAdder为什么这么快
+LongAdder的基本思路就是分散热点，将value值分散到一个Cell数组中，不同线程会命中到数组的不同槽中，
+各个 线程只对自己槽中的那个值进行CAS操作，这样热点就被分散了，冲突的概率就小很多，如果要获取真正的
+long值，只要将各个槽中的变量值累加返回 。
+
+45_LongAdder源码分析01
+47_LongAdder源码分析03
+AtomicLong和LongAdder区别
+AtomicLong:
+线程安全，可允许一些性能 损耗，要求高精度时可以使用
+保证精度 ，性能代码
+原理 ：多个线程针对单个 热点值value进行原子 操作
+
+LongAdder:
+当需要在高并发下有较好的性能表现，且对值 的精确度要求不高时，可以使用保证性能 ，精度 代价。
+原理 ：每个线程拥有自己的槽，各个 线程一般只对自己槽中的那个值进行CAS操作。s
+
+48_ThreadLocal简介
+实现每一个线程都有自己专属的本地变量(自己用自己的变量不麻烦别人，不和其它 人共享，人人有份，人各一份。)
+m_thread.third.jucadvance.tl.ThreadLocalDemo.java
+
+50_Thread，ThreadLocal，ThreadLocalMap 关系
+
+55_内存布局之对象头
+java对象 = 对象头+实例数据+对齐填充。
+对象头 = 对象标记markword + 类型指针
+对象标记markword  = 哈希码+GC标记+GC次数 +同步锁标记+偏向锁持有者
+
+
+
 
 
 

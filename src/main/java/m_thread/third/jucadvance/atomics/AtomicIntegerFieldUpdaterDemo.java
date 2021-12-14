@@ -9,6 +9,9 @@ import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
  * @author l
  * @date 2021/11/29 14:19
  * @description
+ *
+ * 思想 ：锁住一个对象的属性
+ *
  */
 class BankAccount{
     String bankName = "ccb";
