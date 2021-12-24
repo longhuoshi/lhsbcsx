@@ -1,6 +1,8 @@
 package m_thread.basic;
 
 import bcsx.net.mindview.util.Pair;
+import com.sun.corba.se.impl.orbutil.concurrent.Sync;
+import lombok.Synchronized;
 
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -30,7 +32,6 @@ public class ReentrantLockDemo {
                 }
             }.start();
         }
-
     }
 
 }

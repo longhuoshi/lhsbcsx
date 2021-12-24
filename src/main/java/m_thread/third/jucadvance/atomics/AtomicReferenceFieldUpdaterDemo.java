@@ -22,10 +22,7 @@ class MyVar{
         }else {
             System.out.println(Thread.currentThread().getName()+"----抢锁失败，数据正在被其它线程修改！");
         }
-
     }
-
-
 }
 
 /**

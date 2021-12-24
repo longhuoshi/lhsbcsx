@@ -524,7 +524,73 @@ CLH 队列(Craig,Landin and Hagersten locks 缩写)
 Node 队列中每个排队的个体就是一个Node
 
 
+68_AQS源码分析02
+69_ReentrantReadWriteLock演变复习
+ReentrantLock、ReentrantReadWriteLock、StampedLock讲解 。
 
+
+读写锁定义为
+一个资能够被多个读线程访问，或者被一个写线程访问，但是不能同时存在读写线程。
+一体两面，读写互斥，读读共享(刀刃，刀背互斥)
+
+70_读写锁的演变2
+71_ReentrantReadWriteLock降级规则
+锁降级：遵循获取写锁、获取读锁再释放写锁的次序，写锁能够降级成为读锁。
+写锁可以降级为读锁，但读锁是不能升级成写锁的。
+这样的好处是写完立即读，没有读完，写不进去。
+
+
+ class CachedData {
+   Object data;
+   volatile boolean cacheValid;
+   final ReentrantReadWriteLock rwl = new ReentrantReadWriteLock();
+
+   void processCachedData() {
+     rwl.readLock().lock();
+     if (!cacheValid) {
+       // Must release read lock before acquiring write lock
+       rwl.readLock().unlock();
+       rwl.writeLock().lock();
+       try {
+         // Recheck state because another thread might have
+         // acquired write lock and changed state before we did.
+         if (!cacheValid) {
+           data = ...
+           cacheValid = true;
+         }
+         // Downgrade by acquiring read lock before releasing write lock
+         rwl.readLock().lock(); //释放写锁之前获取读锁
+       } finally {
+         rwl.writeLock().unlock(); // Unlock write, still hold read
+       }
+     }
+
+     try {
+       use(data);
+     } finally {
+       rwl.readLock().unlock();
+     }
+   }
+ }
+
+
+违背锁降级的步骤
+如果当前的线程A在修改完cache中的数据后，没有获取读锁而是直接释放了写锁，那么假设此时另一个线程B获取了写锁并修改了数据，
+那么A线程无法感知到数据已被 修改，则数据出现错误 。
+
+遵循锁降级的步骤
+线程A在释放写锁之前获取读锁,那么线程B在获取写锁时将被阻塞，直到线程A完成数据处理过程，释放读锁。这样可以保证返回的数据是
+这次更新的数据，该机制是专门为了缓存设计的。
+
+
+72_有没有比读写锁更快的锁
+StampedLock
+适用于写线程少，读线程多的情况。
+读的过程中也允许获取写锁介入。
+注意：
+1、不可重入，没有Re开头(如果一个线程已经 持有了写锁，再去获取写锁的话就会造成死锁)
+2、不支持条件变量(Condition),没有wait(),notify()
+3、不能调用 中断操作，即不要调用interrupt()方法。
 
 
 

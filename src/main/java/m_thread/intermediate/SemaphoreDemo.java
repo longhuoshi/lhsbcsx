@@ -1,4 +1,4 @@
-package main.java.m_thread.intermediate;
+package m_thread.intermediate;
 
 import java.util.concurrent.Semaphore;
 

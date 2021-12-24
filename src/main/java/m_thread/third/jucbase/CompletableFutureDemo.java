@@ -32,6 +32,5 @@ public class CompletableFutureDemo {
             System.out.println("-----u="+u); //异常时，返回
         });
 
-
     }
 }

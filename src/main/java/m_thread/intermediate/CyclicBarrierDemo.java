@@ -1,4 +1,4 @@
-package main.java.m_thread.intermediate;
+package m_thread.intermediate;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
@@ -18,7 +18,7 @@ import java.util.concurrent.CyclicBarrier;
  */
 public class CyclicBarrierDemo {
     public static void main(String[] args) {
-        CyclicBarrier barrier = new CyclicBarrier(4,new TotalTask());
+        CyclicBarrier barrier = new CyclicBarrier(3,new TotalTask());
         BillTask worker = new BillTask("111",barrier);
         BillTask worker2 = new BillTask("222",barrier);
         BillTask worker3 = new BillTask("333",barrier);
@@ -53,7 +53,6 @@ public class CyclicBarrierDemo {
                 //都到达这个节点之后后面才会继续执行。
                 barrier.await();
                 System.out.println("全部都结束 ，市区"+billName+"才开始后面的工作。");
-
             } catch (InterruptedException | BrokenBarrierException e) {
                 e.printStackTrace();
             }

@@ -35,7 +35,6 @@ public class InterruptDemo {
                     Thread.currentThread().interrupt();
                     //aqs（AbstractQueuedSynchronizer）里有这个应用
 
-
                     e.printStackTrace();
                 }
                 System.out.println("----hello interrupt");
