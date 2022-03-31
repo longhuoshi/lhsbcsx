@@ -4,7 +4,7 @@ package jvm_demo.chapter13;
  * 面试题 1
  * 题目：new String("ab") 会创建几个对象？
  * 看字节码就知道是两个。
- * 对象1堆空间不是常量池区域  new String("a") (对应字节码： new #2 <java/lang/String>)
+ * 对象1堆空间不是常量池区域  new 关键字在堆空间创建的 (对应字节码： new #2 <java/lang/String>)
  * 对象2存在堆空间常量池区域 "ab"  (对应字节码： ldc #3 <ab>)
  *
  * 拓展：new String("a") + new String("b") 呢？

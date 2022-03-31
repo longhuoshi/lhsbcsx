@@ -5,7 +5,7 @@ intern 练习
 * **/
 public class StringExer1 {
     public static void main(String[] args) {
-//        String x = "ab"; //会影响结果。（添加这行s == "ab" 会是false）
+//        String x = "ab"; //会影响结果。（添加这行  jdk8中 s == "ab" 会是false）
 
         String s = new String("a") + new String("b");//new String("ab")
         //在上一行代码执行完以后，字符串常量池中并没有"ab"
@@ -15,5 +15,6 @@ public class StringExer1 {
 
         System.out.println(s2 == "ab");//jdk6:true  jdk8:true
         System.out.println(s == "ab");//jdk6:false  jdk8:true
+
     }
 }
