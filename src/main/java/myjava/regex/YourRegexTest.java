@@ -1,11 +1,30 @@
 package myjava.regex;
 
 import java.util.Arrays;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class YourRegexTest {
     public static void main(String[] args) {
 //        test();
-        checkMail();
+//        checkMail();
+        catchImagInHtml();
+    }
+
+    public static void catchImagInHtml(){//(http|https)
+        String html = "<p><img src=\"https://txlcoss.oss-cn-hangzhou.aliyuncs.com/aliyuncs/resource/2022/07/05/20220705150655_535.png\" alt=\"D{T68$Y9(8(N)J3UK~H_)CR.png\"/></p>";
+        html += "<p><img src=\"http://txlcoss.oss-cn-hangzhou.aliyuncs.com/aliyuncs/resource/2022/07/04/20220704164904_458.jpg\" alt=\"微信图片_20220704164219.jpg\" width=\"393\" height=\"483\" style=\"width: 393px; height: 483px;\"/></p>";
+//        String urlRegex = "(http|https)://[^\":<>]*\\.(jpg|bmp|gif|ico|jpeg|tif|png)";
+        String urlRegex = "http[s]{0,1}://[^\":<>]*\\.(jpg|bmp|gif|ico|jpeg|tif|png)";
+        Pattern compile = Pattern.compile(urlRegex, Pattern.CASE_INSENSITIVE);
+        Matcher matcher = compile.matcher(html);
+        while (matcher.find()){
+            System.out.println(matcher.group(0));
+            System.out.println(matcher.group(1));
+
+        }
+
+
     }
 
     /**练习：对ip地址进行排序

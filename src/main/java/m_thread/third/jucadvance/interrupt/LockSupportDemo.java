@@ -26,7 +26,7 @@ public class LockSupportDemo {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
+            Thread.yield();
             System.out.println(Thread.currentThread().getName() + "   ---come in");
             LockSupport.park();
             LockSupport.park();
