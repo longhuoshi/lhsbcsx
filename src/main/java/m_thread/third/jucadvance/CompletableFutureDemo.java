@@ -14,6 +14,11 @@ import java.util.concurrent.*;
  */
 public class CompletableFutureDemo {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
+        m1();
+    }
+
+
+    private static void m2()  throws ExecutionException, InterruptedException{
         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(2,5,2L, TimeUnit.SECONDS,new ArrayBlockingQueue<>(50), Executors.defaultThreadFactory(),new ThreadPoolExecutor.AbortPolicy());
         //异步编排，多线程异步调用 。
         CompletableFuture<Integer> future = CompletableFuture.supplyAsync(() -> {
@@ -24,6 +29,7 @@ public class CompletableFutureDemo {
             }
             return 1;
         },threadPoolExecutor).thenApply((result) -> { //(result)当一个参数 的时候 可以不要括号 ，直接写成result
+            System.out.println("----thenApply result+2");
             //result上一步的计算结果
             return result+2;
         }).whenComplete((v,e)->{
@@ -40,7 +46,9 @@ public class CompletableFutureDemo {
         TimeUnit.SECONDS.sleep(3);
 
         threadPoolExecutor.shutdown();
+
     }
+
 
     private static void m1() throws InterruptedException, ExecutionException {
         //-----没有返回值的-----
@@ -58,6 +66,7 @@ public class CompletableFutureDemo {
         //-----有返回值 的-----
         CompletableFuture<Integer> future3 = CompletableFuture.supplyAsync(() -> {
             System.out.println(Thread.currentThread().getName() + "\t----come in");
+
             return 1024;
         });
         System.out.println(future3.get());

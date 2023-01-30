@@ -2,6 +2,7 @@ package myjava;
 
 import com.sun.deploy.util.StringUtils;
 import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+import entity.Student;
 import org.w3c.dom.ls.LSOutput;
 
 import javax.print.attribute.HashAttributeSet;
@@ -29,6 +30,30 @@ public class Test3 {
 //        List<String> aaa =strToListByComma("12,2,4,4565",String.class);
 //        System.out.println(aaa);00000001632383300672
         System.out.println(1234);
+        List<Student> a = new ArrayList(Arrays.asList(new Student(1,"a","boy"),
+                new Student(2,"b","boy"),
+                new Student(4,"d","girl"),
+                new Student(3,"c","boy")));
+        List<Student> b = new ArrayList(Arrays.asList(new Student(4,"d","girl"),
+                new Student(5,"e","girl"),
+                new Student(3,"c","boy")));
+        List<Student> c = new ArrayList();
+        for (Student i1 : a) {
+            for (Student i2 : b) {
+                if (i1.getId()  == i2.getId() )
+                    c.add(i1);
+            }
+        }
+        System.out.println(c);
+        c.addAll(a);
+        c.addAll(b);
+        System.out.println(c);
+        List<Student> collect = c.stream().distinct().collect(Collectors.toList());
+        c.clear();
+        c = collect;
+        System.out.println(c);
+
+
 
     }
 
