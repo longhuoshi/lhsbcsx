@@ -13,4 +13,9 @@ public class SmsServiceImpl implements SmsService {
         System.out.println("send message:" + message);
         return message;
     }
+
+    @Override
+    public void select(int id) {
+        System.out.println("订单号是"+id);
+    }
 }

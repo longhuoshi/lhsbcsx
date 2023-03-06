@@ -9,4 +9,6 @@ package reflect.dynamic_proxy;
  */
 public interface SmsService {
     String send(String message);
+    void select(int id);
+
 }
