@@ -1,23 +1,42 @@
 package annotation;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 /**
  * 自定义注解
  *
  * */
 public class Test03 {
+    public String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String[] schools;
     //注解可以显示赋值，如果没有默认值 ，我们就必须给注解赋值。
     @MyAnnotation2(name = "李雲迪",schools = {"西北大学","湖南大学"})
-    public void test1(){}
+    public void test1(){
+
+    }
 
     @MyAnnotation3("张三")
     public void test2(){}
 
+   /* public static void main(String[] args) {
+        Class<Test03> test03Class = Test03.class;
+        Annotation[] annotations = test03Class.getAnnotations();
+        for (Annotation annotation : annotations) {
+            System.out.println(((MyAnnotation2)annotation).name());
+        }
+    }*/
+
 }
+
 
 @Target({ElementType.TYPE,ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
@@ -37,3 +56,6 @@ public class Test03 {
     //参数名是value时，调用注解的地方可以省略参数名。
     String value();
 }
+
+
+
