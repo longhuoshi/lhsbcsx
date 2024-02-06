@@ -1,6 +1,7 @@
 package myjava;
 
 import com.sun.deploy.util.StringUtils;
+import entity.Student;
 
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
@@ -59,7 +60,18 @@ public class Test2 {
         List<String> list4 = aaa.stream().map(Object::toString).collect(Collectors.toList());
         System.out.println(String.join(",",list4));
 
+        Test2 test2 = new Test2();
+        test2.s1 = new Student(1,"tom","girl");
+        test2.s2 = test2.s1;
+        System.out.println(test2.s1 );
+        test2.s1 =null;
+        System.out.println(test2.s2 );
+
+
+
     }
+    private Student s1;
+    private Student s2;
 
 
     public static String formatPointXX(BigDecimal source){
