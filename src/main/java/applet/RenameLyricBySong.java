@@ -19,10 +19,10 @@ import java.util.Map;
  * 歌词命名后的名称 ：陈奕迅 - 一丝不挂.lrc
  */
 public class RenameLyricBySong {
-    // 歌曲路径
-    private final static String PATH_SONGS = "E:\\Download\\music\\新建文件夹\\新建文件夹\\新建文件夹\\test_1songs";
-    // 歌词路径
-    private final static String PATH_LYRIC = "E:\\Download\\music\\新建文件夹\\新建文件夹\\新建文件夹\\test_1lyric";
+    // 歌曲路径 (修改成自己的)
+    private final static String PATH_SONGS = "E:\\Download\\music\\新建文件夹\\新建文件夹\\新建文件夹\\1songs";
+    // 歌词路径 (修改成自己的)
+    private final static String PATH_LYRIC = "E:\\Download\\music\\新建文件夹\\新建文件夹\\新建文件夹\\1lyric";
 
     private final static String TYPE_SONG = "song";
     private final static String TYPE_LYRIC = "lyric";
@@ -62,7 +62,8 @@ public class RenameLyricBySong {
                         return;
                     }
                 }else {
-                    notFindLyricOfSongList.add(beanSong.getShortName());
+//                    notFindLyricOfSongList.add(beanSong.getShortName());
+                    notFindLyricOfSongList.add(userName);
                 }
             });
 
@@ -119,7 +120,7 @@ public class RenameLyricBySong {
                 bean.setSuffixal("."+getExtension(name));
                 bean.setParentPath(file.getParent());
                 if (fileMAP.containsKey(shortName)){
-                    throw new Exception(shortName+" 名称有重复！");
+                    throw new Exception(shortName+" 名称有重复！ type:"+type +"   name:"+name);
                 }else {
                     fileMAP.put(shortName,bean);
                 }
@@ -143,7 +144,7 @@ public class RenameLyricBySong {
 
     private String getShortNameBySong(String name){
         String shorName="";
-        String[] suffixalArr = {".flac",".mp3"};
+        String[] suffixalArr = {".flac",".mp3",".wav"};
         int secondIndex =-1;
         for (String s : suffixalArr) {
             secondIndex = name.indexOf(s);
@@ -159,7 +160,7 @@ public class RenameLyricBySong {
     }
 
     private String cleanSuffixal(String fileName,String suffixal){
-        String[] suffixalArr = {".flac",".mp3",".lrc"};
+        String[] suffixalArr = {".flac",".mp3",".lrc",".wav"};
         if (suffixal != null && suffixal != ""){
             suffixalArr[2] = suffixal;
         }
