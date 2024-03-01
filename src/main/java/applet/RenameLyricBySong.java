@@ -20,9 +20,11 @@ import java.util.Map;
  */
 public class RenameLyricBySong {
     // 歌曲路径 (修改成自己的)
-    private final static String PATH_SONGS = "E:\\Download\\music\\新建文件夹\\新建文件夹\\新建文件夹\\1songs";
+//    private final static String PATH_SONGS = "E:\\Download\\music\\新建文件夹\\新建文件夹\\新建文件夹\\1songs";
+    private final static String PATH_SONGS = "D:\\javaxxz\\Adele\\1";
     // 歌词路径 (修改成自己的)
-    private final static String PATH_LYRIC = "E:\\Download\\music\\新建文件夹\\新建文件夹\\新建文件夹\\1lyric";
+//    private final static String PATH_LYRIC = "E:\\Download\\music\\新建文件夹\\新建文件夹\\新建文件夹\\1lyric";
+    private final static String PATH_LYRIC = "D:\\javaxxz\\Adele\\2";
 
     private final static String TYPE_SONG = "song";
     private final static String TYPE_LYRIC = "lyric";
@@ -45,8 +47,8 @@ public class RenameLyricBySong {
             songsMap.entrySet().stream().forEach(entry -> {
                 FileBean beanSong = entry.getValue();
                 String userName = cleanSuffixal(beanSong.getOriginalName(),null).trim();
-                if(lyricMap.containsKey(beanSong.getShortName())){
-                    FileBean beanLyric = lyricMap.get(beanSong.getShortName());
+                if(lyricMap.containsKey(beanSong.getShortName().toUpperCase())){
+                    FileBean beanLyric = lyricMap.get(beanSong.getShortName().toUpperCase());
                     File file = new File(beanLyric.getPath());
                     String newFileName = userName+beanLyric.getSuffixal();
                     File newFile = new File(beanLyric.getParentPath()+"\\"+newFileName);
@@ -119,10 +121,10 @@ public class RenameLyricBySong {
                 bean.setPath(file.getAbsolutePath());
                 bean.setSuffixal("."+getExtension(name));
                 bean.setParentPath(file.getParent());
-                if (fileMAP.containsKey(shortName)){
+                if (fileMAP.containsKey(shortName.toUpperCase())){
                     throw new Exception(shortName+" 名称有重复！ type:"+type +"   name:"+name);
                 }else {
-                    fileMAP.put(shortName,bean);
+                    fileMAP.put(shortName.toUpperCase(),bean);
                 }
 
             }
